@@ -926,3 +926,9 @@ java.io.FileNotFoundException: C:\auto-drive\auto-drive\.metadata\.plugins\org.e
 
 !ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 04:38:15.847
 !MESSAGE Include paths were discovered in 50 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 04:44:12.172
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 833 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 04:44:12.204
+!MESSAGE Include paths were discovered in 33 milliseconds.

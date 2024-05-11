@@ -37,4 +37,5 @@ Libraries/iLLD/TC27D/Tricore/Scu/Std \
 Libraries/iLLD/TC27D/Tricore/Src/Std \
 Libraries/iLLD/TC27D/Tricore/_Impl \
 Libraries/iLLD/TC27D/Tricore/_PinMap \
+includes/tc275/gpio \
 
