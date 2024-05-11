@@ -74,11 +74,3 @@ Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg
 c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxPort_regdef.h :
 Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuWdt.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuWdt.h :
-Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/stm/stm.h
-c:/auto-drive/auto-drive/auto-drive/includes/tc275/stm/stm.h :
-Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h
-c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h :
-Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.h
-c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.h :
-Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h
-c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h :

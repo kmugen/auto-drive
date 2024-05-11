@@ -1,7 +1,6 @@
 #include "taskScheduler.h"
 #include "stm.h"
 #include "Ifx_Types.h"
-#include "gpio.h"
 
 typedef struct
 {
@@ -36,10 +35,9 @@ static void Task10ms(void)
 static void Task100ms(void)
 {
     stTestCnt.cnt_100ms++;
-    togglePin(P10_2);
 }
 
-void AppScheduling(void)
+void taskScheduler(void)
 {
     if(schedulingInfo.f_100us == 1)
     {
