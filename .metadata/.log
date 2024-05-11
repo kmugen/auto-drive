@@ -256,3 +256,9 @@ Caused by: java.net.MalformedURLException: no protocol:
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-05-12 03:24:43.074
 !MESSAGE Indexed 'auto-drive' (165 sources, 638 headers) in 62.4 sec: 147,675 declarations; 196,219 references; 10 unresolved inclusions; 4,982 syntax errors; 5,551 unresolved names (1.6%)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 03:32:36.400
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 7618 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 03:32:37.477
+!MESSAGE Include paths were discovered in 1066 milliseconds.
