@@ -905,3 +905,24 @@ java.io.FileNotFoundException: C:\auto-drive\auto-drive\.metadata\.plugins\org.e
 	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1152)
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 04:37:03.809
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 04:37:03.809
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 04:37:03.892
+!MESSAGE Include paths were discovered in 87 milliseconds.
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-12 04:37:05.217
+!MESSAGE Indexed 'auto-drive' (165 sources, 638 headers) in 23.9 sec: 147,675 declarations; 196,219 references; 10 unresolved inclusions; 4,982 syntax errors; 5,551 unresolved names (1.6%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-12 04:37:28.804
+!MESSAGE Indexed 'auto-drive' (165 sources, 638 headers) in 23.6 sec: 147,675 declarations; 196,219 references; 10 unresolved inclusions; 4,982 syntax errors; 5,551 unresolved names (1.6%)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 04:38:15.794
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 907 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 04:38:15.847
+!MESSAGE Include paths were discovered in 50 milliseconds.
