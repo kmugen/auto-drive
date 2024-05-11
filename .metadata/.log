@@ -277,3 +277,27 @@ Caused by: java.net.MalformedURLException: no protocol:
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-05-12 05:14:00.000
 !MESSAGE Indexed 'auto-drive' (73 sources, 443 headers) in 15.9 sec: 104,933 declarations; 59,566 references; 10 unresolved inclusions; 2,242 syntax errors; 5,521 unresolved names (3.2%)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 05:18:23.066
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1398 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 05:18:23.144
+!MESSAGE Include paths were discovered in 70 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 05:19:27.561
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 863 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 05:19:27.619
+!MESSAGE Include paths were discovered in 55 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 05:19:31.713
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 165 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 05:19:31.763
+!MESSAGE Include paths were discovered in 48 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 05:19:39.276
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 159 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 05:19:39.329
+!MESSAGE Include paths were discovered in 51 milliseconds.
