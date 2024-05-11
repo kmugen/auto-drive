@@ -4,7 +4,6 @@
 #include "stm.h"
 #include "IfxStm.h"
 #include "IfxCpu_Irq.h"
-#include "Ifx_Types.h"
 #include "isrPrio.h"
 
 /*********************************************************************************************************************/
