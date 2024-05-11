@@ -8,6 +8,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include includes/tc275/gpio/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/_PinMap/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/_Impl/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Stm/Std/subdir.mk
