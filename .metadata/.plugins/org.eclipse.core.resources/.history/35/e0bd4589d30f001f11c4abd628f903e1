@@ -1,0 +1,8 @@
+#ifndef TASKSCHEDULER_H_
+#define TASKSCHEDULER_H_
+
+#include "Ifx_Types.h"
+
+extern void AppScheduling(void);
+
+#endif /* TASKSCHEDULER_H_ */

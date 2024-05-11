@@ -10,6 +10,7 @@ RM := rm -rf
 -include sources.mk
 -include includes/tc275/stm/subdir.mk
 -include includes/tc275/gpio/subdir.mk
+-include includes/app/taskScheduler/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/_PinMap/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/_Impl/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Stm/Std/subdir.mk
