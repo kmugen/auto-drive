@@ -657,3 +657,9 @@ java.lang.Exception: Resource '/auto-drive/TriCore Debug (TASKING)/makefile' doe
 
 !ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 04:15:56.557
 !MESSAGE Include paths were discovered in 42 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 04:30:08.425
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1342 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 04:30:08.498
+!MESSAGE Include paths were discovered in 71 milliseconds.
