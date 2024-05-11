@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<workingSet factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1715451819147_1" label="ActiveProject" name="ActiveProject">
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1715451819147_1" label="ActiveProject" name="ActiveProject">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/auto-drive" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1715451751394_0" label="Window Working Set" name="Aggregate for window 1715451751393">
+<workingSet IMemento.internal.id="ActiveProject"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1715454190467_2" label="Window Working Set" name="Aggregate for window 1715454190467">
 <workingSet IMemento.internal.id="ActiveProject"/>
 </workingSet>
 </workingSetManager>

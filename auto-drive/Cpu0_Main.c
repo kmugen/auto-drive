@@ -28,6 +28,9 @@
 #include "IfxCpu.h"
 #include "IfxScuWdt.h"
 
+#include "headers.h"
+#include "IfxPort.h"
+#include "IfxPort_PinMap.h"
 IfxCpu_syncEvent g_cpuSyncEvent = 0;
 
 void core0_main(void)
@@ -43,7 +46,9 @@ void core0_main(void)
     /* Wait for CPU sync event */
     IfxCpu_emitEvent(&g_cpuSyncEvent);
     IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
-        
+
+    IfxCpu_enableInterrupts();
+
     while(1)
     {
     }
