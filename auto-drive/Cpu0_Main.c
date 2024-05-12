@@ -1,9 +1,10 @@
 #include "Ifx_Types.h"
 #include "IfxCpu.h"
 #include "IfxScuWdt.h"
-
+#include "encoder.h"
 IfxCpu_syncEvent g_cpuSyncEvent = 0;
 
+float32 encPos = 0;
 void core0_main(void)
 {
     IfxCpu_enableInterrupts();
@@ -13,9 +14,11 @@ void core0_main(void)
     
     IfxCpu_emitEvent(&g_cpuSyncEvent);
     IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
-
+    initEncoder();
     IfxCpu_enableInterrupts();
     while(1)
     {
+        countEncTicks();
+        encPos = getEncPos(ENC2);
     }
 }
