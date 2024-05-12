@@ -8,6 +8,8 @@
 #include <stdio.h>
 #include "motor.h"
 #include "lpf.h"
+#include "pid.h"
+#include "commonMacros.h"
 
 /*********************************************************************************************************************/
 /*-------------------------------------------------Data Structures---------------------------------------------------*/
@@ -25,13 +27,19 @@
 TestCnt stTestCnt;
 
 float32 w_ref;
-float32 w_lpf;
+float32 w_ref_lpf;
+float32 w_ref_lpf_prev;
+
 float32 w;
+float32 w_lpf;
+float32 w_lpf_prev;
+
 float32 encPos;
 float32 prev_encPos;
 float32 w_err;
-char str[20];
 
+float32 v_in;
+char str[20];
 /*********************************************************************************************************************/
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
 /*********************************************************************************************************************/
@@ -49,52 +57,65 @@ void appNoTask(void)
 
 static void Task1ms(void)
 {
+    static float32 w_ss = 6 * PI;
+    if (stTestCnt.cnt_1ms < 2000 || stTestCnt.cnt_1ms >= 15000)
+    {
+        w_ref = 0.0;
+    }
+    else if (stTestCnt.cnt_1ms < 7000)
+    {
+        w_ref = w_ss / 5 * (stTestCnt.cnt_1ms - 2000) / 1000;
+    }
+    else if (stTestCnt.cnt_1ms < 10000)
+    {
+        w_ref =w_ss;
+    }
+    else if (stTestCnt.cnt_1ms < 15000)
+    {
+        w_ref = w_ss / 5 * (15000 - stTestCnt.cnt_1ms) / 1000;
+    }
+
+
+    w_ref_lpf = lowPassFilter(w_ref, w_ref_lpf_prev);
+    w_ref_lpf_prev = w_ref_lpf;
+
+    encPos = getEncPos(ENC2);
+    w = (encPos - prev_encPos) * 1000;
+    prev_encPos = encPos;
+
+    w_lpf = lowPassFilter(w, w_lpf_prev);
+    w_lpf_prev = w_lpf;
+
+    w_err = w_ref_lpf - w_lpf;
+
+    v_in = pidController(MOTOR2, w_err, w_ref_lpf);
+
+    v_in = (v_in > 12) ? 12 : v_in;
+
+    setMotorPower(0, v_in / 12);
+
     stTestCnt.cnt_1ms++;
 }
 
 static void Task10ms(void)
 {
 
-    if (stTestCnt.cnt_1ms < 5000 || stTestCnt.cnt_1ms >= 20000)
-    {
-        w_ref = 0.0;
-    }
-    else if (stTestCnt.cnt_1ms < 10000)
-    {
-        w_ref = 0.123 * (stTestCnt.cnt_1ms - 5000);
-    }
-    else if (stTestCnt.cnt_1ms < 15000)
-    {
-        w_ref = 615.0;
-    }
-    else if (stTestCnt.cnt_1ms < 20000)
-    {
-        w_ref = 0.123 * (20000 - stTestCnt.cnt_1ms);
-    }
-
-    w_lpf = lowPassFilter(w_ref);
-    if (w_ref == 0)
-    {
-        w_lpf = 0;
-    }
-    encPos = getEncPos(ENC2);
-    w = (encPos - prev_encPos) * 100;
-    prev_encPos = encPos;
-
-//    w_err = w_lpf - w;
-
-    setMotorPower(0, 0);
-
-    sprintf(str, "%.2f %.1f %.1f\r\n", (float32)stTestCnt.cnt_10ms/100, w_ref, w_lpf);
-    for (int i =0;i < 20; i++)
-    {
-        _out_uart3(str[i]);
-    }
     stTestCnt.cnt_10ms++;
 }
 
 static void Task100ms(void)
 {
+    if (stTestCnt.cnt_100ms % 2 == 0) {
+        static float32 a1, a2, a3;
+        a1 = getEncPos(ENC2);
+        a3 = (a1 - a2) * 5;
+        a2 = a1;
+        sprintf(str, "%.1f %.1f %.1f\r\n", (float32)stTestCnt.cnt_100ms/10, w_ref_lpf, a3);
+        for (int i =0;i < 20; i++)
+        {
+            _out_uart3(str[i]);
+        }
+    }
     stTestCnt.cnt_100ms++;
 }
 
