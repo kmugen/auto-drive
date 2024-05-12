@@ -9,5 +9,8 @@
 #define ENC1    0
 #define ENC2    1
 
+#define MOTOR1  0
+#define MOTOR2  1
+
 
 #endif /* INCLUDES_HARDWARE_COMMONMACROS_H_ */

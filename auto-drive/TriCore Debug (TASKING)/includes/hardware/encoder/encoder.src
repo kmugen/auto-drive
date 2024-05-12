@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc11260a --dep-file=includes/hardware/encoder/encoder.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc27xd -D__CPU_TC27XD__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc27xd -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Configurations -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D\\\\_Reg -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Impl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_PinMap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\taskScheduler -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\encoder -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275 -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\extIrq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\uart -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o includes/hardware/encoder/encoder.src ../includes/hardware/encoder/encoder.c"
+	.compiler_invocation	"ctc -f cc12140a --dep-file=includes/hardware/encoder/encoder.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc27xd -D__CPU_TC27XD__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc27xd -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Configurations -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D\\\\_Reg -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom\\\\PwmHl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom\\\\Timer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Impl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_PinMap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\lpf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\pid -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\taskScheduler -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\encoder -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\motor -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275 -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\extIrq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmHl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmTom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\uart -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o includes/hardware/encoder/encoder.src ../includes/hardware/encoder/encoder.c"
 	.compiler_name		"ctc"
 	;source	'../includes/hardware/encoder/encoder.c'
 
@@ -13,42 +13,28 @@ $TC16X
 	
 	.global	initEncoder
 ; Function initEncoder
-.L31:
+.L17:
 initEncoder:	.type	func
-	movh.a	a15,#@his(IfxPort_P15_0)
-	lea	a15,[a15]@los(IfxPort_P15_0)
-	ld.d	e4,[a15]0
-.L58:
-	mov	d6,#16
-	call	setPinMode
-.L59:
-	movh.a	a15,#@his(IfxPort_P15_1)
-	lea	a15,[a15]@los(IfxPort_P15_1)
-	ld.d	e4,[a15]0
-.L63:
-	mov	d6,#16
-	call	setPinMode
-.L64:
 	movh.a	a15,#@his(IfxPort_P33_9)
 	lea	a15,[a15]@los(IfxPort_P33_9)
 	ld.d	e4,[a15]0
-.L65:
+.L44:
 	mov	d6,#16
 	call	setPinMode
-.L66:
+.L45:
 	movh.a	a15,#@his(IfxPort_P33_8)
 	lea	a15,[a15]@los(IfxPort_P33_8)
 	ld.d	e4,[a15]0
-.L67:
+.L49:
 	mov	d6,#16
 	call	setPinMode
-.L68:
+.L50:
 	ret
-.L56:
+.L42:
 	
 __initEncoder_function_end:
 	.size	initEncoder,__initEncoder_function_end-initEncoder
-.L42:
+.L28:
 	; End of function
 	
 	.sdecl	'.text.encoder.countEncTicks',code,cluster('countEncTicks')
@@ -57,258 +43,180 @@ __initEncoder_function_end:
 	
 	.global	countEncTicks
 ; Function countEncTicks
-.L33:
+.L19:
 countEncTicks:	.type	func
-	movh.a	a15,#@his(IfxPort_P15_0)
-	lea	a15,[a15]@los(IfxPort_P15_0)
+	movh.a	a15,#@his(IfxPort_P33_9)
+	lea	a15,[a15]@los(IfxPort_P33_9)
 	ld.d	e0,[a15]0
-.L76:
+.L54:
 	mov	d15,d0
 	mov.a	a15,d15
-.L141:
+.L91:
 	extr.u	d0,d1,#0,#8
-.L88:
+.L62:
 	ld.w	d15,[a15]36
 	extr.u	d15,d15,d0,#1
-.L142:
+.L92:
 	jeq	d15,#0,.L2
-.L143:
-	mov	d3,#1
-.L125:
+.L93:
+	mov	d15,#1
+.L94:
 	j	.L3
 .L2:
-	mov	d3,#0
+	mov	d15,#0
 .L3:
 	j	.L4
 .L4:
 	j	.L5
 .L5:
-	movh.a	a15,#@his(IfxPort_P15_1)
-	lea	a15,[a15]@los(IfxPort_P15_1)
+	movh.a	a15,#@his(_999003_cur_enc2_chA)
+	lea	a15,[a15]@los(_999003_cur_enc2_chA)
+.L59:
+	st.b	[a15],d15
+.L60:
+	movh.a	a15,#@his(IfxPort_P33_8)
+	lea	a15,[a15]@los(IfxPort_P33_8)
 	ld.d	e0,[a15]0
+.L69:
+	mov	d15,d0
+	mov.a	a15,d15
 .L95:
-	mov	d2,d0
-	mov.a	a15,d2
-.L144:
 	extr.u	d0,d1,#0,#8
-.L102:
+.L75:
 	ld.w	d15,[a15]36
 	extr.u	d15,d15,d0,#1
-.L145:
+.L96:
 	jeq	d15,#0,.L6
-.L146:
-	mov	d4,#1
-.L126:
+.L97:
+	mov	d0,#1
+.L98:
 	j	.L7
 .L6:
-	mov	d4,#0
+	mov	d0,#0
 .L7:
 	j	.L8
 .L8:
 	j	.L9
 .L9:
-	movh.a	a15,#@his(IfxPort_P33_9)
-	lea	a15,[a15]@los(IfxPort_P33_9)
-	ld.d	e0,[a15]0
-.L104:
-	mov	d2,d0
-	mov.a	a15,d2
-.L147:
-	extr.u	d0,d1,#0,#8
-.L112:
-	ld.w	d15,[a15]36
-	extr.u	d15,d15,d0,#1
-.L148:
-	jeq	d15,#0,.L10
-.L149:
-	mov	d5,#1
-.L127:
-	j	.L11
-.L10:
-	mov	d5,#0
-.L11:
-	j	.L12
-.L12:
-	j	.L13
-.L13:
-	movh.a	a15,#@his(IfxPort_P33_8)
-	lea	a15,[a15]@los(IfxPort_P33_8)
-	ld.d	e0,[a15]0
-.L114:
-	mov	d2,d0
-	mov.a	a15,d2
-.L150:
-	extr.u	d0,d1,#0,#8
-.L121:
-	ld.w	d15,[a15]36
-	extr.u	d15,d15,d0,#1
-.L151:
-	jeq	d15,#0,.L14
-.L152:
-	mov	d8,#1
-.L128:
-	j	.L15
-.L14:
-	mov	d8,#0
-.L15:
-	j	.L16
-.L16:
-	j	.L17
-.L17:
-	movh.a	a15,#@his(_999001_prev_enc1_chA)
-	lea	a15,[a15]@los(_999001_prev_enc1_chA)
-	ld.bu	d15,[a15]
-.L153:
-	jne	d15,#0,.L18
-.L81:
-	jne	d3,#1,.L19
-.L82:
-	jne	d4,#0,.L20
-.L97:
-	mov	d0,#1
-.L154:
-	j	.L21
-.L20:
-	mov	d0,#-1
-.L21:
-	movh.a	a15,#@his(g_dir_enc1)
-	lea	a15,[a15]@los(g_dir_enc1)
-.L155:
+	movh.a	a15,#@his(_999004_cur_enc2_chB)
+	lea	a15,[a15]@los(_999004_cur_enc2_chB)
+.L71:
 	st.b	[a15],d0
-.L19:
-.L18:
-	movh.a	a15,#@his(_999003_prev_enc2_chA)
-	lea	a15,[a15]@los(_999003_prev_enc2_chA)
+.L72:
+	movh.a	a15,#@his(_999001_prev_enc2_chA)
+	lea	a15,[a15]@los(_999001_prev_enc2_chA)
 	ld.bu	d15,[a15]
-.L156:
-	jne	d15,#0,.L22
-.L106:
-	jne	d5,#1,.L23
-.L107:
-	jne	d8,#0,.L24
-.L116:
-	mov	d0,#1
-.L157:
-	j	.L25
-.L24:
-	mov	d0,#-1
-.L25:
+.L99:
+	jne	d15,#0,.L10
+.L100:
+	movh.a	a15,#@his(_999003_cur_enc2_chA)
+	lea	a15,[a15]@los(_999003_cur_enc2_chA)
+	ld.bu	d15,[a15]
+.L101:
+	jne	d15,#1,.L11
+.L73:
+	jne	d0,#0,.L12
+.L74:
+	mov	d15,#1
+.L102:
+	j	.L13
+.L12:
+	mov	d15,#-1
+.L13:
 	movh.a	a15,#@his(g_dir_enc2)
 	lea	a15,[a15]@los(g_dir_enc2)
-.L158:
-	st.b	[a15],d0
-.L23:
-.L22:
-	movh.a	a15,#@his(_999001_prev_enc1_chA)
-	lea	a15,[a15]@los(_999001_prev_enc1_chA)
+.L103:
+	st.b	[a15],d15
+.L11:
+.L10:
+	movh.a	a15,#@his(_999001_prev_enc2_chA)
+	lea	a15,[a15]@los(_999001_prev_enc2_chA)
 	ld.bu	d15,[a15]
-.L83:
-	jeq	d15,d3,.L26
-.L84:
-	movh.a	a15,#@his(g_cnt_enc1)
-	lea	a15,[a15]@los(g_cnt_enc1)
-	movh.a	a2,#@his(g_cnt_enc1)
-	lea	a2,[a2]@los(g_cnt_enc1)
-	ld.d	e0,[a2]0
-.L159:
-	movh.a	a2,#@his(g_dir_enc1)
-	lea	a2,[a2]@los(g_dir_enc1)
-	ld.b	d2,[a2]0
-	mov	e6,d2
-.L160:
-	addx	d0,d0,d6
-	addc	d1,d1,d7
-	st.d	[a15]0,e0
-.L26:
-	movh.a	a15,#@his(_999002_prev_enc1_chB)
-	lea	a15,[a15]@los(_999002_prev_enc1_chB)
-	ld.bu	d15,[a15]
-.L98:
-	jeq	d15,d4,.L27
-.L99:
-	movh.a	a15,#@his(g_cnt_enc1)
-	lea	a15,[a15]@los(g_cnt_enc1)
-	movh.a	a2,#@his(g_cnt_enc1)
-	lea	a2,[a2]@los(g_cnt_enc1)
-	ld.d	e0,[a2]0
-.L161:
-	movh.a	a2,#@his(g_dir_enc1)
-	lea	a2,[a2]@los(g_dir_enc1)
-	ld.b	d15,[a2]0
-	mov	e6,d15
-.L162:
-	addx	d0,d0,d6
-	addc	d1,d1,d7
-	st.d	[a15]0,e0
-.L27:
-	movh.a	a15,#@his(_999003_prev_enc2_chA)
-	lea	a15,[a15]@los(_999003_prev_enc2_chA)
-	ld.bu	d15,[a15]
+.L104:
+	movh.a	a15,#@his(_999003_cur_enc2_chA)
+	lea	a15,[a15]@los(_999003_cur_enc2_chA)
+	ld.bu	d0,[a15]
+.L105:
+	jeq	d15,d0,.L14
+.L106:
+	movh.a	a15,#@his(g_pos_enc2)
+	lea	a15,[a15]@los(g_pos_enc2)
+	movh.a	a2,#@his(g_pos_enc2)
+	lea	a2,[a2]@los(g_pos_enc2)
+	ld.w	d15,[a2]
+.L107:
+	movh.a	a2,#@his(g_dir_enc2)
+	lea	a2,[a2]@los(g_dir_enc2)
+	ld.b	d0,[a2]0
 .L108:
-	jeq	d15,d5,.L28
+	mul	d0,d0,#2
+	itof	d0,d0
 .L109:
-	movh.a	a15,#@his(g_cnt_enc2)
-	lea	a15,[a15]@los(g_cnt_enc2)
-	movh.a	a2,#@his(g_cnt_enc2)
-	lea	a2,[a2]@los(g_cnt_enc2)
-	ld.d	e0,[a2]0
-.L163:
-	movh.a	a2,#@his(g_dir_enc2)
-	lea	a2,[a2]@los(g_dir_enc2)
-	ld.b	d15,[a2]0
-	mov	e6,d15
-.L164:
-	addx	d0,d0,d6
-	addc	d1,d1,d7
-	st.d	[a15]0,e0
-.L28:
-	movh.a	a15,#@his(_999004_prev_enc2_chB)
-	lea	a15,[a15]@los(_999004_prev_enc2_chB)
-	ld.bu	d15,[a15]
-.L117:
-	jeq	d15,d8,.L29
-.L118:
-	movh.a	a15,#@his(g_cnt_enc2)
-	lea	a15,[a15]@los(g_cnt_enc2)
-	movh.a	a2,#@his(g_cnt_enc2)
-	lea	a2,[a2]@los(g_cnt_enc2)
-	ld.d	e0,[a2]0
-.L165:
-	movh.a	a2,#@his(g_dir_enc2)
-	lea	a2,[a2]@los(g_dir_enc2)
-	ld.b	d15,[a2]0
-	mov	e6,d15
-.L166:
-	addx	d0,d0,d6
-	addc	d1,d1,d7
-	st.d	[a15]0,e0
-.L29:
-	movh.a	a15,#@his(_999001_prev_enc1_chA)
-	lea	a15,[a15]@los(_999001_prev_enc1_chA)
-.L85:
-	st.b	[a15],d3
-.L86:
-	movh.a	a15,#@his(_999002_prev_enc1_chB)
-	lea	a15,[a15]@los(_999002_prev_enc1_chB)
-.L100:
-	st.b	[a15],d4
-.L101:
-	movh.a	a15,#@his(_999003_prev_enc2_chA)
-	lea	a15,[a15]@los(_999003_prev_enc2_chA)
+	mov	d1,#4056
+	addih	d1,d1,#16457
+	mul.f	d0,d0,d1
+	movh	d1,#16960
+	div.f	d0,d0,d1
 .L110:
-	st.b	[a15],d5
+	add.f	d15,d15,d0
+	st.w	[a15],d15
+.L14:
+	movh.a	a15,#@his(_999002_prev_enc2_chB)
+	lea	a15,[a15]@los(_999002_prev_enc2_chB)
+	ld.bu	d15,[a15]
 .L111:
-	movh.a	a15,#@his(_999004_prev_enc2_chB)
-	lea	a15,[a15]@los(_999004_prev_enc2_chB)
+	movh.a	a15,#@his(_999004_cur_enc2_chB)
+	lea	a15,[a15]@los(_999004_cur_enc2_chB)
+	ld.bu	d0,[a15]
+.L112:
+	jeq	d15,d0,.L15
+.L113:
+	movh.a	a15,#@his(g_pos_enc2)
+	lea	a15,[a15]@los(g_pos_enc2)
+	movh.a	a2,#@his(g_pos_enc2)
+	lea	a2,[a2]@los(g_pos_enc2)
+	ld.w	d15,[a2]
+.L114:
+	movh.a	a2,#@his(g_dir_enc2)
+	lea	a2,[a2]@los(g_dir_enc2)
+	ld.b	d0,[a2]0
+.L115:
+	mul	d0,d0,#2
+	itof	d0,d0
+.L116:
+	mov	d1,#4056
+	addih	d1,d1,#16457
+	mul.f	d0,d0,d1
+	movh	d1,#16960
+	div.f	d0,d0,d1
+.L117:
+	add.f	d15,d15,d0
+	st.w	[a15],d15
+.L15:
+	movh.a	a15,#@his(_999001_prev_enc2_chA)
+	lea	a15,[a15]@los(_999001_prev_enc2_chA)
+.L118:
+	movh.a	a2,#@his(_999003_cur_enc2_chA)
+	lea	a2,[a2]@los(_999003_cur_enc2_chA)
+	ld.bu	d15,[a2]
 .L119:
-	st.b	[a15],d8
+	st.b	[a15],d15
 .L120:
+	movh.a	a15,#@his(_999002_prev_enc2_chB)
+	lea	a15,[a15]@los(_999002_prev_enc2_chB)
+.L121:
+	movh.a	a2,#@his(_999004_cur_enc2_chB)
+	lea	a2,[a2]@los(_999004_cur_enc2_chB)
+	ld.bu	d15,[a2]
+.L122:
+	st.b	[a15],d15
+.L123:
 	ret
-.L69:
+.L51:
 	
 __countEncTicks_function_end:
 	.size	countEncTicks,__countEncTicks_function_end-countEncTicks
-.L47:
+.L33:
 	; End of function
 	
 	.sdecl	'.data.encoder.g_dir_enc1',data,cluster('g_dir_enc1')
@@ -323,61 +231,59 @@ g_dir_enc1:	.type	object
 g_dir_enc2:	.type	object
 	.size	g_dir_enc2,1
 	.byte	1
-	.sdecl	'.data.encoder.g_cnt_enc1',data,cluster('g_cnt_enc1')
-	.sect	'.data.encoder.g_cnt_enc1'
-	.global	g_cnt_enc1
-	.align	4
-g_cnt_enc1:	.type	object
-	.size	g_cnt_enc1,8
-	.space	8
-	.sdecl	'.data.encoder.g_cnt_enc2',data,cluster('g_cnt_enc2')
-	.sect	'.data.encoder.g_cnt_enc2'
-	.global	g_cnt_enc2
-	.align	4
-g_cnt_enc2:	.type	object
-	.size	g_cnt_enc2,8
-	.space	8
-	.sdecl	'.data.encoder._999001_prev_enc1_chA',data,cluster('_999001_prev_enc1_chA')
-	.sect	'.data.encoder._999001_prev_enc1_chA'
-_999001_prev_enc1_chA:	.type	object
-	.size	_999001_prev_enc1_chA,1
+	.sdecl	'.data.encoder.g_pos_enc1',data,cluster('g_pos_enc1')
+	.sect	'.data.encoder.g_pos_enc1'
+	.global	g_pos_enc1
+	.align	2
+g_pos_enc1:	.type	object
+	.size	g_pos_enc1,4
+	.space	4
+	.sdecl	'.data.encoder.g_pos_enc2',data,cluster('g_pos_enc2')
+	.sect	'.data.encoder.g_pos_enc2'
+	.global	g_pos_enc2
+	.align	2
+g_pos_enc2:	.type	object
+	.size	g_pos_enc2,4
+	.space	4
+	.sdecl	'.data.encoder._999001_prev_enc2_chA',data,cluster('_999001_prev_enc2_chA')
+	.sect	'.data.encoder._999001_prev_enc2_chA'
+_999001_prev_enc2_chA:	.type	object
+	.size	_999001_prev_enc2_chA,1
 	.space	1
-	.sdecl	'.data.encoder._999002_prev_enc1_chB',data,cluster('_999002_prev_enc1_chB')
-	.sect	'.data.encoder._999002_prev_enc1_chB'
-_999002_prev_enc1_chB:	.type	object
-	.size	_999002_prev_enc1_chB,1
+	.sdecl	'.data.encoder._999002_prev_enc2_chB',data,cluster('_999002_prev_enc2_chB')
+	.sect	'.data.encoder._999002_prev_enc2_chB'
+_999002_prev_enc2_chB:	.type	object
+	.size	_999002_prev_enc2_chB,1
 	.space	1
-	.sdecl	'.data.encoder._999003_prev_enc2_chA',data,cluster('_999003_prev_enc2_chA')
-	.sect	'.data.encoder._999003_prev_enc2_chA'
-_999003_prev_enc2_chA:	.type	object
-	.size	_999003_prev_enc2_chA,1
+	.sdecl	'.data.encoder._999003_cur_enc2_chA',data,cluster('_999003_cur_enc2_chA')
+	.sect	'.data.encoder._999003_cur_enc2_chA'
+_999003_cur_enc2_chA:	.type	object
+	.size	_999003_cur_enc2_chA,1
 	.space	1
-	.sdecl	'.data.encoder._999004_prev_enc2_chB',data,cluster('_999004_prev_enc2_chB')
-	.sect	'.data.encoder._999004_prev_enc2_chB'
-_999004_prev_enc2_chB:	.type	object
-	.size	_999004_prev_enc2_chB,1
+	.sdecl	'.data.encoder._999004_cur_enc2_chB',data,cluster('_999004_cur_enc2_chB')
+	.sect	'.data.encoder._999004_cur_enc2_chB'
+_999004_cur_enc2_chB:	.type	object
+	.size	_999004_cur_enc2_chB,1
 	.space	1
 	.calls	'initEncoder','setPinMode'
 	.calls	'initEncoder','',0
-	.extern	IfxPort_P15_0
-	.extern	IfxPort_P15_1
 	.extern	IfxPort_P33_8
 	.extern	IfxPort_P33_9
 	.extern	setPinMode
 	.calls	'countEncTicks','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L35:
-	.word	36137
+.L21:
+	.word	36089
 	.half	3
-	.word	.L36
+	.word	.L22
 	.byte	4
-.L34:
+.L20:
 	.byte	1
 	.byte	'../includes/hardware/encoder/encoder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L37
+	.word	.L23
 	.byte	2,1,1,3
 	.word	195
 	.byte	4
@@ -385,7 +291,9 @@ _999004_prev_enc2_chB:	.type	object
 	.byte	'fun',0,1,58,43
 	.word	198
 	.byte	6,0,7
-	.byte	'__fract',0,4,128,1,7
+	.byte	'__fract',0,4,128,1
+.L78:
+	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,149,2,18
 	.word	243
@@ -410,7 +318,7 @@ _999004_prev_enc2_chB:	.type	object
 	.byte	'value',0,2,143,1,43
 	.word	309
 	.byte	6,0
-.L70:
+.L52:
 	.byte	7
 	.byte	'unsigned char',0,1,8,7
 	.byte	'unsigned int',0,4,7,7
@@ -1758,20 +1666,20 @@ _999004_prev_enc2_chB:	.type	object
 	.word	7620
 	.byte	3
 	.word	8223
-.L87:
+.L61:
 	.byte	8
 	.byte	'IfxPort_getPinState',0,3,3,170,4,20
 	.word	427
 	.byte	1,1
-.L89:
+.L63:
 	.byte	5
 	.byte	'port',0,3,170,4,47
 	.word	8228
-.L91:
+.L65:
 	.byte	5
 	.byte	'pinIndex',0,3,170,4,59
 	.word	427
-.L93:
+.L67:
 	.byte	6,0,17,3,170,1,9,4,18
 	.byte	'IfxPort_State_notChanged',0,0,18
 	.byte	'IfxPort_State_high',0,1,18
@@ -1793,14 +1701,14 @@ _999004_prev_enc2_chB:	.type	object
 	.byte	'pinIndex',0
 	.word	427
 	.byte	1,2,35,4,0
-.L57:
+.L43:
 	.byte	4
 	.byte	'setPinInput',0,3,5,127,20,1,1
-.L60:
+.L46:
 	.byte	5
 	.byte	'pin',0,5,127,39
 	.word	8480
-.L62:
+.L48:
 	.byte	6,0,7
 	.byte	'unsigned long int',0,4,7,4
 	.byte	'setPinState',0,3,5,137,1,20,1,1,5
@@ -1810,16 +1718,16 @@ _999004_prev_enc2_chB:	.type	object
 	.byte	'state',0,5,137,1,51
 	.word	8552
 	.byte	6,0
-.L75:
+.L53:
 	.byte	8
 	.byte	'getPinState',0,3,5,157,1,23
 	.word	427
 	.byte	1,1
-.L77:
+.L55:
 	.byte	5
 	.byte	'pin',0,5,157,1,42
 	.word	8480
-.L79:
+.L57:
 	.byte	20,6,0,0,21
 	.byte	'__extru',0
 	.word	444
@@ -1920,7 +1828,7 @@ _999004_prev_enc2_chB:	.type	object
 	.byte	28
 	.byte	'uint64',0,7,121,29
 	.word	309
-.L123:
+.L77:
 	.byte	7
 	.byte	'char',0,1,6,28
 	.byte	'sint8',0,7,125,29
@@ -1932,7 +1840,6 @@ _999004_prev_enc2_chB:	.type	object
 	.byte	'long int',0,4,5,28
 	.byte	'sint32',0,7,134,1,29
 	.word	9104
-.L124:
 	.byte	7
 	.byte	'long long int',0,8,5,28
 	.byte	'sint64',0,7,141,1,29
@@ -5737,12 +5644,6 @@ _999004_prev_enc2_chB:	.type	object
 	.byte	'IfxPort_Pin',0,3,192,1,3
 	.word	8480
 	.byte	30
-	.byte	'IfxPort_P15_0',0,11,126,24
-	.word	8480
-	.byte	1,1,30
-	.byte	'IfxPort_P15_1',0,11,127,24
-	.word	8480
-	.byte	1,1,30
 	.byte	'IfxPort_P33_8',0,11,196,1,24
 	.word	8480
 	.byte	1,1,30
@@ -5751,7 +5652,7 @@ _999004_prev_enc2_chB:	.type	object
 	.byte	1,1,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L36:
+.L22:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -5763,12 +5664,12 @@ _999004_prev_enc2_chB:	.type	object
 	.byte	73,19,0,0,29,21,0,54,15,0,0,30,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L37:
-	.word	.L130-.L129
-.L129:
+.L23:
+	.word	.L80-.L79
+.L79:
 	.half	3
-	.word	.L132-.L131
-.L131:
+	.word	.L82-.L81
+.L81:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D\\\\_Reg',0
 	.byte	'C:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio',0
@@ -5789,712 +5690,449 @@ _999004_prev_enc2_chB:	.type	object
 	.byte	0,0,0
 	.byte	'IfxScu_regdef.h',0,1,0,0
 	.byte	'IfxPort_PinMap.h',0,4,0,0,0
-.L132:
-.L130:
+.L82:
+.L80:
 	.sdecl	'.debug_info',debug,cluster('initEncoder')
 	.sect	'.debug_info'
-.L38:
-	.word	387
+.L24:
+	.word	315
 	.half	3
-	.word	.L39
+	.word	.L25
 	.byte	4,1
 	.byte	'../includes/hardware/encoder/encoder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L41,.L40
+	.word	.L27,.L26
 	.byte	2
-	.word	.L34
+	.word	.L20
 	.byte	3
 	.byte	'initEncoder',0,1,20,6,1,1,1
-	.word	.L31,.L56,.L30
+	.word	.L17,.L42,.L16
 	.byte	4
-	.word	.L31,.L56
+	.word	.L17,.L42
 	.byte	5
-	.word	.L57,.L58,.L59
+	.word	.L43,.L44,.L45
 	.byte	6
-	.word	.L60,.L61
+	.word	.L46,.L47
 	.byte	7
-	.word	.L62,.L58,.L59
+	.word	.L48,.L44,.L45
 	.byte	0,5
-	.word	.L57,.L63,.L64
+	.word	.L43,.L49,.L50
 	.byte	6
-	.word	.L60,.L61
+	.word	.L46,.L47
 	.byte	7
-	.word	.L62,.L63,.L64
-	.byte	0,5
-	.word	.L57,.L65,.L66
-	.byte	6
-	.word	.L60,.L61
-	.byte	7
-	.word	.L62,.L65,.L66
-	.byte	0,5
-	.word	.L57,.L67,.L68
-	.byte	6
-	.word	.L60,.L61
-	.byte	7
-	.word	.L62,.L67,.L68
+	.word	.L48,.L49,.L50
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('initEncoder')
 	.sect	'.debug_abbrev'
-.L39:
+.L25:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,29,1,49,16,17,1,18,1,0,0,6,5,0,49,16,2,6,0,0,7,11
 	.byte	0,49,16,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('initEncoder')
 	.sect	'.debug_line'
-.L40:
-	.word	.L134-.L133
-.L133:
+.L26:
+	.word	.L84-.L83
+.L83:
 	.half	3
-	.word	.L136-.L135
-.L135:
+	.word	.L86-.L85
+.L85:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio',0,0
 	.byte	'../includes/hardware/encoder/encoder.c',0,0,0,0
 	.byte	'gpio.h',0,1,0,0,0
-.L136:
+.L86:
 	.byte	5,17,7,0,5,2
-	.word	.L31
-	.byte	3,21,1,4,2,5,21,9
-	.half	.L58-.L31
-	.byte	3,235,0,1,4,1,5,17,9
-	.half	.L59-.L58
-	.byte	3,150,127,1,4,2,5,21,9
-	.half	.L63-.L59
-	.byte	3,234,0,1,4,1,5,17,9
-	.half	.L64-.L63
-	.byte	3,151,127,1,4,2,5,21,9
-	.half	.L65-.L64
+	.word	.L17
+	.byte	3,23,1,4,2,5,21,9
+	.half	.L44-.L17
 	.byte	3,233,0,1,4,1,5,17,9
-	.half	.L66-.L65
+	.half	.L45-.L44
 	.byte	3,152,127,1,4,2,5,21,9
-	.half	.L67-.L66
+	.half	.L49-.L45
 	.byte	3,232,0,1,4,1,5,1,9
-	.half	.L68-.L67
+	.half	.L50-.L49
 	.byte	3,153,127,1,7,9
-	.half	.L42-.L68
+	.half	.L28-.L50
 	.byte	0,1,1
-.L134:
+.L84:
 	.sdecl	'.debug_ranges',debug,cluster('initEncoder')
 	.sect	'.debug_ranges'
-.L41:
-	.word	-1,.L31,0,.L42-.L31,0,0
+.L27:
+	.word	-1,.L17,0,.L28-.L17,0,0
 	.sdecl	'.debug_info',debug,cluster('countEncTicks')
 	.sect	'.debug_info'
-.L43:
-	.word	1413
+.L29:
+	.word	668
 	.half	3
-	.word	.L44
+	.word	.L30
 	.byte	4,1
 	.byte	'../includes/hardware/encoder/encoder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L46,.L45
+	.word	.L32,.L31
 	.byte	2
-	.word	.L34
+	.word	.L20
 	.byte	3
 	.byte	'countEncTicks',0,1,28,6,1,1,1
-	.word	.L33,.L69,.L32
+	.word	.L19,.L51,.L18
 	.byte	4
-	.word	.L33,.L69
-	.byte	5
-	.byte	'prev_enc1_chA',0,1,30,20
-	.word	.L70
-	.byte	5,3
-	.word	_999001_prev_enc1_chA
-	.byte	5
-	.byte	'prev_enc1_chB',0,1,31,20
-	.word	.L70
-	.byte	5,3
-	.word	_999002_prev_enc1_chB
+	.word	.L19,.L51
 	.byte	5
 	.byte	'prev_enc2_chA',0,1,32,20
-	.word	.L70
+	.word	.L52
 	.byte	5,3
-	.word	_999003_prev_enc2_chA
+	.word	_999001_prev_enc2_chA
 	.byte	5
 	.byte	'prev_enc2_chB',0,1,33,20
-	.word	.L70
+	.word	.L52
 	.byte	5,3
-	.word	_999004_prev_enc2_chB
+	.word	_999002_prev_enc2_chB
+	.byte	5
+	.byte	'cur_enc2_chA',0,1,37,20
+	.word	.L52
+	.byte	5,3
+	.word	_999003_cur_enc2_chA
+	.byte	5
+	.byte	'cur_enc2_chB',0,1,38,20
+	.word	.L52
+	.byte	5,3
+	.word	_999004_cur_enc2_chB
 	.byte	6
-	.byte	'cur_enc1_chA',0,1,35,13
-	.word	.L70,.L71
+	.word	.L53,.L54,.L5
+	.byte	7
+	.word	.L55,.L56
+	.byte	8
+	.word	.L57,.L58
 	.byte	6
-	.byte	'cur_enc1_chB',0,1,36,13
-	.word	.L70,.L72
+	.word	.L61,.L62,.L4
+	.byte	7
+	.word	.L63,.L64
+	.byte	7
+	.word	.L65,.L66
+	.byte	9
+	.word	.L67,.L68
+	.byte	0,6
+	.word	.L61,.L59,.L60
+	.byte	7
+	.word	.L63,.L64
+	.byte	7
+	.word	.L65,.L66
+	.byte	0,0,0,6
+	.word	.L53,.L59,.L60
+	.byte	7
+	.word	.L55,.L56
+	.byte	0,6
+	.word	.L53,.L69,.L9
+	.byte	7
+	.word	.L55,.L56
+	.byte	8
+	.word	.L57,.L70
 	.byte	6
-	.byte	'cur_enc2_chA',0,1,37,13
-	.word	.L70,.L73
-	.byte	6
-	.byte	'cur_enc2_chB',0,1,38,13
-	.word	.L70,.L74
+	.word	.L61,.L75,.L8
 	.byte	7
-	.word	.L75,.L76,.L5
-	.byte	8
-	.word	.L77,.L78
+	.word	.L63,.L64
+	.byte	7
+	.word	.L65,.L66
 	.byte	9
-	.word	.L79,.L80
+	.word	.L67,.L76
+	.byte	0,6
+	.word	.L61,.L71,.L72
 	.byte	7
-	.word	.L87,.L88,.L4
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	10
-	.word	.L93,.L94
-	.byte	0,7
-	.word	.L87,.L81,.L82
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	0,7
-	.word	.L87,.L83,.L84
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	0,7
-	.word	.L87,.L85,.L86
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	0,0,0,7
-	.word	.L75,.L95,.L9
-	.byte	8
-	.word	.L77,.L78
-	.byte	9
-	.word	.L79,.L96
+	.word	.L63,.L64
 	.byte	7
-	.word	.L87,.L102,.L8
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	10
-	.word	.L93,.L103
-	.byte	0,7
-	.word	.L87,.L82,.L97
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	0,7
-	.word	.L87,.L98,.L99
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	0,7
-	.word	.L87,.L100,.L101
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	0,0,0,7
-	.word	.L75,.L104,.L13
-	.byte	8
-	.word	.L77,.L78
-	.byte	9
-	.word	.L79,.L105
+	.word	.L65,.L66
+	.byte	0,6
+	.word	.L61,.L73,.L74
 	.byte	7
-	.word	.L87,.L112,.L12
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	10
-	.word	.L93,.L113
-	.byte	0,7
-	.word	.L87,.L106,.L107
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	0,7
-	.word	.L87,.L108,.L109
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	0,7
-	.word	.L87,.L110,.L111
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	0,0,0,7
-	.word	.L75,.L114,.L17
-	.byte	8
-	.word	.L77,.L78
-	.byte	9
-	.word	.L79,.L115
+	.word	.L63,.L64
 	.byte	7
-	.word	.L87,.L121,.L16
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	10
-	.word	.L93,.L122
-	.byte	0,7
-	.word	.L87,.L107,.L116
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	0,7
-	.word	.L87,.L117,.L118
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	0,7
-	.word	.L87,.L119,.L120
-	.byte	8
-	.word	.L89,.L90
-	.byte	8
-	.word	.L91,.L92
-	.byte	0,0,0,7
-	.word	.L75,.L81,.L82
-	.byte	8
-	.word	.L77,.L78
-	.byte	0,7
-	.word	.L75,.L82,.L97
-	.byte	8
-	.word	.L77,.L78
-	.byte	0,7
-	.word	.L75,.L106,.L107
-	.byte	8
-	.word	.L77,.L78
-	.byte	0,7
-	.word	.L75,.L107,.L116
-	.byte	8
-	.word	.L77,.L78
-	.byte	0,7
-	.word	.L75,.L83,.L84
-	.byte	8
-	.word	.L77,.L78
-	.byte	0,7
-	.word	.L75,.L98,.L99
-	.byte	8
-	.word	.L77,.L78
-	.byte	0,7
-	.word	.L75,.L108,.L109
-	.byte	8
-	.word	.L77,.L78
-	.byte	0,7
-	.word	.L75,.L117,.L118
-	.byte	8
-	.word	.L77,.L78
-	.byte	0,7
-	.word	.L75,.L85,.L86
-	.byte	8
-	.word	.L77,.L78
-	.byte	0,7
-	.word	.L75,.L100,.L101
-	.byte	8
-	.word	.L77,.L78
-	.byte	0,7
-	.word	.L75,.L110,.L111
-	.byte	8
-	.word	.L77,.L78
-	.byte	0,7
-	.word	.L75,.L119,.L120
-	.byte	8
-	.word	.L77,.L78
+	.word	.L65,.L66
+	.byte	0,0,0,6
+	.word	.L53,.L71,.L72
+	.byte	7
+	.word	.L55,.L56
+	.byte	0,6
+	.word	.L53,.L73,.L74
+	.byte	7
+	.word	.L55,.L56
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('countEncTicks')
 	.sect	'.debug_abbrev'
-.L44:
+.L30:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,6,52,0
-	.byte	3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,1,49,16,85,6,0
-	.byte	0,10,11,0,49,16,85,6,0,0,0
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,6,29,1
+	.byte	49,16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,1,49,16,85,6,0,0,9,11,0,49,16,85,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('countEncTicks')
 	.sect	'.debug_line'
-.L45:
-	.word	.L138-.L137
-.L137:
+.L31:
+	.word	.L88-.L87
+.L87:
 	.half	3
-	.word	.L140-.L139
-.L139:
+	.word	.L90-.L89
+.L89:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio',0,0
 	.byte	'../includes/hardware/encoder/encoder.c',0,0,0,0
 	.byte	'gpio.h',0,1,0,0
 	.byte	'C:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\Port\\Std\\IfxPort.h',0
 	.byte	0,0,0,0
-.L140:
-	.byte	5,40,7,0,5,2
-	.word	.L33
-	.byte	3,34,1,4,2,5,35,9
-	.half	.L76-.L33
-	.byte	3,252,0,1,5,45,9
-	.half	.L141-.L76
+.L90:
+	.byte	5,32,7,0,5,2
+	.word	.L19
+	.byte	3,39,1,4,2,5,35,9
+	.half	.L54-.L19
+	.byte	3,247,0,1,5,45,9
+	.half	.L91-.L54
 	.byte	1,4,3,5,13,9
-	.half	.L88-.L141
+	.half	.L62-.L91
 	.byte	3,141,3,1,5,12,9
-	.half	.L142-.L88
+	.half	.L92-.L62
 	.byte	1,5,51,7,9
-	.half	.L143-.L142
+	.half	.L93-.L92
 	.byte	1,5,58,9
-	.half	.L125-.L143
+	.half	.L94-.L93
 	.byte	1,5,51,9
-	.half	.L2-.L125
+	.half	.L2-.L94
 	.byte	1,5,5,9
 	.half	.L3-.L2
 	.byte	1,4,2,9
 	.half	.L4-.L3
-	.byte	3,243,124,1,4,1,5,40,9
+	.byte	3,243,124,1,4,1,9
 	.half	.L5-.L4
-	.byte	3,133,127,1,4,2,5,35,9
-	.half	.L95-.L5
-	.byte	3,251,0,1,5,45,9
-	.half	.L144-.L95
+	.byte	3,137,127,1,5,18,9
+	.half	.L59-.L5
+	.byte	1,5,32,9
+	.half	.L60-.L59
+	.byte	3,1,1,4,2,5,35,9
+	.half	.L69-.L60
+	.byte	3,246,0,1,5,45,9
+	.half	.L95-.L69
 	.byte	1,4,3,5,13,9
-	.half	.L102-.L144
+	.half	.L75-.L95
 	.byte	3,141,3,1,5,12,9
-	.half	.L145-.L102
+	.half	.L96-.L75
 	.byte	1,5,51,7,9
-	.half	.L146-.L145
+	.half	.L97-.L96
 	.byte	1,5,58,9
-	.half	.L126-.L146
+	.half	.L98-.L97
 	.byte	1,5,51,9
-	.half	.L6-.L126
+	.half	.L6-.L98
 	.byte	1,5,5,9
 	.half	.L7-.L6
 	.byte	1,4,2,9
 	.half	.L8-.L7
-	.byte	3,243,124,1,4,1,5,40,9
+	.byte	3,243,124,1,4,1,9
 	.half	.L9-.L8
-	.byte	3,134,127,1,4,2,5,35,9
-	.half	.L104-.L9
-	.byte	3,250,0,1,5,45,9
-	.half	.L147-.L104
-	.byte	1,4,3,5,13,9
-	.half	.L112-.L147
-	.byte	3,141,3,1,5,12,9
-	.half	.L148-.L112
-	.byte	1,5,51,7,9
-	.half	.L149-.L148
-	.byte	1,5,58,9
-	.half	.L127-.L149
-	.byte	1,5,51,9
-	.half	.L10-.L127
-	.byte	1,5,5,9
-	.half	.L11-.L10
-	.byte	1,4,2,9
-	.half	.L12-.L11
-	.byte	3,243,124,1,4,1,5,40,9
-	.half	.L13-.L12
-	.byte	3,135,127,1,4,2,5,35,9
-	.half	.L114-.L13
-	.byte	3,249,0,1,5,45,9
-	.half	.L150-.L114
-	.byte	1,4,3,5,13,9
-	.half	.L121-.L150
-	.byte	3,141,3,1,5,12,9
-	.half	.L151-.L121
-	.byte	1,5,51,7,9
-	.half	.L152-.L151
-	.byte	1,5,58,9
-	.half	.L128-.L152
-	.byte	1,5,51,9
-	.half	.L14-.L128
-	.byte	1,5,5,9
-	.half	.L15-.L14
-	.byte	1,4,2,9
-	.half	.L16-.L15
-	.byte	3,243,124,1,4,1,5,10,9
-	.half	.L17-.L16
-	.byte	3,137,127,1,5,9,9
-	.half	.L153-.L17
-	.byte	1,5,51,7,9
-	.half	.L81-.L153
-	.byte	1,5,22,7,9
-	.half	.L82-.L81
-	.byte	3,2,1,5,46,7,9
-	.half	.L97-.L82
-	.byte	1,5,50,9
-	.half	.L154-.L97
-	.byte	1,5,46,9
-	.half	.L20-.L154
-	.byte	1,5,9,9
-	.half	.L21-.L20
-	.byte	1,5,20,9
-	.half	.L155-.L21
+	.byte	3,138,127,1,5,18,9
+	.half	.L71-.L9
 	.byte	1,5,10,9
-	.half	.L18-.L155
-	.byte	3,3,1,5,9,9
-	.half	.L156-.L18
-	.byte	1,5,51,7,9
-	.half	.L106-.L156
-	.byte	1,5,22,7,9
-	.half	.L107-.L106
-	.byte	3,2,1,5,46,7,9
-	.half	.L116-.L107
-	.byte	1,5,50,9
-	.half	.L157-.L116
-	.byte	1,5,46,9
-	.half	.L24-.L157
-	.byte	1,5,9,9
-	.half	.L25-.L24
-	.byte	1,5,20,9
-	.half	.L158-.L25
-	.byte	1,5,9,9
-	.half	.L22-.L158
-	.byte	3,3,1,5,5,9
-	.half	.L83-.L22
-	.byte	1,5,9,7,9
-	.half	.L84-.L83
-	.byte	3,2,1,5,23,9
-	.half	.L159-.L84
-	.byte	1,5,20,9
-	.half	.L160-.L159
-	.byte	1,5,9,9
-	.half	.L26-.L160
-	.byte	3,2,1,5,5,9
-	.half	.L98-.L26
-	.byte	1,5,9,7,9
-	.half	.L99-.L98
-	.byte	3,2,1,5,23,9
-	.half	.L161-.L99
-	.byte	1,5,20,9
-	.half	.L162-.L161
-	.byte	1,5,9,9
-	.half	.L27-.L162
-	.byte	3,3,1,5,5,9
-	.half	.L108-.L27
-	.byte	1,5,9,7,9
-	.half	.L109-.L108
-	.byte	3,2,1,5,23,9
-	.half	.L163-.L109
-	.byte	1,5,20,9
-	.half	.L164-.L163
-	.byte	1,5,9,9
-	.half	.L28-.L164
-	.byte	3,2,1,5,5,9
-	.half	.L117-.L28
-	.byte	1,5,9,7,9
-	.half	.L118-.L117
-	.byte	3,2,1,5,23,9
-	.half	.L165-.L118
-	.byte	1,5,20,9
-	.half	.L166-.L165
-	.byte	1,5,5,9
-	.half	.L29-.L166
-	.byte	3,3,1,5,19,9
-	.half	.L85-.L29
-	.byte	1,5,5,9
-	.half	.L86-.L85
-	.byte	3,1,1,5,19,9
-	.half	.L100-.L86
-	.byte	1,5,5,9
+	.half	.L72-.L71
+	.byte	3,7,1,5,9,9
+	.half	.L99-.L72
+	.byte	1,5,38,7,9
+	.half	.L100-.L99
+	.byte	1,5,51,9
 	.half	.L101-.L100
-	.byte	3,1,1,5,19,9
-	.half	.L110-.L101
+	.byte	1,5,22,7,9
+	.half	.L73-.L101
+	.byte	3,2,1,5,46,7,9
+	.half	.L74-.L73
+	.byte	1,5,50,9
+	.half	.L102-.L74
+	.byte	1,5,46,9
+	.half	.L12-.L102
+	.byte	1,5,9,9
+	.half	.L13-.L12
+	.byte	1,5,20,9
+	.half	.L103-.L13
+	.byte	1,5,9,9
+	.half	.L10-.L103
+	.byte	3,12,1,5,26,9
+	.half	.L104-.L10
 	.byte	1,5,5,9
-	.half	.L111-.L110
-	.byte	3,1,1,5,19,9
-	.half	.L119-.L111
-	.byte	1,5,1,9
+	.half	.L105-.L104
+	.byte	1,5,9,7,9
+	.half	.L106-.L105
+	.byte	3,2,1,5,24,9
+	.half	.L107-.L106
+	.byte	1,5,35,9
+	.half	.L108-.L107
+	.byte	1,5,37,9
+	.half	.L109-.L108
+	.byte	1,5,20,9
+	.half	.L110-.L109
+	.byte	1,5,9,9
+	.half	.L14-.L110
+	.byte	3,2,1,5,26,9
+	.half	.L111-.L14
+	.byte	1,5,5,9
+	.half	.L112-.L111
+	.byte	1,5,9,7,9
+	.half	.L113-.L112
+	.byte	3,2,1,5,24,9
+	.half	.L114-.L113
+	.byte	1,5,35,9
+	.half	.L115-.L114
+	.byte	1,5,37,9
+	.half	.L116-.L115
+	.byte	1,5,20,9
+	.half	.L117-.L116
+	.byte	1,5,5,9
+	.half	.L15-.L117
+	.byte	3,5,1,5,21,9
+	.half	.L118-.L15
+	.byte	1,5,19,9
+	.half	.L119-.L118
+	.byte	1,5,5,9
 	.half	.L120-.L119
+	.byte	3,1,1,5,21,9
+	.half	.L121-.L120
+	.byte	1,5,19,9
+	.half	.L122-.L121
+	.byte	1,5,1,9
+	.half	.L123-.L122
 	.byte	3,1,1,7,9
-	.half	.L47-.L120
+	.half	.L33-.L123
 	.byte	0,1,1
-.L138:
+.L88:
 	.sdecl	'.debug_ranges',debug,cluster('countEncTicks')
 	.sect	'.debug_ranges'
-.L46:
-	.word	-1,.L33,0,.L47-.L33,0,0
-.L80:
-	.word	-1,.L33,.L76-.L33,.L5-.L33,.L81-.L33,.L82-.L33,.L83-.L33,.L84-.L33,.L85-.L33,.L86-.L33,0,0
-.L94:
-	.word	-1,.L33,.L88-.L33,.L4-.L33,.L81-.L33,.L82-.L33,.L83-.L33,.L84-.L33,.L85-.L33,.L86-.L33,0,0
-.L96:
-	.word	-1,.L33,.L95-.L33,.L9-.L33,.L82-.L33,.L97-.L33,.L98-.L33,.L99-.L33,.L100-.L33,.L101-.L33,0,0
-.L103:
-	.word	-1,.L33,.L102-.L33,.L8-.L33,.L82-.L33,.L97-.L33,.L98-.L33,.L99-.L33,.L100-.L33,.L101-.L33,0,0
-.L105:
-	.word	-1,.L33,.L104-.L33,.L13-.L33,.L106-.L33,.L107-.L33,.L108-.L33,.L109-.L33,.L110-.L33,.L111-.L33,0,0
-.L113:
-	.word	-1,.L33,.L112-.L33,.L12-.L33,.L106-.L33,.L107-.L33,.L108-.L33,.L109-.L33,.L110-.L33,.L111-.L33,0,0
-.L115:
-	.word	-1,.L33,.L114-.L33,.L17-.L33,.L107-.L33,.L116-.L33,.L117-.L33,.L118-.L33,.L119-.L33,.L120-.L33,0,0
-.L122:
-	.word	-1,.L33,.L121-.L33,.L16-.L33,.L107-.L33,.L116-.L33,.L117-.L33,.L118-.L33,.L119-.L33,.L120-.L33,0,0
+.L32:
+	.word	-1,.L19,0,.L33-.L19,0,0
+.L58:
+	.word	-1,.L19,.L54-.L19,.L5-.L19,.L59-.L19,.L60-.L19,0,0
+.L68:
+	.word	-1,.L19,.L62-.L19,.L4-.L19,.L59-.L19,.L60-.L19,0,0
+.L70:
+	.word	-1,.L19,.L69-.L19,.L9-.L19,.L71-.L19,.L72-.L19,.L73-.L19,.L74-.L19,0,0
+.L76:
+	.word	-1,.L19,.L75-.L19,.L8-.L19,.L71-.L19,.L72-.L19,.L73-.L19,.L74-.L19,0,0
 	.sdecl	'.debug_info',debug,cluster('g_dir_enc1')
 	.sect	'.debug_info'
-.L48:
+.L34:
 	.word	219
 	.half	3
-	.word	.L49
+	.word	.L35
 	.byte	4,1
 	.byte	'../includes/hardware/encoder/encoder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L34
+	.word	.L20
 	.byte	3
 	.byte	'g_dir_enc1',0,6,11,7
-	.word	.L123
+	.word	.L77
 	.byte	1,5,3
 	.word	g_dir_enc1
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('g_dir_enc1')
 	.sect	'.debug_abbrev'
-.L49:
+.L35:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('g_dir_enc2')
 	.sect	'.debug_info'
-.L50:
+.L36:
 	.word	219
 	.half	3
-	.word	.L51
+	.word	.L37
 	.byte	4,1
 	.byte	'../includes/hardware/encoder/encoder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L34
+	.word	.L20
 	.byte	3
 	.byte	'g_dir_enc2',0,6,12,7
-	.word	.L123
+	.word	.L77
 	.byte	1,5,3
 	.word	g_dir_enc2
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('g_dir_enc2')
 	.sect	'.debug_abbrev'
-.L51:
+.L37:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('g_cnt_enc1')
+	.sdecl	'.debug_info',debug,cluster('g_pos_enc1')
 	.sect	'.debug_info'
-.L52:
+.L38:
 	.word	219
 	.half	3
-	.word	.L53
+	.word	.L39
 	.byte	4,1
 	.byte	'../includes/hardware/encoder/encoder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L34
+	.word	.L20
 	.byte	3
-	.byte	'g_cnt_enc1',0,6,14,8
-	.word	.L124
+	.byte	'g_pos_enc1',0,6,14,9
+	.word	.L78
 	.byte	1,5,3
-	.word	g_cnt_enc1
+	.word	g_pos_enc1
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('g_cnt_enc1')
+	.sdecl	'.debug_abbrev',debug,cluster('g_pos_enc1')
 	.sect	'.debug_abbrev'
-.L53:
+.L39:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('g_cnt_enc2')
+	.sdecl	'.debug_info',debug,cluster('g_pos_enc2')
 	.sect	'.debug_info'
-.L54:
+.L40:
 	.word	219
 	.half	3
-	.word	.L55
+	.word	.L41
 	.byte	4,1
 	.byte	'../includes/hardware/encoder/encoder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L34
+	.word	.L20
 	.byte	3
-	.byte	'g_cnt_enc2',0,6,15,8
-	.word	.L124
+	.byte	'g_pos_enc2',0,6,15,9
+	.word	.L78
 	.byte	1,5,3
-	.word	g_cnt_enc2
+	.word	g_pos_enc2
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('g_cnt_enc2')
+	.sdecl	'.debug_abbrev',debug,cluster('g_pos_enc2')
 	.sect	'.debug_abbrev'
-.L55:
+.L41:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('countEncTicks')
 	.sect	'.debug_loc'
-.L32:
-	.word	-1,.L33,0,.L69-.L33
+.L18:
+	.word	-1,.L19,0,.L51-.L19
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L71:
-	.word	-1,.L33,.L125-.L33,.L2-.L33
-	.half	1
-	.byte	83
-	.word	.L3-.L33,.L69-.L33
-	.half	1
-	.byte	83
-	.word	0,0
-.L72:
-	.word	-1,.L33,.L126-.L33,.L6-.L33
-	.half	1
-	.byte	84
-	.word	.L7-.L33,.L69-.L33
-	.half	1
-	.byte	84
-	.word	0,0
-.L73:
-	.word	-1,.L33,.L127-.L33,.L10-.L33
-	.half	1
-	.byte	85
-	.word	.L11-.L33,.L69-.L33
-	.half	1
-	.byte	85
-	.word	0,0
-.L74:
-	.word	-1,.L33,.L128-.L33,.L14-.L33
-	.half	1
-	.byte	88
-	.word	.L15-.L33,.L69-.L33
-	.half	1
-	.byte	88
-	.word	0,0
-.L78:
-	.word	-1,.L33,.L76-.L33,.L88-.L33
+.L56:
+	.word	-1,.L19,.L54-.L19,.L62-.L19
 	.half	2
 	.byte	144,32
-	.word	.L95-.L33,.L102-.L33
-	.half	2
-	.byte	144,32
-	.word	.L104-.L33,.L112-.L33
-	.half	2
-	.byte	144,32
-	.word	.L114-.L33,.L121-.L33
+	.word	.L69-.L19,.L75-.L19
 	.half	2
 	.byte	144,32
 	.word	0,0
-.L92:
+.L66:
 	.word	0,0
-.L90:
+.L64:
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('initEncoder')
 	.sect	'.debug_loc'
-.L30:
-	.word	-1,.L31,0,.L56-.L31
+.L16:
+	.word	-1,.L17,0,.L42-.L17
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L61:
-	.word	-1,.L31,.L58-.L31,.L59-.L31
+.L47:
+	.word	-1,.L17,.L44-.L17,.L45-.L17
 	.half	2
 	.byte	144,34
-	.word	.L63-.L31,.L64-.L31
-	.half	2
-	.byte	144,34
-	.word	.L65-.L31,.L66-.L31
-	.half	2
-	.byte	144,34
-	.word	.L67-.L31,.L68-.L31
+	.word	.L49-.L17,.L50-.L17
 	.half	2
 	.byte	144,34
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L167:
+.L124:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -6502,10 +6140,10 @@ _999004_prev_enc2_chB:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('initEncoder')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L167,.L31,.L56-.L31
+	.word	.L124,.L17,.L42-.L17
 	.sdecl	'.debug_frame',debug,cluster('countEncTicks')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L167,.L33,.L69-.L33
+	.word	.L124,.L19,.L51-.L19
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	; Module end

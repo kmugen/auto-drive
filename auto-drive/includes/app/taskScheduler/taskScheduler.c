@@ -4,14 +4,16 @@
 #include "taskScheduler.h"
 #include "stm.h"
 #include "encoder.h"
+#include "uart.h"
 #include <stdio.h>
+#include "motor.h"
+#include "lpf.h"
 
 /*********************************************************************************************************************/
 /*-------------------------------------------------Data Structures---------------------------------------------------*/
 /*********************************************************************************************************************/
  typedef struct
 {
-        uint32 cnt_100us;
         uint32 cnt_1ms;
         uint32 cnt_10ms;
         uint32 cnt_100ms;
@@ -21,12 +23,18 @@
 /*-------------------------------------------------Global variables--------------------------------------------------*/
 /*********************************************************************************************************************/
 TestCnt stTestCnt;
-float32 g_encPos;
+
+float32 w_ref;
+float32 w_lpf;
+float32 w;
+float32 encPos;
+float32 prev_encPos;
+float32 w_err;
+char str[20];
 
 /*********************************************************************************************************************/
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
 /*********************************************************************************************************************/
-static void Task100us(void);
 static void Task1ms(void);
 static void Task10ms(void);
 static void Task100ms(void);
@@ -39,12 +47,6 @@ void appNoTask(void)
     countEncTicks();
 }
 
-static void Task100us(void)
-{
-    stTestCnt.cnt_100us++;
-    g_encPos = getEncPos(ENC2);
-}
-
 static void Task1ms(void)
 {
     stTestCnt.cnt_1ms++;
@@ -52,41 +54,67 @@ static void Task1ms(void)
 
 static void Task10ms(void)
 {
+
+    if (stTestCnt.cnt_1ms < 5000 || stTestCnt.cnt_1ms >= 20000)
+    {
+        w_ref = 0.0;
+    }
+    else if (stTestCnt.cnt_1ms < 10000)
+    {
+        w_ref = 0.123 * (stTestCnt.cnt_1ms - 5000);
+    }
+    else if (stTestCnt.cnt_1ms < 15000)
+    {
+        w_ref = 615.0;
+    }
+    else if (stTestCnt.cnt_1ms < 20000)
+    {
+        w_ref = 0.123 * (20000 - stTestCnt.cnt_1ms);
+    }
+
+    w_lpf = lowPassFilter(w_ref);
+    if (w_ref == 0)
+    {
+        w_lpf = 0;
+    }
+    encPos = getEncPos(ENC2);
+    w = (encPos - prev_encPos) * 100;
+    prev_encPos = encPos;
+
+//    w_err = w_lpf - w;
+
+    setMotorPower(0, 0);
+
+    sprintf(str, "%.2f %.1f %.1f\r\n", (float32)stTestCnt.cnt_10ms/100, w_ref, w_lpf);
+    for (int i =0;i < 20; i++)
+    {
+        _out_uart3(str[i]);
+    }
     stTestCnt.cnt_10ms++;
 }
 
 static void Task100ms(void)
 {
     stTestCnt.cnt_100ms++;
-
-    char str[40];
-    sprintf(str, "%.1f %f\r\n", (float32)stTestCnt.cnt_100ms/10, g_encPos);
-    sendUartMsg(str, 40);
 }
 
 void taskScheduler(void)
 {
-    if(schedulingInfo.f_100us == 1)
-    {
-        schedulingInfo.f_100us = 0;
-        Task100us();
-    }
-
     if(schedulingInfo.f_1ms == 1)
     {
         schedulingInfo.f_1ms = 0;
         Task1ms();
-    }
 
-    if(schedulingInfo.f_10ms == 1)
-    {
-        schedulingInfo.f_10ms = 0;
-        Task10ms();
-    }
+        if(schedulingInfo.f_10ms == 1)
+        {
+            schedulingInfo.f_10ms = 0;
+            Task10ms();
+        }
 
-    if(schedulingInfo.f_100ms == 1)
-    {
-        schedulingInfo.f_100ms = 0;
-        Task100ms();
+        if(schedulingInfo.f_100ms == 1)
+        {
+            schedulingInfo.f_100ms = 0;
+            Task100ms();
+        }
     }
 }
