@@ -2,9 +2,12 @@
 #include "IfxCpu.h"
 #include "IfxScuWdt.h"
 #include "encoder.h"
+#include "uart.h"
+#include "stm.h"
+#include "taskScheduler.h"
+
 IfxCpu_syncEvent g_cpuSyncEvent = 0;
 
-float32 encPos = 0;
 void core0_main(void)
 {
     IfxCpu_enableInterrupts();
@@ -15,10 +18,13 @@ void core0_main(void)
     IfxCpu_emitEvent(&g_cpuSyncEvent);
     IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
     initEncoder();
+    initUart();
+    initStm();
+
     IfxCpu_enableInterrupts();
     while(1)
     {
-        countEncTicks();
-        encPos = getEncPos(ENC2);
+        appNoTask();
+        taskScheduler();
     }
 }

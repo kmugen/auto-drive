@@ -78,3 +78,9 @@ Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/encoder/enco
 c:/auto-drive/auto-drive/auto-drive/includes/hardware/encoder/encoder.h :
 Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/commonMacros.h
 c:/auto-drive/auto-drive/auto-drive/includes/commonMacros.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/uart/uart.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/uart/uart.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/stm/stm.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/stm/stm.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/app/taskScheduler/taskScheduler.h
+c:/auto-drive/auto-drive/auto-drive/includes/app/taskScheduler/taskScheduler.h :

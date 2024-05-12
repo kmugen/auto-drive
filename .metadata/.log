@@ -98,3 +98,150 @@ Caused by: java.nio.channels.UnresolvedAddressException
 
 !ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:24:24.122
 !MESSAGE Include paths were discovered in 79 milliseconds.
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-12 19:29:29.978
+!MESSAGE Indexed 'ASCLIN_UART_1_KIT_TC275_LK' (165 sources, 634 headers) in 23.7 sec: 146,043 declarations; 193,425 references; 6 unresolved inclusions; 4,606 syntax errors; 5,369 unresolved names (1.6%)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:35:31.570
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 2030 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:35:31.633
+!MESSAGE Include paths were discovered in 62 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:36:27.337
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1926 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:36:27.413
+!MESSAGE Include paths were discovered in 67 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:40:29.167
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 3008 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:40:29.266
+!MESSAGE Include paths were discovered in 97 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:40:51.008
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 2103 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:40:51.088
+!MESSAGE Include paths were discovered in 78 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:41:06.474
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1581 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:41:06.564
+!MESSAGE Include paths were discovered in 85 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:41:15.023
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1401 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:41:15.077
+!MESSAGE Include paths were discovered in 53 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:45:02.934
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1472 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:45:02.988
+!MESSAGE Include paths were discovered in 51 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:46:00.034
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 948 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:46:00.085
+!MESSAGE Include paths were discovered in 50 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:47:27.968
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1064 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:47:28.002
+!MESSAGE Include paths were discovered in 32 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:47:34.419
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 877 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:47:34.460
+!MESSAGE Include paths were discovered in 39 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:51:04.553
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 992 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:51:04.587
+!MESSAGE Include paths were discovered in 32 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:51:25.667
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1038 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:51:25.702
+!MESSAGE Include paths were discovered in 34 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:53:28.187
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 922 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:53:28.231
+!MESSAGE Include paths were discovered in 42 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:53:51.935
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 888 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:53:51.964
+!MESSAGE Include paths were discovered in 28 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:54:10.844
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 889 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:54:10.887
+!MESSAGE Include paths were discovered in 42 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:54:29.578
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 915 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:54:29.622
+!MESSAGE Include paths were discovered in 42 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:54:39.410
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:54:39.410
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:54:39.440
+!MESSAGE Include paths were discovered in 28 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:54:50.360
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 122 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:54:50.396
+!MESSAGE Include paths were discovered in 34 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:54:57.986
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 889 milliseconds. (full boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:54:58.019
+!MESSAGE Include paths were discovered in 32 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:55:36.666
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 953 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:55:36.709
+!MESSAGE Include paths were discovered in 41 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:55:57.827
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 856 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:55:57.865
+!MESSAGE Include paths were discovered in 36 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:56:25.040
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:56:25.040
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 0 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:56:25.071
+!MESSAGE Include paths were discovered in 25 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:57:12.735
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 156 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-12 19:57:12.783
+!MESSAGE Include paths were discovered in 46 milliseconds.
