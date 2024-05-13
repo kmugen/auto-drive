@@ -15,9 +15,9 @@
 #define R   8.4
 #define L   1.16
 
-#define L1  21.8017
-#define L2  41.5731
-#define L3  -0.5167
+#define L1  891.8017
+#define L2  262510
+#define L3  12439
 
 /*********************************************************************************************************************/
 /*-------------------------------------------------Global variables--------------------------------------------------*/
@@ -38,14 +38,14 @@ void observeMotor(uint8 chn, float64 v_in, float64 theta)
 {
     theta_tilde = theta - g_theta_h[chn];
 
-    g_int_i_h[chn] += ((-7.241379 * g_i_h[chn]) + (-0.036207 * g_w_h[chn]) + (v_in / L) + (theta_tilde * L3)) * 0.001;
-    g_i_h[chn] = g_int_i_h[chn];
-
-    g_int_w_h[chn] += ((2009.569378 * g_i_h[chn]) + (-0.956938 * g_w_h[chn]) + (theta_tilde * L2)) * 0.001;
-    g_w_h[chn] = g_int_w_h[chn];
-
     g_int_theta_h[chn] += (g_w_h[chn] + (theta_tilde * L1)) * 0.001;
     g_theta_h[chn] = g_int_theta_h[chn];
+
+    g_int_w_h[chn] += ((Kt / J * g_i_h[chn]) + (-B / J * g_w_h[chn]) + (theta_tilde * L2)) * 0.001;
+    g_w_h[chn] = g_int_w_h[chn];
+
+    g_int_i_h[chn] += ((-R / L * g_i_h[chn]) + (-Kb / L * g_w_h[chn]) + (v_in / L) + (theta_tilde * L3)) * 0.001;
+    g_i_h[chn] = g_int_i_h[chn];
 }
 
 float64 getThetaHat(uint8 chn)
