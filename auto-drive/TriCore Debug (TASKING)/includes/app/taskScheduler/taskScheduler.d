@@ -126,3 +126,5 @@ includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive
 c:/auto-drive/auto-drive/auto-drive/includes/app/lpf/lpf.h :
 includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/app/pid/pid.h
 c:/auto-drive/auto-drive/auto-drive/includes/app/pid/pid.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/app/observer/observer.h
+c:/auto-drive/auto-drive/auto-drive/includes/app/observer/observer.h :
