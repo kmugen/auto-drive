@@ -11,6 +11,9 @@
 #include "pid.h"
 #include "commonMacros.h"
 #include "observer.h"
+#include "gpio.h"
+#include "pinSettings.h"
+#include "ultrasonic.h"
 
 /*********************************************************************************************************************/
 /*-------------------------------------------------Data Structures---------------------------------------------------*/
@@ -54,6 +57,9 @@ float32 w_err_2;
 float32 v_in_1;
 float32 v_in_2;
 
+float32 g_dist;
+
+float32 tmp;
 char str[20];
 /*********************************************************************************************************************/
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
@@ -73,33 +79,33 @@ void appNoTask(void)
 static void Task1ms(void)
 {
     static float32 w_ss_1 = -200 * PI;
-    static float32 w_ss_2 = 200 * PI;
+    static float32 w_ss_2 = 1 * PI;
 
-    if (stTestCnt.cnt_1ms < 2000 || stTestCnt.cnt_1ms >= 13000)
-    {
-        w_ref_1 = 0.0;
-        w_ref_2 = 0.0;
-    }
-    else if (stTestCnt.cnt_1ms < 5000)
-    {
-        w_ref_1 = w_ss_1 / 3 * (stTestCnt.cnt_1ms - 2000) / 1000;
-        w_ref_2 = w_ss_2 / 3 * (stTestCnt.cnt_1ms - 2000) / 1000;
-    }
-    else if (stTestCnt.cnt_1ms < 10000)
-    {
-        w_ref_1 = w_ss_1;
-        w_ref_2 = w_ss_2;
-    }
-    else if (stTestCnt.cnt_1ms < 13000)
-    {
-        w_ref_1 = w_ss_1 / 3 * (13000 - stTestCnt.cnt_1ms) / 1000;
-        w_ref_2 = w_ss_2 / 3 * (13000 - stTestCnt.cnt_1ms) / 1000;
-    }
-
-
-    w_ref_lpf_1 = lowPassFilter(w_ref_1, w_ref_lpf_prev_1);
-    w_ref_lpf_prev_1 = w_ref_lpf_1;
-
+//    if (stTestCnt.cnt_1ms < 2000 || stTestCnt.cnt_1ms >= 13000)
+//    {
+//        w_ref_1 = 0.0;
+//        w_ref_2 = 0.0;
+//    }
+//    else if (stTestCnt.cnt_1ms < 5000)
+//    {
+//        w_ref_1 = w_ss_1 / 3 * (stTestCnt.cnt_1ms - 2000) / 1000;
+//        w_ref_2 = w_ss_2 / 3 * (stTestCnt.cnt_1ms - 2000) / 1000;
+//    }
+//    else if (stTestCnt.cnt_1ms < 10000)
+//    {
+//        w_ref_1 = w_ss_1;
+//        w_ref_2 = w_ss_2;
+//    }
+//    else if (stTestCnt.cnt_1ms < 13000)
+//    {
+//        w_ref_1 = w_ss_1 / 3 * (13000 - stTestCnt.cnt_1ms) / 1000;
+//        w_ref_2 = w_ss_2 / 3 * (13000 - stTestCnt.cnt_1ms) / 1000;
+//    }
+    w_ref_2 = w_ss_2;
+//
+//    w_ref_lpf_1 = lowPassFilter(w_ref_1, w_ref_lpf_prev_1);
+//    w_ref_lpf_prev_1 = w_ref_lpf_1;
+//
     w_ref_lpf_2 = lowPassFilter(w_ref_2, w_ref_lpf_prev_2);
     w_ref_lpf_prev_2 = w_ref_lpf_2;
 
@@ -124,7 +130,7 @@ static void Task1ms(void)
 
     v_in_1 = -1 * pidController(MOTOR1, w_err_1, w_ref_lpf_1);
     v_in_2 = pidController(MOTOR2, w_err_2, w_ref_lpf_2);
-
+tmp = v_in_2;
     if (v_in_1 < 0)
     {
         v_in_1 = 0;
@@ -136,7 +142,12 @@ static void Task1ms(void)
 
     if (v_in_2 < 0)
     {
-        v_in_2 = 0;
+        v_in_2 *= -1;
+        setPinHigh(PIN_MOTOR2_DIR);
+    }
+    else
+    {
+        setPinLow(PIN_MOTOR2_DIR);
     }
     if (v_in_2 > 12)
     {
@@ -149,7 +160,9 @@ static void Task1ms(void)
 
     observeMotor(MOTOR2, v_in_2, encPos_2);
 
-    setMotorPower(v_in_1 / 12, w_ref_lpf_2 / 600);
+    setMotorPower(v_in_1 / 12, v_in_2 / 12);
+
+    togglePin(PIN_BUZZER);
 
     stTestCnt.cnt_1ms++;
 }
@@ -157,6 +170,8 @@ static void Task1ms(void)
 static void Task10ms(void)
 {
     stTestCnt.cnt_10ms++;
+    trigUltrasonic();
+    g_dist = getUsDist();
 }
 
 static void Task100ms(void)
@@ -167,11 +182,12 @@ static void Task100ms(void)
     a3 = (a1 - a2) * 10;
     a2 = a1;
 //    a3 = getThetaHat(MOTOR2);
-    sprintf(str, "%.1f %.1f %.1f\r\n", (float32)stTestCnt.cnt_100ms/10, encPos_2, getThetaHat(MOTOR2));
+    sprintf(str, "%.1f %.1f %.1f\r\n", (float32)stTestCnt.cnt_100ms/10, w_ref_lpf_2, g_dist);
     for (int i =0;i < 20; i++)
     {
         _out_uart3(str[i]);
     }
+
 
     stTestCnt.cnt_100ms++;
 }

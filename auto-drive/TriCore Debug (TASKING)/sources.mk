@@ -51,8 +51,10 @@ includes/app/lpf \
 includes/app/observer \
 includes/app/pid \
 includes/app/taskScheduler \
+includes/hardware/buzzer \
 includes/hardware/encoder \
 includes/hardware/motor \
+includes/hardware/ultrasonic \
 includes/tc275/extIrq \
 includes/tc275/gpio \
 includes/tc275/pwmHl \

@@ -120,3 +120,7 @@ Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/app/taskScheduler/tas
 c:/auto-drive/auto-drive/auto-drive/includes/app/taskScheduler/taskScheduler.h :
 Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/motor/motor.h
 c:/auto-drive/auto-drive/auto-drive/includes/hardware/motor/motor.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/buzzer/buzzer.h
+c:/auto-drive/auto-drive/auto-drive/includes/hardware/buzzer/buzzer.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/ultrasonic/ultrasonic.h
+c:/auto-drive/auto-drive/auto-drive/includes/hardware/ultrasonic/ultrasonic.h :

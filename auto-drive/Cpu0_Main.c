@@ -6,6 +6,8 @@
 #include "stm.h"
 #include "taskScheduler.h"
 #include "motor.h"
+#include "buzzer.h"
+#include "ultrasonic.h"
 
 IfxCpu_syncEvent g_cpuSyncEvent = 0;
 
@@ -20,6 +22,8 @@ void core0_main(void)
     IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
     initEncoder();
     initMotor();
+    initBuzzer();
+    initUltrasonic();
     _init_uart3();
     initStm();
 

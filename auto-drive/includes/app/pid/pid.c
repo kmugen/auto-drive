@@ -13,12 +13,8 @@ const float32 K_p_chA = 0.1;
 const float32 K_i_chA = 3;
 const float32 K_d_chA = 0;
 
-//const float32 K_p_chB = 0.1;
-//const float32 K_i_chB = 3;
-//const float32 K_d_chB = 0;
-
-const float32 K_p_chB = 0.03;
-const float32 K_i_chB = 0.001;
+const float32 K_p_chB = 0.1;
+const float32 K_i_chB = 3;
 const float32 K_d_chB = 0;
 
 float32 g_prev_err_chA;

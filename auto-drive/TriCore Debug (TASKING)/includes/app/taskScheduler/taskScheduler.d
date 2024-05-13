@@ -128,3 +128,13 @@ includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive
 c:/auto-drive/auto-drive/auto-drive/includes/app/pid/pid.h :
 includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/app/observer/observer.h
 c:/auto-drive/auto-drive/auto-drive/includes/app/observer/observer.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/pinSettings.h
+c:/auto-drive/auto-drive/auto-drive/includes/pinSettings.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/ultrasonic/ultrasonic.h
+c:/auto-drive/auto-drive/auto-drive/includes/hardware/ultrasonic/ultrasonic.h :

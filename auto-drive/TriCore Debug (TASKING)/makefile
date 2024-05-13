@@ -14,8 +14,10 @@ RM := rm -rf
 -include includes/tc275/pwmHl/subdir.mk
 -include includes/tc275/gpio/subdir.mk
 -include includes/tc275/extIrq/subdir.mk
+-include includes/hardware/ultrasonic/subdir.mk
 -include includes/hardware/motor/subdir.mk
 -include includes/hardware/encoder/subdir.mk
+-include includes/hardware/buzzer/subdir.mk
 -include includes/app/taskScheduler/subdir.mk
 -include includes/app/pid/subdir.mk
 -include includes/app/observer/subdir.mk
