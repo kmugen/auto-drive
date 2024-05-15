@@ -7298,3 +7298,48 @@ C Model Exception: C Model Status [Element taskScheduler.c does not exist.]
 
 !ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 18:53:35.652
 !MESSAGE Include paths were discovered in 67 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 18:58:06.205
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1658 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 18:58:06.288
+!MESSAGE Include paths were discovered in 82 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 19:01:22.353
+!MESSAGE Project index is not complete, and cannot be used for boosting.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 19:01:22.354
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 19:01:22.421
+!MESSAGE Include paths were discovered in 66 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 19:05:19.705
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 289 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 19:05:19.786
+!MESSAGE Include paths were discovered in 80 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 19:07:46.479
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1513 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 19:07:46.539
+!MESSAGE Include paths were discovered in 60 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 19:08:05.209
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1813 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 19:08:05.259
+!MESSAGE Include paths were discovered in 49 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 19:08:45.163
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 265 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 19:08:45.284
+!MESSAGE Include paths were discovered in 120 milliseconds.
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 19:09:00.229
+!MESSAGE Boosting configuration TriCore Debug (TASKING) of project auto-drive boosted in 1174 milliseconds. (incremental boost)
+
+!ENTRY com.infineon.aurix.buildsystem 1 0 2024-05-15 19:09:00.304
+!MESSAGE Include paths were discovered in 74 milliseconds.

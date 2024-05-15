@@ -25,10 +25,10 @@ void core0_main(void)
     IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
     initEncoder();
     initMotor();
-//    initBuzzer();
-//    initUltrasonic();
-//    initSwitch();
-//    initDial();
+    initBuzzer();
+    initUltrasonic();
+    initSwitch();
+    initDial();
     setPinOutput(P21_0);
     _init_uart3();
     initStm();

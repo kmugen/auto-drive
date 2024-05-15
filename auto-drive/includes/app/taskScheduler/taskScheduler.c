@@ -137,10 +137,10 @@ static void Task1ms(void)
             v_in_2 = 12;
         }
 
-//        if (g_motor_on == FALSE)
-//        {
-//            v_in_1 = v_in_2 = 0;
-//        }
+        if (g_motor_on == FALSE)
+        {
+            v_in_1 = v_in_2 = 0;
+        }
     }
 
 
@@ -148,15 +148,15 @@ static void Task1ms(void)
 
     observeMotor(MOTOR2, v_in_2, encPos_2);
 
-    setMotorPower(1, 1);
+    setMotorPower(v_in_1 / 12, v_in_2 / 12);
 
-//    if (buzzer_on == TRUE) {
-//        togglePin(PIN_BUZZER);
-//    }
-//    else
-//    {
-//        setPinLow(PIN_BUZZER);
-//    }
+    if (buzzer_on == TRUE) {
+        togglePin(PIN_BUZZER);
+    }
+    else
+    {
+        setPinLow(PIN_BUZZER);
+    }
 
     stTestCnt.cnt_1ms++;
 }
@@ -164,26 +164,33 @@ static void Task1ms(void)
 static void Task10ms(void)
 {
     static float32 a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13;
-//
-//    a1 = getEncPos(ENC2);
-//    a3 = (a1 - a2) * 100;
-//    a2 = a1;
-//    a4 = lowPassFilter(a3, a5, 0.01);
-//    a5 = a4;
-//
-//    a1 = getEncPos(ENC1);
-//    a6 = (a1 - a7) * 100;
-//    a7 = a1;
-//    a8 = lowPassFilter(a6, a9, 0.01);
-//    a9 = a8;
-//
-//    a10 = getWHat(MOTOR2);
-//    a11 = lowPassFilter(a10, a12, 0.01);
-//    a12 = a11;
-//
-//        w_ref_1 = -1 * getWRef();
-//        w_ref_2 = -1 * w_ref_1;
-//
+
+    a1 = getEncPos(ENC2);
+    a3 = (a1 - a2) * 100;
+    a2 = a1;
+    a4 = lowPassFilter(a3, a5, 0.01);
+    a5 = a4;
+
+    a1 = getEncPos(ENC1);
+    a6 = (a1 - a7) * 100;
+    a7 = a1;
+    a8 = lowPassFilter(a6, a9, 0.01);
+    a9 = a8;
+
+    a10 = getWHat(MOTOR2);
+    a11 = lowPassFilter(a10, a12, 0.01);
+    a12 = a11;
+
+    if (g_motor_on == TRUE)
+    {
+        w_ref_1 = -1 * getWRef();
+        w_ref_2 = -1 * w_ref_1;
+    }
+    else
+    {
+        w_ref_1 = w_ref_2 = 0;
+    }
+
     sprintf(str, "%.2f %.1f %.1f\r\n", (float32)stTestCnt.cnt_10ms/100, w_ref_2, w_lpf_2);
     for (int i =0;i < 30; i++)
     {
@@ -191,61 +198,61 @@ static void Task10ms(void)
     }
     stTestCnt.cnt_10ms++;
 
-//    trigUltrasonic();
-//    static float32 dist_prev;
-//    g_dist = getUsDist();
-//    g_dist = lowPassFilter(g_dist, dist_prev, 0.01);
-//    dist_prev = g_dist;
+    trigUltrasonic();
+    static float32 dist_prev;
+    g_dist = getUsDist();
+    g_dist = lowPassFilter(g_dist, dist_prev, 0.01);
+    dist_prev = g_dist;
 }
 
 static void Task100ms(void)
 {
-//    if (getSW() == TRUE)
-//    {
-//        g_motor_on = !g_motor_on;
-//    }
-//
-//    if (g_dist < 10)
-//    {
-//        buzzer_on = TRUE;
-//    }
-//    else if (g_dist < 15)
-//    {
-//        if (stTestCnt.cnt_100ms % 2 == 0)
-//        {
-//            buzzer_on = TRUE;
-//        }
-//        else
-//        {
-//            buzzer_on = FALSE;
-//        }
-//    }
-//    else if (g_dist < 20)
-//    {
-//        if (stTestCnt.cnt_100ms % 3 == 0)
-//        {
-//            buzzer_on = TRUE;
-//        }
-//        else
-//        {
-//            buzzer_on = FALSE;
-//        }
-//    }
-//    else if (g_dist < 25)
-//    {
-//        if (stTestCnt.cnt_100ms % 5 == 0)
-//        {
-//            buzzer_on = TRUE;
-//        }
-//        else
-//        {
-//            buzzer_on = FALSE;
-//        }
-//    }
-//    else
-//    {
-//        buzzer_on = FALSE;
-//    }
+    if (getSW() == TRUE)
+    {
+        g_motor_on = !g_motor_on;
+    }
+
+    if (g_dist < 10)
+    {
+        buzzer_on = TRUE;
+    }
+    else if (g_dist < 15)
+    {
+        if (stTestCnt.cnt_100ms % 2 == 0)
+        {
+            buzzer_on = TRUE;
+        }
+        else
+        {
+            buzzer_on = FALSE;
+        }
+    }
+    else if (g_dist < 20)
+    {
+        if (stTestCnt.cnt_100ms % 3 == 0)
+        {
+            buzzer_on = TRUE;
+        }
+        else
+        {
+            buzzer_on = FALSE;
+        }
+    }
+    else if (g_dist < 25)
+    {
+        if (stTestCnt.cnt_100ms % 5 == 0)
+        {
+            buzzer_on = TRUE;
+        }
+        else
+        {
+            buzzer_on = FALSE;
+        }
+    }
+    else
+    {
+        buzzer_on = FALSE;
+    }
     stTestCnt.cnt_100ms++;
 }
 
