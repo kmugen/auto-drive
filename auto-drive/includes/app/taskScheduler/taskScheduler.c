@@ -148,7 +148,8 @@ static void Task1ms(void)
 
     observeMotor(MOTOR2, v_in_2, encPos_2);
 
-    setMotorPower(v_in_1 / 12, v_in_2 / 12);
+//    setMotorPower(v_in_1 / 12, v_in_2 / 12);
+    setMotorPower(0,v_in_2 / 12);
 
     if (buzzer_on == TRUE) {
         togglePin(PIN_BUZZER);
@@ -191,8 +192,8 @@ static void Task10ms(void)
         w_ref_1 = w_ref_2 = 0;
     }
 
-    sprintf(str, "%.2f %.1f %.1f\r\n", (float32)stTestCnt.cnt_10ms/100, w_ref_2, w_lpf_2);
-    for (int i =0;i < 30; i++)
+    sprintf(str, "%.2f %.1f %.1f %.1f\r\n", (float32)stTestCnt.cnt_10ms/100, w_ref_2, a4, a8);
+    for (int i =0;i < 40; i++)
     {
         _out_uart3(str[i]);
     }
