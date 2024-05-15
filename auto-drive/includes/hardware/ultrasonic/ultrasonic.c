@@ -7,6 +7,7 @@
 #include "extIrq.h"
 #include "delay.h"
 #include "IfxStm.h"
+#include "isrPrio.h"
 
 /*********************************************************************************************************************/
 /*------------------------------------------------------Macros-------------------------------------------------------*/
@@ -30,13 +31,13 @@ float32 g_dist_prev;
 /*********************************************************************************************************************/
 /*---------------------------------------------Function Implementations----------------------------------------------*/
 /*********************************************************************************************************************/
-IFX_INTERRUPT(ISR_US_R, 0, 140);
+IFX_INTERRUPT(ISR_US_R, 0, ISR_PRIO_US_ECHO_R);
 void ISR_US_R(void)
 {
     g_cnt_r = getCurStmTicks();
 }
 
-IFX_INTERRUPT(ISR_US_F, 0, 141);
+IFX_INTERRUPT(ISR_US_F, 0, ISR_PRIO_US_ECHO_F);
 void ISR_US_F(void)
 {
     g_cnt_f = getCurStmTicks() - g_cnt_r;
@@ -45,8 +46,8 @@ void ISR_US_F(void)
 void initUltrasonic(void)
 {
     setPinOutput(PIN_US_TRIG);
-    initExtIrq(PIN_US_ECHO_R, risingEdgeDetection, 140);
-    initExtIrq(PIN_US_ECHO_F, fallingEdgeDetection, 141);
+    initExtIrq(PIN_US_ECHO_R, risingEdgeDetection, ISR_PRIO_US_ECHO_R);
+    initExtIrq(PIN_US_ECHO_F, fallingEdgeDetection, ISR_PRIO_US_ECHO_F);
 }
 
 void trigUltrasonic(void)

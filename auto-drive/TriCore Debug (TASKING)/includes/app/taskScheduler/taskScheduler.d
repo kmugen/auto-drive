@@ -138,3 +138,29 @@ includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive
 c:/auto-drive/auto-drive/auto-drive/includes/pinSettings.h :
 includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/ultrasonic/ultrasonic.h
 c:/auto-drive/auto-drive/auto-drive/includes/hardware/ultrasonic/ultrasonic.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/dial/dial.h
+c:/auto-drive/auto-drive/auto-drive/includes/hardware/dial/dial.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/adc/adc.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/adc/adc.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Vadc/Adc/IfxVadc_Adc.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Vadc/Adc/IfxVadc_Adc.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Vadc/Std/IfxVadc.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Vadc/Std/IfxVadc.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_Impl/IfxVadc_cfg.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_Impl/IfxVadc_cfg.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxVadc_PinMap.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxVadc_PinMap.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxVadc_reg.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxVadc_reg.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxVadc_regdef.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxVadc_regdef.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxVadc_bf.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxVadc_bf.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxCcu6_reg.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxCcu6_reg.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxCcu6_regdef.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxCcu6_regdef.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxCcu6_bf.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxCcu6_bf.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/switch/switch.h
+c:/auto-drive/auto-drive/auto-drive/includes/hardware/switch/switch.h :

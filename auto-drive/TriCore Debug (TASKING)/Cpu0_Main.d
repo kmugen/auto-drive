@@ -124,3 +124,37 @@ Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/buzzer/buzze
 c:/auto-drive/auto-drive/auto-drive/includes/hardware/buzzer/buzzer.h :
 Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/ultrasonic/ultrasonic.h
 c:/auto-drive/auto-drive/auto-drive/includes/hardware/ultrasonic/ultrasonic.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/switch/switch.h
+c:/auto-drive/auto-drive/auto-drive/includes/hardware/switch/switch.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/pinSettings.h
+c:/auto-drive/auto-drive/auto-drive/includes/pinSettings.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/adc/adc.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/adc/adc.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Vadc/Adc/IfxVadc_Adc.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Vadc/Adc/IfxVadc_Adc.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Vadc/Std/IfxVadc.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Vadc/Std/IfxVadc.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_Impl/IfxVadc_cfg.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_Impl/IfxVadc_cfg.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxVadc_PinMap.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxVadc_PinMap.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxVadc_reg.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxVadc_reg.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxVadc_regdef.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxVadc_regdef.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxVadc_bf.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxVadc_bf.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxCcu6_reg.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxCcu6_reg.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxCcu6_regdef.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxCcu6_regdef.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxCcu6_bf.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/Infra/Sfr/TC27D/_Reg/IfxCcu6_bf.h :
+Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/dial/dial.h
+c:/auto-drive/auto-drive/auto-drive/includes/hardware/dial/dial.h :

@@ -104,3 +104,5 @@ includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/
 c:/auto-drive/auto-drive/auto-drive/Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.h :
 includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.h :
+includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/includes/isrPrio.h
+c:/auto-drive/auto-drive/auto-drive/includes/isrPrio.h :

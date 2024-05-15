@@ -31,9 +31,14 @@
 /*********************************************************************************************************************/
 /*------------------------------------------------------Macros-------------------------------------------------------*/
 /*********************************************************************************************************************/
-#define ISR_PRIO_UART_RX      1
-#define ISR_PRIO_UART_TX      2
+#define ISR_PRIO_UART_RX        1
+#define ISR_PRIO_UART_TX        2
 
-#define ISR_PRIO_STM        200
+#define ISR_PRIO_SW             255
+
+#define ISR_PRIO_US_ECHO_R      140
+#define ISR_PRIO_US_ECHO_F      141
+
+#define ISR_PRIO_STM            200
 
 #endif /* INCLUDES_ISRPRIO_H_ */
