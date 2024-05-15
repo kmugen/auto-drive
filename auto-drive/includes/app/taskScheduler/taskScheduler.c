@@ -118,27 +118,27 @@ static void Task1ms(void)
 //    w_1 = (encPos_1 - prev_encPos_1) * 1000;
 //    prev_encPos_1 = encPos_1;
 //
-    encPos_2 = getEncPos(ENC2);
-    w_2 = (encPos_2 - prev_encPos_2) * 1000;
-    prev_encPos_2 = encPos_2;
+//    encPos_2 = getEncPos(ENC2);
+//    w_2 = (encPos_2 - prev_encPos_2) * 1000;
+//    prev_encPos_2 = encPos_2;
 //
-    tmp = getWHat(MOTOR2);
-    tmp = lowPassFilter(tmp, tmp_prev, 0.001);
-    tmp_prev = tmp;
+    w_2 = getWHat(MOTOR2);
+//    tmp = lowPassFilter(tmp, tmp_prev, 0.001);
+//    tmp_prev = tmp;
 //
 //    w_lpf_1 = lowPassFilter(w_1, w_lpf_prev_1);
 //    w_lpf_prev_1 = w_lpf_1;
 //
-//    w_lpf_2 = lowPassFilter(tmp, w_lpf_prev_2, 0.001);
-//    w_lpf_prev_2 = w_lpf_2;
-    tmp_lpf = lowPassFilter(tmp, tmp_lpf_prev, 0.001);
-    tmp_lpf_prev = tmp_lpf;
+    w_lpf_2 = lowPassFilter(w_2, w_lpf_prev_2, 0.001);
+    w_lpf_prev_2 = w_lpf_2;
+//    tmp_lpf = lowPassFilter(tmp, tmp_lpf_prev, 0.001);
+//    tmp_lpf_prev = tmp_lpf;
 //
     if (w_ref_lpf_2 != 0)
     {
 //    w_err_1 = w_ref_lpf_1 - w_lpf_1;
-//    w_err_2 = w_ref_lpf_2 - w_lpf_2;
-      w_err_2 = w_ref_lpf_2 - tmp_lpf;
+    w_err_2 = w_ref_lpf_2 - w_lpf_2;
+//      w_err_2 = w_ref_lpf_2 - tmp_lpf;
 //
 //    v_in_1 = -1 * pidController(MOTOR1, w_err_1, w_ref_lpf_1);
     v_in_2 = pidController(MOTOR2, w_err_2, w_ref_lpf_2);
@@ -170,16 +170,17 @@ static void Task1ms(void)
         v_in_2 = 12;
     }
     }
-    else
-    {
-        v_in_2 = 0;
-    }
 //    if (stTestCnt.cnt_1ms >= 15000)
 //    {
 //        v_in = 0;
 //    }
 
+    encPos_1 = getEncPos(MOTOR1);
+    observeMotor(MOTOR2, v_in_1, encPos_1);
+
+    encPos_2 = getEncPos(MOTOR2);
     observeMotor(MOTOR2, v_in_2, encPos_2);
+
 
     // setMotorPower(v_in_1 / 12, v_in_2 / 12);
     setMotorPower(0, v_in_2 / 12);
@@ -207,7 +208,7 @@ static void Task10ms(void)
         a6 = getWHat(MOTOR2);
         a6 = lowPassFilter(a6, a7, 0.01);
         a7 = a6;
-    sprintf(str, "%.2f %.1f %.1f\r\n", (float32)stTestCnt.cnt_10ms/100, w_ref_lpf_2, tmp_lpf);
+    sprintf(str, "%.2f %.1f %.1f\r\n", (float32)stTestCnt.cnt_10ms/100, w_ref_lpf_2, a3);
     for (int i =0;i < 20; i++)
     {
         _out_uart3(str[i]);
