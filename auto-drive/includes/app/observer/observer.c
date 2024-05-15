@@ -22,19 +22,19 @@
 /*********************************************************************************************************************/
 /*-------------------------------------------------Global variables--------------------------------------------------*/
 /*********************************************************************************************************************/
-float64 g_theta_h[2] = {0.0, 0.0};
-float64 g_w_h[2] = {0.0, 0.0};
-float64 g_i_h[2] = {0.0, 0.0};
+float32 g_theta_h[2] = {0.0, 0.0};
+float32 g_w_h[2] = {0.0, 0.0};
+float32 g_i_h[2] = {0.0, 0.0};
 
-float64 g_int_theta_h[2] = {0.0, 0.0};
-float64 g_int_w_h[2] = {0.0, 0.0};
-float64 g_int_i_h[2] = {0.0, 0.0};
+float32 g_int_theta_h[2] = {0.0, 0.0};
+float32 g_int_w_h[2] = {0.0, 0.0};
+float32 g_int_i_h[2] = {0.0, 0.0};
 
-float64 theta_tilde;
+float32 theta_tilde;
 /*********************************************************************************************************************/
 /*---------------------------------------------Function Implementations----------------------------------------------*/
 /*********************************************************************************************************************/
-void observeMotor(uint8 chn, float64 v_in, float64 theta)
+void observeMotor(uint8 chn, float32 v_in, float32 theta)
 {
     theta_tilde = theta - g_theta_h[chn];
 
@@ -48,17 +48,17 @@ void observeMotor(uint8 chn, float64 v_in, float64 theta)
     g_i_h[chn] = g_int_i_h[chn];
 }
 
-float64 getThetaHat(uint8 chn)
+float32 getThetaHat(uint8 chn)
 {
     return g_theta_h[chn];
 }
 
-float64 getWHat(uint8 chn)
+float32 getWHat(uint8 chn)
 {
     return g_w_h[chn];
 }
 
-float64 getIHat(uint8 chn)
+float32 getIHat(uint8 chn)
 {
     return g_i_h[chn];
 }

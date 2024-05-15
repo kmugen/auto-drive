@@ -22,8 +22,8 @@ void core0_main(void)
     IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
     initEncoder();
     initMotor();
-    initBuzzer();
-    initUltrasonic();
+//    initBuzzer();
+//    initUltrasonic();
     _init_uart3();
     initStm();
 
