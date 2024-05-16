@@ -11,7 +11,6 @@ RM := rm -rf
 -include includes/tc275/uart/subdir.mk
 -include includes/tc275/stm/subdir.mk
 -include includes/tc275/pwmTom/subdir.mk
--include includes/tc275/pwmHl/subdir.mk
 -include includes/tc275/gpio/subdir.mk
 -include includes/tc275/extIrq/subdir.mk
 -include includes/tc275/adc/subdir.mk
@@ -19,12 +18,9 @@ RM := rm -rf
 -include includes/hardware/switch/subdir.mk
 -include includes/hardware/motor/subdir.mk
 -include includes/hardware/encoder/subdir.mk
--include includes/hardware/dial/subdir.mk
--include includes/hardware/buzzer/subdir.mk
 -include includes/app/taskScheduler/subdir.mk
 -include includes/app/pid/subdir.mk
 -include includes/app/observer/subdir.mk
--include includes/app/lpf/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/_PinMap/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/_Lib/DataHandling/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/_Impl/subdir.mk
@@ -35,8 +31,6 @@ RM := rm -rf
 -include Libraries/iLLD/TC27D/Tricore/Scu/Std/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Port/Std/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Mtu/Std/subdir.mk
--include Libraries/iLLD/TC27D/Tricore/Gtm/Tom/Timer/subdir.mk
--include Libraries/iLLD/TC27D/Tricore/Gtm/Tom/PwmHl/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Gtm/Std/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Cpu/Trap/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/Cpu/Std/subdir.mk

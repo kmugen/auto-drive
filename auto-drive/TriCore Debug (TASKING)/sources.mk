@@ -37,8 +37,6 @@ Libraries/iLLD/TC27D/Tricore/Cpu/Irq \
 Libraries/iLLD/TC27D/Tricore/Cpu/Std \
 Libraries/iLLD/TC27D/Tricore/Cpu/Trap \
 Libraries/iLLD/TC27D/Tricore/Gtm/Std \
-Libraries/iLLD/TC27D/Tricore/Gtm/Tom/PwmHl \
-Libraries/iLLD/TC27D/Tricore/Gtm/Tom/Timer \
 Libraries/iLLD/TC27D/Tricore/Mtu/Std \
 Libraries/iLLD/TC27D/Tricore/Port/Std \
 Libraries/iLLD/TC27D/Tricore/Scu/Std \
@@ -49,12 +47,9 @@ Libraries/iLLD/TC27D/Tricore/Vadc/Std \
 Libraries/iLLD/TC27D/Tricore/_Impl \
 Libraries/iLLD/TC27D/Tricore/_Lib/DataHandling \
 Libraries/iLLD/TC27D/Tricore/_PinMap \
-includes/app/lpf \
 includes/app/observer \
 includes/app/pid \
 includes/app/taskScheduler \
-includes/hardware/buzzer \
-includes/hardware/dial \
 includes/hardware/encoder \
 includes/hardware/motor \
 includes/hardware/switch \
@@ -62,7 +57,6 @@ includes/hardware/ultrasonic \
 includes/tc275/adc \
 includes/tc275/extIrq \
 includes/tc275/gpio \
-includes/tc275/pwmHl \
 includes/tc275/pwmTom \
 includes/tc275/stm \
 includes/tc275/uart \

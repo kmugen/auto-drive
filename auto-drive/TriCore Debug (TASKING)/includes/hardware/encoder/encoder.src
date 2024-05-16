@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc8120a --dep-file=includes/hardware/encoder/encoder.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc27xd -D__CPU_TC27XD__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc27xd -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Configurations -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D\\\\_Reg -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom\\\\PwmHl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom\\\\Timer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Impl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_PinMap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\lpf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\observer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\pid -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\taskScheduler -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\buzzer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\dial -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\encoder -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\motor -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\switch -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\ultrasonic -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275 -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\delay -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\extIrq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmHl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmTom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\uart -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o includes/hardware/encoder/encoder.src ../includes/hardware/encoder/encoder.c"
+	.compiler_invocation	"ctc -f cc12344a --dep-file=includes/hardware/encoder/encoder.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc27xd -D__CPU_TC27XD__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc27xd -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Configurations -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D\\\\_Reg -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Impl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_PinMap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\lpf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\observer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\pid -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\taskScheduler -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\buzzer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\dial -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\encoder -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\motor -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\switch -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\ultrasonic -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275 -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\delay -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\extIrq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmTom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\uart -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o includes/hardware/encoder/encoder.src ../includes/hardware/encoder/encoder.c"
 	.compiler_name		"ctc"
 	;source	'../includes/hardware/encoder/encoder.c'
 
@@ -13,42 +13,42 @@ $TC16X
 	
 	.global	initEncoder
 ; Function initEncoder
-.L31:
+.L37:
 initEncoder:	.type	func
 	movh.a	a15,#@his(IfxPort_P20_0)
 	lea	a15,[a15]@los(IfxPort_P20_0)
 	ld.d	e4,[a15]0
-.L58:
+.L64:
 	mov	d6,#16
 	call	setPinMode
-.L59:
+.L65:
 	movh.a	a15,#@his(IfxPort_P20_3)
 	lea	a15,[a15]@los(IfxPort_P20_3)
 	ld.d	e4,[a15]0
-.L63:
+.L69:
 	mov	d6,#16
 	call	setPinMode
-.L64:
+.L70:
 	movh.a	a15,#@his(IfxPort_P15_5)
 	lea	a15,[a15]@los(IfxPort_P15_5)
 	ld.d	e4,[a15]0
-.L65:
+.L71:
 	mov	d6,#16
 	call	setPinMode
-.L66:
+.L72:
 	movh.a	a15,#@his(IfxPort_P15_4)
 	lea	a15,[a15]@los(IfxPort_P15_4)
 	ld.d	e4,[a15]0
-.L67:
+.L73:
 	mov	d6,#16
 	call	setPinMode
-.L68:
+.L74:
 	ret
-.L56:
+.L62:
 	
 __initEncoder_function_end:
 	.size	initEncoder,__initEncoder_function_end-initEncoder
-.L42:
+.L48:
 	; End of function
 	
 	.sdecl	'.text.encoder.countEncTicks',code,cluster('countEncTicks')
@@ -57,24 +57,24 @@ __initEncoder_function_end:
 	
 	.global	countEncTicks
 ; Function countEncTicks
-.L33:
+.L39:
 countEncTicks:	.type	func
 	movh.a	a15,#@his(IfxPort_P20_0)
 	lea	a15,[a15]@los(IfxPort_P20_0)
 	ld.d	e0,[a15]0
-.L74:
+.L82:
 	mov	d15,d0
 	mov.a	a15,d15
-.L132:
+.L147:
 	extr.u	d0,d1,#0,#8
-.L86:
+.L94:
 	ld.w	d15,[a15]36
 	extr.u	d15,d15,d0,#1
-.L133:
+.L148:
 	jeq	d15,#0,.L2
-.L134:
+.L149:
 	mov	d3,#1
-.L118:
+.L131:
 	j	.L3
 .L2:
 	mov	d3,#0
@@ -86,19 +86,19 @@ countEncTicks:	.type	func
 	movh.a	a15,#@his(IfxPort_P20_3)
 	lea	a15,[a15]@los(IfxPort_P20_3)
 	ld.d	e0,[a15]0
-.L93:
+.L101:
 	mov	d2,d0
 	mov.a	a15,d2
-.L135:
+.L150:
 	extr.u	d0,d1,#0,#8
-.L100:
+.L108:
 	ld.w	d15,[a15]36
 	extr.u	d15,d15,d0,#1
-.L136:
+.L151:
 	jeq	d15,#0,.L6
-.L137:
+.L152:
 	mov	d4,#1
-.L119:
+.L132:
 	j	.L7
 .L6:
 	mov	d4,#0
@@ -110,215 +110,146 @@ countEncTicks:	.type	func
 	movh.a	a15,#@his(IfxPort_P15_5)
 	lea	a15,[a15]@los(IfxPort_P15_5)
 	ld.d	e0,[a15]0
-.L102:
+.L110:
 	mov	d2,d0
 	mov.a	a15,d2
-.L138:
+.L153:
 	extr.u	d0,d1,#0,#8
-.L106:
+.L118:
 	ld.w	d15,[a15]36
 	extr.u	d15,d15,d0,#1
-.L139:
+.L154:
 	jeq	d15,#0,.L10
-.L140:
-	mov	d0,#1
-.L141:
+.L155:
+	mov	d5,#1
+.L133:
 	j	.L11
 .L10:
-	mov	d0,#0
+	mov	d5,#0
 .L11:
 	j	.L12
 .L12:
 	j	.L13
 .L13:
-	movh.a	a15,#@his(_999005_cur_enc2_chA)
-	lea	a15,[a15]@los(_999005_cur_enc2_chA)
-.L104:
-	st.b	[a15],d0
-.L105:
 	movh.a	a15,#@his(IfxPort_P15_4)
 	lea	a15,[a15]@los(IfxPort_P15_4)
 	ld.d	e0,[a15]0
-.L108:
+.L120:
 	mov	d2,d0
 	mov.a	a15,d2
-.L142:
+.L156:
 	extr.u	d0,d1,#0,#8
-.L114:
+.L127:
 	ld.w	d15,[a15]36
 	extr.u	d15,d15,d0,#1
-.L143:
+.L157:
 	jeq	d15,#0,.L14
-.L144:
-	mov	d0,#1
-.L145:
+.L158:
+	mov	d6,#1
+.L134:
 	j	.L15
 .L14:
-	mov	d0,#0
+	mov	d6,#0
 .L15:
 	j	.L16
 .L16:
 	j	.L17
 .L17:
-	movh.a	a15,#@his(_999006_cur_enc2_chB)
-	lea	a15,[a15]@los(_999006_cur_enc2_chB)
-.L110:
-	st.b	[a15],d0
-.L111:
 	movh.a	a15,#@his(_999001_prev_enc1_chA)
 	lea	a15,[a15]@los(_999001_prev_enc1_chA)
 	ld.bu	d15,[a15]
-.L146:
+.L159:
 	jne	d15,#0,.L18
-.L79:
+.L87:
 	jne	d3,#1,.L19
-.L80:
+.L88:
 	jne	d4,#0,.L20
-.L95:
-	mov	d15,#1
-.L147:
+.L103:
+	mov	d0,#1
+.L160:
 	j	.L21
 .L20:
-	mov	d15,#-1
+	mov	d0,#-1
 .L21:
 	movh.a	a15,#@his(g_dir_enc1)
 	lea	a15,[a15]@los(g_dir_enc1)
-.L148:
-	st.b	[a15],d15
+.L161:
+	st.b	[a15],d0
+.L162:
+	j	.L22
 .L19:
 .L18:
+.L22:
 	movh.a	a15,#@his(_999003_prev_enc2_chA)
 	lea	a15,[a15]@los(_999003_prev_enc2_chA)
 	ld.bu	d15,[a15]
-.L149:
-	jne	d15,#0,.L22
-.L150:
-	movh.a	a15,#@his(_999005_cur_enc2_chA)
-	lea	a15,[a15]@los(_999005_cur_enc2_chA)
-	ld.bu	d15,[a15]
-.L151:
-	jne	d15,#1,.L23
+.L163:
+	jne	d15,#0,.L23
 .L112:
-	jne	d0,#0,.L24
+	jne	d5,#1,.L24
 .L113:
-	mov	d15,#1
-.L152:
-	j	.L25
-.L24:
-	mov	d15,#-1
+	jne	d6,#0,.L25
+.L122:
+	mov	d0,#1
+.L164:
+	j	.L26
 .L25:
+	mov	d0,#-1
+.L26:
 	movh.a	a15,#@his(g_dir_enc2)
 	lea	a15,[a15]@los(g_dir_enc2)
-.L153:
-	st.b	[a15],d15
+.L165:
+	st.b	[a15],d0
+.L166:
+	j	.L27
+.L24:
 .L23:
-.L22:
+.L27:
 	movh.a	a15,#@his(_999001_prev_enc1_chA)
 	lea	a15,[a15]@los(_999001_prev_enc1_chA)
-	ld.bu	d15,[a15]
-.L81:
-	jeq	d15,d3,.L26
-.L82:
+	ld.bu	d0,[a15]
+.L89:
+	jeq	d0,d3,.L28
+.L90:
 	movh.a	a15,#@his(g_pos_enc1)
 	lea	a15,[a15]@los(g_pos_enc1)
 	movh.a	a2,#@his(g_pos_enc1)
 	lea	a2,[a2]@los(g_pos_enc1)
-	ld.w	d15,[a2]
-.L154:
+	ld.w	d0,[a2]
+.L167:
 	movh.a	a2,#@his(g_dir_enc1)
 	lea	a2,[a2]@los(g_dir_enc1)
-	ld.b	d0,[a2]0
-.L155:
-	mul	d0,d0,#2
-	itof	d0,d0
-.L156:
-	mov	d1,#4056
-	addih	d1,d1,#16457
-	mul.f	d0,d0,d1
-	movh	d1,#16944
-	div.f	d0,d0,d1
-.L157:
-	add.f	d15,d15,d0
+	ld.b	d1,[a2]0
+.L168:
+	mul	d1,d1,#2
+	itof	d1,d1
+.L169:
+	mov	d2,#4056
+	addih	d2,d2,#16457
+	mul.f	d1,d1,d2
+	movh	d2,#16944
+	div.f	d15,d1,d2
+.L170:
+	add.f	d15,d0,d15
 	st.w	[a15],d15
-.L26:
+.L171:
+	j	.L29
+.L28:
+.L29:
 	movh.a	a15,#@his(_999002_prev_enc1_chB)
 	lea	a15,[a15]@los(_999002_prev_enc1_chB)
 	ld.bu	d15,[a15]
-.L96:
-	jeq	d15,d4,.L27
-.L97:
+.L104:
+	jeq	d15,d4,.L30
+.L105:
 	movh.a	a15,#@his(g_pos_enc1)
 	lea	a15,[a15]@los(g_pos_enc1)
 	movh.a	a2,#@his(g_pos_enc1)
 	lea	a2,[a2]@los(g_pos_enc1)
 	ld.w	d15,[a2]
-.L158:
+.L172:
 	movh.a	a2,#@his(g_dir_enc1)
 	lea	a2,[a2]@los(g_dir_enc1)
-	ld.b	d0,[a2]0
-.L159:
-	mul	d0,d0,#2
-	itof	d0,d0
-.L160:
-	mov	d1,#4056
-	addih	d1,d1,#16457
-	mul.f	d0,d0,d1
-	movh	d1,#16944
-	div.f	d0,d0,d1
-.L161:
-	add.f	d15,d15,d0
-	st.w	[a15],d15
-.L27:
-	movh.a	a15,#@his(_999003_prev_enc2_chA)
-	lea	a15,[a15]@los(_999003_prev_enc2_chA)
-	ld.bu	d15,[a15]
-.L162:
-	movh.a	a15,#@his(_999005_cur_enc2_chA)
-	lea	a15,[a15]@los(_999005_cur_enc2_chA)
-	ld.bu	d0,[a15]
-.L163:
-	jeq	d15,d0,.L28
-.L164:
-	movh.a	a15,#@his(g_pos_enc2)
-	lea	a15,[a15]@los(g_pos_enc2)
-	movh.a	a2,#@his(g_pos_enc2)
-	lea	a2,[a2]@los(g_pos_enc2)
-	ld.w	d15,[a2]
-.L165:
-	movh.a	a2,#@his(g_dir_enc2)
-	lea	a2,[a2]@los(g_dir_enc2)
-	ld.b	d0,[a2]0
-.L166:
-	mul	d0,d0,#2
-	itof	d0,d0
-.L167:
-	mov	d1,#4056
-	addih	d1,d1,#16457
-	mul.f	d0,d0,d1
-	movh	d1,#16944
-	div.f	d0,d0,d1
-.L168:
-	add.f	d15,d15,d0
-	st.w	[a15],d15
-.L28:
-	movh.a	a15,#@his(_999004_prev_enc2_chB)
-	lea	a15,[a15]@los(_999004_prev_enc2_chB)
-	ld.bu	d15,[a15]
-.L169:
-	movh.a	a15,#@his(_999006_cur_enc2_chB)
-	lea	a15,[a15]@los(_999006_cur_enc2_chB)
-	ld.bu	d0,[a15]
-.L170:
-	jeq	d15,d0,.L29
-.L171:
-	movh.a	a15,#@his(g_pos_enc2)
-	lea	a15,[a15]@los(g_pos_enc2)
-	movh.a	a2,#@his(g_pos_enc2)
-	lea	a2,[a2]@los(g_pos_enc2)
-	ld.w	d15,[a2]
-.L172:
-	movh.a	a2,#@his(g_dir_enc2)
-	lea	a2,[a2]@los(g_dir_enc2)
 	ld.b	d0,[a2]0
 .L173:
 	mul	d0,d0,#2
@@ -332,41 +263,98 @@ countEncTicks:	.type	func
 .L175:
 	add.f	d15,d15,d0
 	st.w	[a15],d15
-.L29:
-	movh.a	a15,#@his(_999001_prev_enc1_chA)
-	lea	a15,[a15]@los(_999001_prev_enc1_chA)
-.L83:
-	st.b	[a15],d3
-.L84:
-	movh.a	a15,#@his(_999002_prev_enc1_chB)
-	lea	a15,[a15]@los(_999002_prev_enc1_chB)
-.L98:
-	st.b	[a15],d4
-.L99:
+.L176:
+	j	.L31
+.L30:
+.L31:
 	movh.a	a15,#@his(_999003_prev_enc2_chA)
 	lea	a15,[a15]@los(_999003_prev_enc2_chA)
-.L176:
-	movh.a	a2,#@his(_999005_cur_enc2_chA)
-	lea	a2,[a2]@los(_999005_cur_enc2_chA)
-	ld.bu	d15,[a2]
+	ld.bu	d15,[a15]
+.L114:
+	jeq	d15,d5,.L32
+.L115:
+	movh.a	a15,#@his(g_pos_enc2)
+	lea	a15,[a15]@los(g_pos_enc2)
+	movh.a	a2,#@his(g_pos_enc2)
+	lea	a2,[a2]@los(g_pos_enc2)
+	ld.w	d15,[a2]
 .L177:
-	st.b	[a15],d15
+	movh.a	a2,#@his(g_dir_enc2)
+	lea	a2,[a2]@los(g_dir_enc2)
+	ld.b	d0,[a2]0
 .L178:
+	mul	d0,d0,#2
+	itof	d0,d0
+.L179:
+	mov	d1,#4056
+	addih	d1,d1,#16457
+	mul.f	d0,d0,d1
+	movh	d1,#16944
+	div.f	d0,d0,d1
+.L180:
+	add.f	d15,d15,d0
+	st.w	[a15],d15
+.L181:
+	j	.L33
+.L32:
+.L33:
 	movh.a	a15,#@his(_999004_prev_enc2_chB)
 	lea	a15,[a15]@los(_999004_prev_enc2_chB)
-.L179:
-	movh.a	a2,#@his(_999006_cur_enc2_chB)
-	lea	a2,[a2]@los(_999006_cur_enc2_chB)
-	ld.bu	d15,[a2]
-.L180:
-	st.b	[a15],d15
-.L181:
+	ld.bu	d15,[a15]
+.L123:
+	jeq	d15,d6,.L34
+.L124:
+	movh.a	a15,#@his(g_pos_enc2)
+	lea	a15,[a15]@los(g_pos_enc2)
+	movh.a	a2,#@his(g_pos_enc2)
+	lea	a2,[a2]@los(g_pos_enc2)
+	ld.w	d15,[a2]
+.L182:
+	movh.a	a2,#@his(g_dir_enc2)
+	lea	a2,[a2]@los(g_dir_enc2)
+	ld.b	d0,[a2]0
+.L183:
+	mul	d0,d0,#2
+	itof	d0,d0
+.L184:
+	mov	d1,#4056
+	addih	d1,d1,#16457
+	mul.f	d0,d0,d1
+	movh	d1,#16944
+	div.f	d0,d0,d1
+.L185:
+	add.f	d15,d15,d0
+	st.w	[a15],d15
+.L186:
+	j	.L35
+.L34:
+.L35:
+	movh.a	a15,#@his(_999001_prev_enc1_chA)
+	lea	a15,[a15]@los(_999001_prev_enc1_chA)
+.L91:
+	st.b	[a15],d3
+.L92:
+	movh.a	a15,#@his(_999002_prev_enc1_chB)
+	lea	a15,[a15]@los(_999002_prev_enc1_chB)
+.L106:
+	st.b	[a15],d4
+.L107:
+	movh.a	a15,#@his(_999003_prev_enc2_chA)
+	lea	a15,[a15]@los(_999003_prev_enc2_chA)
+.L116:
+	st.b	[a15],d5
+.L117:
+	movh.a	a15,#@his(_999004_prev_enc2_chB)
+	lea	a15,[a15]@los(_999004_prev_enc2_chB)
+.L125:
+	st.b	[a15],d6
+.L126:
 	ret
-.L69:
+.L75:
 	
 __countEncTicks_function_end:
 	.size	countEncTicks,__countEncTicks_function_end-countEncTicks
-.L47:
+.L53:
 	; End of function
 	
 	.sdecl	'.data.encoder.g_dir_enc1',data,cluster('g_dir_enc1')
@@ -415,16 +403,6 @@ _999003_prev_enc2_chA:	.type	object
 _999004_prev_enc2_chB:	.type	object
 	.size	_999004_prev_enc2_chB,1
 	.space	1
-	.sdecl	'.data.encoder._999005_cur_enc2_chA',data,cluster('_999005_cur_enc2_chA')
-	.sect	'.data.encoder._999005_cur_enc2_chA'
-_999005_cur_enc2_chA:	.type	object
-	.size	_999005_cur_enc2_chA,1
-	.space	1
-	.sdecl	'.data.encoder._999006_cur_enc2_chB',data,cluster('_999006_cur_enc2_chB')
-	.sect	'.data.encoder._999006_cur_enc2_chB'
-_999006_cur_enc2_chB:	.type	object
-	.size	_999006_cur_enc2_chB,1
-	.space	1
 	.calls	'initEncoder','setPinMode'
 	.calls	'initEncoder','',0
 	.extern	IfxPort_P15_4
@@ -435,17 +413,17 @@ _999006_cur_enc2_chB:	.type	object
 	.calls	'countEncTicks','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L35:
-	.word	36139
+.L41:
+	.word	36134
 	.half	3
-	.word	.L36
+	.word	.L42
 	.byte	4
-.L34:
+.L40:
 	.byte	1
 	.byte	'../includes/hardware/encoder/encoder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L37
+	.word	.L43
 	.byte	2,1,1,3
 	.word	195
 	.byte	4
@@ -454,7 +432,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	198
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1
-.L117:
+.L129:
 	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,149,2,18
@@ -480,7 +458,7 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	'value',0,2,143,1,43
 	.word	309
 	.byte	6,0
-.L70:
+.L76:
 	.byte	7
 	.byte	'unsigned char',0,1,8,7
 	.byte	'unsigned int',0,4,7,7
@@ -1828,20 +1806,20 @@ _999006_cur_enc2_chB:	.type	object
 	.word	7620
 	.byte	3
 	.word	8223
-.L85:
+.L93:
 	.byte	8
 	.byte	'IfxPort_getPinState',0,3,3,170,4,20
 	.word	427
 	.byte	1,1
-.L87:
+.L95:
 	.byte	5
 	.byte	'port',0,3,170,4,47
 	.word	8228
-.L89:
+.L97:
 	.byte	5
 	.byte	'pinIndex',0,3,170,4,59
 	.word	427
-.L91:
+.L99:
 	.byte	6,0,17,3,170,1,9,4,18
 	.byte	'IfxPort_State_notChanged',0,0,18
 	.byte	'IfxPort_State_high',0,1,18
@@ -1863,33 +1841,33 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	'pinIndex',0
 	.word	427
 	.byte	1,2,35,4,0
-.L57:
+.L63:
 	.byte	4
-	.byte	'setPinInput',0,3,5,127,20,1,1
-.L60:
+	.byte	'setPinInput',0,3,5,34,20,1,1
+.L66:
 	.byte	5
-	.byte	'pin',0,5,127,39
+	.byte	'pin',0,5,34,39
 	.word	8480
-.L62:
+.L68:
 	.byte	6,0,7
 	.byte	'unsigned long int',0,4,7,4
-	.byte	'setPinState',0,3,5,137,1,20,1,1,5
-	.byte	'pin',0,5,137,1,39
+	.byte	'setPinState',0,3,5,44,20,1,1,5
+	.byte	'pin',0,5,44,39
 	.word	8480
 	.byte	5
-	.byte	'state',0,5,137,1,51
+	.byte	'state',0,5,44,51
 	.word	8552
 	.byte	6,0
-.L73:
+.L81:
 	.byte	8
-	.byte	'getPinState',0,3,5,157,1,23
+	.byte	'getPinState',0,3,5,64,23
 	.word	427
 	.byte	1,1
-.L75:
+.L83:
 	.byte	5
-	.byte	'pin',0,5,157,1,42
+	.byte	'pin',0,5,64,42
 	.word	8480
-.L77:
+.L85:
 	.byte	20,6,0,0,21
 	.byte	'__extru',0
 	.word	444
@@ -1932,11 +1910,11 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	24
 	.word	8462
 	.byte	6,0,25
-	.byte	'setPinMode',0,5,122,13,1,1,1,1,5
-	.byte	'pin',0,5,122,31
+	.byte	'setPinMode',0,5,29,13,1,1,1,1,5
+	.byte	'pin',0,5,29,31
 	.word	8480
 	.byte	5
-	.byte	'mode',0,5,122,42
+	.byte	'mode',0,5,29,42
 	.word	427
 	.byte	0,23
 	.word	8519
@@ -1945,13 +1923,13 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	6,0,23
 	.word	8573
 	.byte	24
-	.word	8593
+	.word	8592
 	.byte	24
-	.word	8606
+	.word	8604
 	.byte	6,0,23
-	.word	8623
+	.word	8620
 	.byte	24
-	.word	8647
+	.word	8643
 	.byte	20,26
 	.word	8233
 	.byte	24
@@ -1963,7 +1941,7 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	0,6,0,0,7
 	.byte	'short int',0,2,5,28
 	.byte	'__wchar_t',0,6,1,1
-	.word	8898
+	.word	8893
 	.byte	28
 	.byte	'__size_t',0,6,1,1
 	.word	444
@@ -1971,10 +1949,10 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	'__ptrdiff_t',0,6,1,1
 	.word	460
 	.byte	29,1,3
-	.word	8966
+	.word	8961
 	.byte	28
 	.byte	'__codeptr',0,6,1,1
-	.word	8968
+	.word	8963
 	.byte	28
 	.byte	'boolean',0,7,104,29
 	.word	427
@@ -1990,22 +1968,22 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	28
 	.byte	'uint64',0,7,121,29
 	.word	309
-.L116:
+.L130:
 	.byte	7
 	.byte	'char',0,1,6,28
 	.byte	'sint8',0,7,125,29
-	.word	9066
+	.word	9061
 	.byte	28
 	.byte	'sint16',0,7,129,1,29
-	.word	8898
+	.word	8893
 	.byte	7
 	.byte	'long int',0,4,5,28
 	.byte	'sint32',0,7,134,1,29
-	.word	9104
+	.word	9099
 	.byte	7
 	.byte	'long long int',0,8,5,28
 	.byte	'sint64',0,7,141,1,29
-	.word	9132
+	.word	9127
 	.byte	28
 	.byte	'float32',0,7,170,1,29
 	.word	255
@@ -2014,7 +1992,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	341
 	.byte	28
 	.byte	'Ifx_TickTime',0,8,76,28
-	.word	9132
+	.word	9127
 	.byte	28
 	.byte	'Ifx_P_ACCEN0_Bits',0,4,97,3
 	.word	7053
@@ -2190,13 +2168,13 @@ _999006_cur_enc2_chB:	.type	object
 	.word	7620
 	.byte	28
 	.byte	'Ifx_P',0,4,156,6,3
-	.word	10536
+	.word	10531
 	.byte	17,9,163,11,9,1,18
 	.byte	'IfxScu_WDTCON1_IR_divBy16384',0,0,18
 	.byte	'IfxScu_WDTCON1_IR_divBy256',0,1,18
 	.byte	'IfxScu_WDTCON1_IR_divBy64',0,2,0,28
 	.byte	'IfxScu_WDTCON1_IR',0,9,168,11,3
-	.word	10556
+	.word	10551
 	.byte	10
 	.byte	'_Ifx_SCU_ACCEN0_Bits',0,10,63,16,4,11
 	.byte	'EN0',0,1
@@ -2296,14 +2274,14 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_ACCEN0_Bits',0,10,97,3
-	.word	10678
+	.word	10673
 	.byte	10
 	.byte	'_Ifx_SCU_ACCEN1_Bits',0,10,100,16,4,11
 	.byte	'reserved_0',0,4
 	.word	444
 	.byte	32,0,2,35,0,0,28
 	.byte	'Ifx_SCU_ACCEN1_Bits',0,10,103,3
-	.word	11235
+	.word	11230
 	.byte	10
 	.byte	'_Ifx_SCU_ARSTDIS_Bits',0,10,106,16,4,11
 	.byte	'STM0DIS',0,1
@@ -2319,7 +2297,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	29,0,2,35,0,0,28
 	.byte	'Ifx_SCU_ARSTDIS_Bits',0,10,112,3
-	.word	11312
+	.word	11307
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON0_Bits',0,10,115,16,4,11
 	.byte	'BAUD1DIV',0,1
@@ -2359,7 +2337,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_CCUCON0_Bits',0,10,129,1,3
-	.word	11448
+	.word	11443
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON1_Bits',0,10,132,1,16,4,11
 	.byte	'CANDIV',0,1
@@ -2393,7 +2371,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_CCUCON1_Bits',0,10,144,1,3
-	.word	11729
+	.word	11724
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON2_Bits',0,10,147,1,16,4,11
 	.byte	'BBBDIV',0,1
@@ -2409,7 +2387,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_CCUCON2_Bits',0,10,153,1,3
-	.word	11969
+	.word	11964
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON3_Bits',0,10,156,1,16,4,11
 	.byte	'PLLDIV',0,1
@@ -2443,7 +2421,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_CCUCON3_Bits',0,10,168,1,3
-	.word	12097
+	.word	12092
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON4_Bits',0,10,171,1,16,4,11
 	.byte	'SPBDIV',0,1
@@ -2477,7 +2455,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_CCUCON4_Bits',0,10,183,1,3
-	.word	12340
+	.word	12335
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON5_Bits',0,10,186,1,16,4,11
 	.byte	'MAXDIV',0,1
@@ -2493,7 +2471,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_CCUCON5_Bits',0,10,192,1,3
-	.word	12575
+	.word	12570
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON6_Bits',0,10,195,1,16,4,11
 	.byte	'CPU0DIV',0,1
@@ -2503,7 +2481,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	26,0,2,35,0,0,28
 	.byte	'Ifx_SCU_CCUCON6_Bits',0,10,199,1,3
-	.word	12703
+	.word	12698
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON7_Bits',0,10,202,1,16,4,11
 	.byte	'CPU1DIV',0,1
@@ -2513,7 +2491,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	26,0,2,35,0,0,28
 	.byte	'Ifx_SCU_CCUCON7_Bits',0,10,206,1,3
-	.word	12803
+	.word	12798
 	.byte	10
 	.byte	'_Ifx_SCU_CCUCON8_Bits',0,10,209,1,16,4,11
 	.byte	'CPU2DIV',0,1
@@ -2523,7 +2501,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	26,0,2,35,0,0,28
 	.byte	'Ifx_SCU_CCUCON8_Bits',0,10,213,1,3
-	.word	12903
+	.word	12898
 	.byte	10
 	.byte	'_Ifx_SCU_CHIPID_Bits',0,10,216,1,16,4,11
 	.byte	'CHREV',0,1
@@ -2554,7 +2532,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_CHIPID_Bits',0,10,227,1,3
-	.word	13003
+	.word	12998
 	.byte	10
 	.byte	'_Ifx_SCU_DTSCON_Bits',0,10,230,1,16,4,11
 	.byte	'PWD',0,1
@@ -2576,7 +2554,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_DTSCON_Bits',0,10,238,1,3
-	.word	13211
+	.word	13206
 	.byte	10
 	.byte	'_Ifx_SCU_DTSLIM_Bits',0,10,241,1,16,4,11
 	.byte	'LOWER',0,2
@@ -2601,7 +2579,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_DTSLIM_Bits',0,10,250,1,3
-	.word	13376
+	.word	13371
 	.byte	10
 	.byte	'_Ifx_SCU_DTSSTAT_Bits',0,10,253,1,16,4,11
 	.byte	'RESULT',0,2
@@ -2620,7 +2598,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	16,0,2,35,2,0,28
 	.byte	'Ifx_SCU_DTSSTAT_Bits',0,10,132,2,3
-	.word	13559
+	.word	13554
 	.byte	10
 	.byte	'_Ifx_SCU_EICR_Bits',0,10,135,2,16,4,11
 	.byte	'reserved_0',0,1
@@ -2675,7 +2653,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EICR_Bits',0,10,154,2,3
-	.word	13713
+	.word	13708
 	.byte	10
 	.byte	'_Ifx_SCU_EIFR_Bits',0,10,157,2,16,4,11
 	.byte	'INTF0',0,1
@@ -2706,7 +2684,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	24,0,2,35,0,0,28
 	.byte	'Ifx_SCU_EIFR_Bits',0,10,168,2,3
-	.word	14077
+	.word	14072
 	.byte	10
 	.byte	'_Ifx_SCU_EMSR_Bits',0,10,171,2,16,4,11
 	.byte	'POL',0,1
@@ -2743,7 +2721,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	4,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EMSR_Bits',0,10,184,2,3
-	.word	14288
+	.word	14283
 	.byte	10
 	.byte	'_Ifx_SCU_ESRCFG_Bits',0,10,187,2,16,4,11
 	.byte	'reserved_0',0,1
@@ -2756,7 +2734,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	23,0,2,35,0,0,28
 	.byte	'Ifx_SCU_ESRCFG_Bits',0,10,192,2,3
-	.word	14540
+	.word	14535
 	.byte	10
 	.byte	'_Ifx_SCU_ESROCFG_Bits',0,10,195,2,16,4,11
 	.byte	'ARI',0,1
@@ -2769,7 +2747,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	30,0,2,35,0,0,28
 	.byte	'Ifx_SCU_ESROCFG_Bits',0,10,200,2,3
-	.word	14658
+	.word	14653
 	.byte	10
 	.byte	'_Ifx_SCU_EVR13CON_Bits',0,10,203,2,16,4,11
 	.byte	'reserved_0',0,4
@@ -2788,7 +2766,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVR13CON_Bits',0,10,210,2,3
-	.word	14769
+	.word	14764
 	.byte	10
 	.byte	'_Ifx_SCU_EVR33CON_Bits',0,10,213,2,16,4,11
 	.byte	'reserved_0',0,4
@@ -2807,7 +2785,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVR33CON_Bits',0,10,220,2,3
-	.word	14932
+	.word	14927
 	.byte	10
 	.byte	'_Ifx_SCU_EVRADCSTAT_Bits',0,10,223,2,16,4,11
 	.byte	'ADC13V',0,1
@@ -2826,7 +2804,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRADCSTAT_Bits',0,10,230,2,3
-	.word	15095
+	.word	15090
 	.byte	10
 	.byte	'_Ifx_SCU_EVRDVSTAT_Bits',0,10,233,2,16,4,11
 	.byte	'DVS13TRIM',0,1
@@ -2845,7 +2823,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRDVSTAT_Bits',0,10,240,2,3
-	.word	15253
+	.word	15248
 	.byte	10
 	.byte	'_Ifx_SCU_EVRMONCTRL_Bits',0,10,243,2,16,4,11
 	.byte	'EVR13OVMOD',0,1
@@ -2891,7 +2869,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRMONCTRL_Bits',0,10,131,3,3
-	.word	15418
+	.word	15413
 	.byte	10
 	.byte	'_Ifx_SCU_EVROVMON_Bits',0,10,134,3,16,4,11
 	.byte	'EVR13OVVAL',0,1
@@ -2913,7 +2891,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVROVMON_Bits',0,10,142,3,3
-	.word	15786
+	.word	15781
 	.byte	10
 	.byte	'_Ifx_SCU_EVRRSTCON_Bits',0,10,145,3,16,4,11
 	.byte	'RST13TRIM',0,1
@@ -2947,7 +2925,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRRSTCON_Bits',0,10,157,3,3
-	.word	15965
+	.word	15960
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCOEFF1_Bits',0,10,160,3,16,4,11
 	.byte	'SD5P',0,1
@@ -2966,7 +2944,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRSDCOEFF1_Bits',0,10,167,3,3
-	.word	16230
+	.word	16225
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCOEFF2_Bits',0,10,170,3,16,4,11
 	.byte	'SD33P',0,1
@@ -2985,7 +2963,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRSDCOEFF2_Bits',0,10,177,3,3
-	.word	16383
+	.word	16378
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCOEFF3_Bits',0,10,180,3,16,4,11
 	.byte	'CT5REG0',0,1
@@ -3004,7 +2982,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRSDCOEFF3_Bits',0,10,187,3,3
-	.word	16539
+	.word	16534
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCOEFF4_Bits',0,10,190,3,16,4,11
 	.byte	'CT5REG3',0,1
@@ -3020,7 +2998,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRSDCOEFF4_Bits',0,10,196,3,3
-	.word	16701
+	.word	16696
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCOEFF5_Bits',0,10,199,3,16,4,11
 	.byte	'CT33REG0',0,1
@@ -3039,7 +3017,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRSDCOEFF5_Bits',0,10,206,3,3
-	.word	16844
+	.word	16839
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCOEFF6_Bits',0,10,209,3,16,4,11
 	.byte	'CT33REG3',0,1
@@ -3055,7 +3033,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRSDCOEFF6_Bits',0,10,215,3,3
-	.word	17009
+	.word	17004
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCTRL1_Bits',0,10,218,3,16,4,11
 	.byte	'SDFREQSPRD',0,2
@@ -3077,7 +3055,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRSDCTRL1_Bits',0,10,226,3,3
-	.word	17154
+	.word	17149
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCTRL2_Bits',0,10,229,3,16,4,11
 	.byte	'DRVP',0,1
@@ -3099,7 +3077,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRSDCTRL2_Bits',0,10,237,3,3
-	.word	17335
+	.word	17330
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCTRL3_Bits',0,10,240,3,16,4,11
 	.byte	'SDPWMPRE',0,1
@@ -3118,7 +3096,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRSDCTRL3_Bits',0,10,247,3,3
-	.word	17509
+	.word	17504
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSDCTRL4_Bits',0,10,250,3,16,4,11
 	.byte	'reserved_0',0,1
@@ -3134,7 +3112,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRSDCTRL4_Bits',0,10,128,4,3
-	.word	17669
+	.word	17664
 	.byte	10
 	.byte	'_Ifx_SCU_EVRSTAT_Bits',0,10,131,4,16,4,11
 	.byte	'EVR13',0,1
@@ -3174,7 +3152,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	21,0,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRSTAT_Bits',0,10,145,4,3
-	.word	17813
+	.word	17808
 	.byte	10
 	.byte	'_Ifx_SCU_EVRTRIM_Bits',0,10,148,4,16,4,11
 	.byte	'EVR13TRIM',0,1
@@ -3193,7 +3171,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRTRIM_Bits',0,10,155,4,3
-	.word	18087
+	.word	18082
 	.byte	10
 	.byte	'_Ifx_SCU_EVRUVMON_Bits',0,10,158,4,16,4,11
 	.byte	'EVR13UVVAL',0,1
@@ -3215,7 +3193,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EVRUVMON_Bits',0,10,166,4,3
-	.word	18242
+	.word	18237
 	.byte	10
 	.byte	'_Ifx_SCU_EXTCON_Bits',0,10,169,4,16,4,11
 	.byte	'EN0',0,1
@@ -3246,7 +3224,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	8,0,2,35,3,0,28
 	.byte	'Ifx_SCU_EXTCON_Bits',0,10,180,4,3
-	.word	18421
+	.word	18416
 	.byte	10
 	.byte	'_Ifx_SCU_FDR_Bits',0,10,183,4,16,4,11
 	.byte	'STEP',0,2
@@ -3268,7 +3246,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_FDR_Bits',0,10,191,4,3
-	.word	18639
+	.word	18634
 	.byte	10
 	.byte	'_Ifx_SCU_FMR_Bits',0,10,194,4,16,4,11
 	.byte	'FS0',0,1
@@ -3326,7 +3304,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	8,0,2,35,3,0,28
 	.byte	'Ifx_SCU_FMR_Bits',0,10,214,4,3
-	.word	18802
+	.word	18797
 	.byte	10
 	.byte	'_Ifx_SCU_ID_Bits',0,10,217,4,16,4,11
 	.byte	'MODREV',0,1
@@ -3339,7 +3317,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	16,0,2,35,2,0,28
 	.byte	'Ifx_SCU_ID_Bits',0,10,222,4,3
-	.word	19138
+	.word	19133
 	.byte	10
 	.byte	'_Ifx_SCU_IGCR_Bits',0,10,225,4,16,4,11
 	.byte	'IPEN00',0,1
@@ -3409,7 +3387,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	2,0,2,35,3,0,28
 	.byte	'Ifx_SCU_IGCR_Bits',0,10,249,4,3
-	.word	19245
+	.word	19240
 	.byte	10
 	.byte	'_Ifx_SCU_IN_Bits',0,10,252,4,16,4,11
 	.byte	'P0',0,1
@@ -3422,7 +3400,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	30,0,2,35,0,0,28
 	.byte	'Ifx_SCU_IN_Bits',0,10,129,5,3
-	.word	19697
+	.word	19692
 	.byte	10
 	.byte	'_Ifx_SCU_IOCR_Bits',0,10,132,5,16,4,11
 	.byte	'reserved_0',0,1
@@ -3441,7 +3419,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	16,0,2,35,2,0,28
 	.byte	'Ifx_SCU_IOCR_Bits',0,10,139,5,3
-	.word	19796
+	.word	19791
 	.byte	10
 	.byte	'_Ifx_SCU_LBISTCTRL0_Bits',0,10,142,5,16,4,11
 	.byte	'LBISTREQ',0,1
@@ -3457,7 +3435,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	16,0,2,35,2,0,28
 	.byte	'Ifx_SCU_LBISTCTRL0_Bits',0,10,148,5,3
-	.word	19946
+	.word	19941
 	.byte	10
 	.byte	'_Ifx_SCU_LBISTCTRL1_Bits',0,10,151,5,16,4,11
 	.byte	'SEED',0,4
@@ -3476,7 +3454,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	4,0,2,35,3,0,28
 	.byte	'Ifx_SCU_LBISTCTRL1_Bits',0,10,158,5,3
-	.word	20095
+	.word	20090
 	.byte	10
 	.byte	'_Ifx_SCU_LBISTCTRL2_Bits',0,10,161,5,16,4,11
 	.byte	'SIGNATURE',0,4
@@ -3489,7 +3467,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_LBISTCTRL2_Bits',0,10,166,5,3
-	.word	20256
+	.word	20251
 	.byte	10
 	.byte	'_Ifx_SCU_LCLCON_Bits',0,10,169,5,16,4,11
 	.byte	'reserved_0',0,2
@@ -3505,7 +3483,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_LCLCON_Bits',0,10,175,5,3
-	.word	20386
+	.word	20381
 	.byte	10
 	.byte	'_Ifx_SCU_LCLTEST_Bits',0,10,178,5,16,4,11
 	.byte	'LCLT0',0,1
@@ -3518,7 +3496,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	30,0,2,35,0,0,28
 	.byte	'Ifx_SCU_LCLTEST_Bits',0,10,183,5,3
-	.word	20518
+	.word	20513
 	.byte	10
 	.byte	'_Ifx_SCU_MANID_Bits',0,10,186,5,16,4,11
 	.byte	'DEPT',0,1
@@ -3531,7 +3509,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	16,0,2,35,2,0,28
 	.byte	'Ifx_SCU_MANID_Bits',0,10,191,5,3
-	.word	20633
+	.word	20628
 	.byte	10
 	.byte	'_Ifx_SCU_OMR_Bits',0,10,194,5,16,4,11
 	.byte	'PS0',0,1
@@ -3553,7 +3531,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	14,0,2,35,2,0,28
 	.byte	'Ifx_SCU_OMR_Bits',0,10,202,5,3
-	.word	20744
+	.word	20739
 	.byte	10
 	.byte	'_Ifx_SCU_OSCCON_Bits',0,10,205,5,16,4,11
 	.byte	'reserved_0',0,1
@@ -3614,7 +3592,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	4,0,2,35,3,0,28
 	.byte	'Ifx_SCU_OSCCON_Bits',0,10,226,5,3
-	.word	20902
+	.word	20897
 	.byte	10
 	.byte	'_Ifx_SCU_OUT_Bits',0,10,229,5,16,4,11
 	.byte	'P0',0,1
@@ -3627,7 +3605,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	30,0,2,35,0,0,28
 	.byte	'Ifx_SCU_OUT_Bits',0,10,234,5,3
-	.word	21314
+	.word	21309
 	.byte	10
 	.byte	'_Ifx_SCU_OVCCON_Bits',0,10,237,5,16,4,11
 	.byte	'CSEL0',0,1
@@ -3664,7 +3642,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	6,0,2,35,3,0,28
 	.byte	'Ifx_SCU_OVCCON_Bits',0,10,250,5,3
-	.word	21415
+	.word	21410
 	.byte	10
 	.byte	'_Ifx_SCU_OVCENABLE_Bits',0,10,253,5,16,4,11
 	.byte	'OVEN0',0,1
@@ -3680,7 +3658,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	29,0,2,35,0,0,28
 	.byte	'Ifx_SCU_OVCENABLE_Bits',0,10,131,6,3
-	.word	21682
+	.word	21677
 	.byte	10
 	.byte	'_Ifx_SCU_PDISC_Bits',0,10,134,6,16,4,11
 	.byte	'PDIS0',0,1
@@ -3693,7 +3671,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	30,0,2,35,0,0,28
 	.byte	'Ifx_SCU_PDISC_Bits',0,10,139,6,3
-	.word	21818
+	.word	21813
 	.byte	10
 	.byte	'_Ifx_SCU_PDR_Bits',0,10,142,6,16,4,11
 	.byte	'PD0',0,1
@@ -3712,7 +3690,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	24,0,2,35,0,0,28
 	.byte	'Ifx_SCU_PDR_Bits',0,10,149,6,3
-	.word	21929
+	.word	21924
 	.byte	10
 	.byte	'_Ifx_SCU_PDRR_Bits',0,10,152,6,16,4,11
 	.byte	'PDR0',0,1
@@ -3743,7 +3721,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	24,0,2,35,0,0,28
 	.byte	'Ifx_SCU_PDRR_Bits',0,10,163,6,3
-	.word	22062
+	.word	22057
 	.byte	10
 	.byte	'_Ifx_SCU_PLLCON0_Bits',0,10,166,6,16,4,11
 	.byte	'VCOBYP',0,1
@@ -3792,7 +3770,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	4,0,2,35,3,0,28
 	.byte	'Ifx_SCU_PLLCON0_Bits',0,10,183,6,3
-	.word	22265
+	.word	22260
 	.byte	10
 	.byte	'_Ifx_SCU_PLLCON1_Bits',0,10,186,6,16,4,11
 	.byte	'K2DIV',0,1
@@ -3814,7 +3792,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	9,0,2,35,2,0,28
 	.byte	'Ifx_SCU_PLLCON1_Bits',0,10,194,6,3
-	.word	22621
+	.word	22616
 	.byte	10
 	.byte	'_Ifx_SCU_PLLCON2_Bits',0,10,197,6,16,4,11
 	.byte	'MODCFG',0,2
@@ -3824,7 +3802,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	16,0,2,35,2,0,28
 	.byte	'Ifx_SCU_PLLCON2_Bits',0,10,201,6,3
-	.word	22799
+	.word	22794
 	.byte	10
 	.byte	'_Ifx_SCU_PLLERAYCON0_Bits',0,10,204,6,16,4,11
 	.byte	'VCOBYP',0,1
@@ -3873,7 +3851,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	4,0,2,35,3,0,28
 	.byte	'Ifx_SCU_PLLERAYCON0_Bits',0,10,221,6,3
-	.word	22899
+	.word	22894
 	.byte	10
 	.byte	'_Ifx_SCU_PLLERAYCON1_Bits',0,10,224,6,16,4,11
 	.byte	'K2DIV',0,1
@@ -3895,7 +3873,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	9,0,2,35,2,0,28
 	.byte	'Ifx_SCU_PLLERAYCON1_Bits',0,10,232,6,3
-	.word	23269
+	.word	23264
 	.byte	10
 	.byte	'_Ifx_SCU_PLLERAYSTAT_Bits',0,10,235,6,16,4,11
 	.byte	'VCOBYST',0,1
@@ -3920,7 +3898,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	26,0,2,35,0,0,28
 	.byte	'Ifx_SCU_PLLERAYSTAT_Bits',0,10,244,6,3
-	.word	23455
+	.word	23450
 	.byte	10
 	.byte	'_Ifx_SCU_PLLSTAT_Bits',0,10,247,6,16,4,11
 	.byte	'VCOBYST',0,1
@@ -3951,7 +3929,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	24,0,2,35,0,0,28
 	.byte	'Ifx_SCU_PLLSTAT_Bits',0,10,130,7,3
-	.word	23653
+	.word	23648
 	.byte	10
 	.byte	'_Ifx_SCU_PMCSR_Bits',0,10,133,7,16,4,11
 	.byte	'REQSLP',0,1
@@ -3970,7 +3948,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	21,0,2,35,0,0,28
 	.byte	'Ifx_SCU_PMCSR_Bits',0,10,140,7,3
-	.word	23886
+	.word	23881
 	.byte	10
 	.byte	'_Ifx_SCU_PMSWCR0_Bits',0,10,143,7,16,4,11
 	.byte	'reserved_0',0,1
@@ -4046,7 +4024,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_PMSWCR0_Bits',0,10,169,7,3
-	.word	24038
+	.word	24033
 	.byte	10
 	.byte	'_Ifx_SCU_PMSWCR1_Bits',0,10,172,7,16,4,11
 	.byte	'reserved_0',0,1
@@ -4077,7 +4055,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	1,0,2,35,3,0,28
 	.byte	'Ifx_SCU_PMSWCR1_Bits',0,10,183,7,3
-	.word	24586
+	.word	24581
 	.byte	10
 	.byte	'_Ifx_SCU_PMSWSTAT_Bits',0,10,186,7,16,4,11
 	.byte	'reserved_0',0,1
@@ -4141,7 +4119,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	4,0,2,35,3,0,28
 	.byte	'Ifx_SCU_PMSWSTAT_Bits',0,10,208,7,3
-	.word	24831
+	.word	24826
 	.byte	10
 	.byte	'_Ifx_SCU_PMSWSTATCLR_Bits',0,10,211,7,16,4,11
 	.byte	'reserved_0',0,1
@@ -4172,7 +4150,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	23,0,2,35,0,0,28
 	.byte	'Ifx_SCU_PMSWSTATCLR_Bits',0,10,222,7,3
-	.word	25292
+	.word	25287
 	.byte	10
 	.byte	'_Ifx_SCU_RSTCON2_Bits',0,10,225,7,16,4,11
 	.byte	'reserved_0',0,1
@@ -4200,7 +4178,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	16,0,2,35,2,0,28
 	.byte	'Ifx_SCU_RSTCON2_Bits',0,10,235,7,3
-	.word	25562
+	.word	25557
 	.byte	10
 	.byte	'_Ifx_SCU_RSTCON_Bits',0,10,238,7,16,4,11
 	.byte	'ESR0',0,1
@@ -4231,7 +4209,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	16,0,2,35,2,0,28
 	.byte	'Ifx_SCU_RSTCON_Bits',0,10,249,7,3
-	.word	25771
+	.word	25766
 	.byte	10
 	.byte	'_Ifx_SCU_RSTSTAT_Bits',0,10,252,7,16,4,11
 	.byte	'ESR0',0,1
@@ -4298,7 +4276,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	3,0,2,35,3,0,28
 	.byte	'Ifx_SCU_RSTSTAT_Bits',0,10,147,8,3
-	.word	25982
+	.word	25977
 	.byte	10
 	.byte	'_Ifx_SCU_SAFECON_Bits',0,10,150,8,16,4,11
 	.byte	'HBT',0,1
@@ -4308,7 +4286,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	31,0,2,35,0,0,28
 	.byte	'Ifx_SCU_SAFECON_Bits',0,10,154,8,3
-	.word	26414
+	.word	26409
 	.byte	10
 	.byte	'_Ifx_SCU_STSTAT_Bits',0,10,157,8,16,4,11
 	.byte	'HWCFG',0,1
@@ -4345,7 +4323,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	427
 	.byte	7,0,2,35,3,0,28
 	.byte	'Ifx_SCU_STSTAT_Bits',0,10,170,8,3
-	.word	26510
+	.word	26505
 	.byte	10
 	.byte	'_Ifx_SCU_SWRSTCON_Bits',0,10,173,8,16,4,11
 	.byte	'reserved_0',0,1
@@ -4358,7 +4336,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	30,0,2,35,0,0,28
 	.byte	'Ifx_SCU_SWRSTCON_Bits',0,10,178,8,3
-	.word	26776
+	.word	26771
 	.byte	10
 	.byte	'_Ifx_SCU_SYSCON_Bits',0,10,181,8,16,4,11
 	.byte	'CCTRIG0',0,1
@@ -4383,7 +4361,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	23,0,2,35,0,0,28
 	.byte	'Ifx_SCU_SYSCON_Bits',0,10,190,8,3
-	.word	26901
+	.word	26896
 	.byte	10
 	.byte	'_Ifx_SCU_TRAPCLR_Bits',0,10,193,8,16,4,11
 	.byte	'ESR0T',0,1
@@ -4402,7 +4380,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	28,0,2,35,0,0,28
 	.byte	'Ifx_SCU_TRAPCLR_Bits',0,10,200,8,3
-	.word	27098
+	.word	27093
 	.byte	10
 	.byte	'_Ifx_SCU_TRAPDIS_Bits',0,10,203,8,16,4,11
 	.byte	'ESR0T',0,1
@@ -4421,7 +4399,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	28,0,2,35,0,0,28
 	.byte	'Ifx_SCU_TRAPDIS_Bits',0,10,210,8,3
-	.word	27251
+	.word	27246
 	.byte	10
 	.byte	'_Ifx_SCU_TRAPSET_Bits',0,10,213,8,16,4,11
 	.byte	'ESR0T',0,1
@@ -4440,7 +4418,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	28,0,2,35,0,0,28
 	.byte	'Ifx_SCU_TRAPSET_Bits',0,10,220,8,3
-	.word	27404
+	.word	27399
 	.byte	10
 	.byte	'_Ifx_SCU_TRAPSTAT_Bits',0,10,223,8,16,4,11
 	.byte	'ESR0T',0,1
@@ -4459,24 +4437,24 @@ _999006_cur_enc2_chB:	.type	object
 	.word	444
 	.byte	28,0,2,35,0,0,28
 	.byte	'Ifx_SCU_TRAPSTAT_Bits',0,10,230,8,3
-	.word	27557
+	.word	27552
 	.byte	7
 	.byte	'unsigned int',0,4,7,10
 	.byte	'_Ifx_SCU_WDTCPU_CON0_Bits',0,10,233,8,16,4,11
 	.byte	'ENDINIT',0,4
-	.word	27712
+	.word	27707
 	.byte	1,31,2,35,0,11
 	.byte	'LCK',0,4
-	.word	27712
+	.word	27707
 	.byte	1,30,2,35,0,11
 	.byte	'PW',0,4
-	.word	27712
+	.word	27707
 	.byte	14,16,2,35,0,11
 	.byte	'REL',0,4
-	.word	27712
+	.word	27707
 	.byte	16,0,2,35,0,0,28
 	.byte	'Ifx_SCU_WDTCPU_CON0_Bits',0,10,239,8,3
-	.word	27728
+	.word	27723
 	.byte	10
 	.byte	'_Ifx_SCU_WDTCPU_CON1_Bits',0,10,242,8,16,4,11
 	.byte	'reserved_0',0,1
@@ -4510,7 +4488,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	16,0,2,35,2,0,28
 	.byte	'Ifx_SCU_WDTCPU_CON1_Bits',0,10,254,8,3
-	.word	27858
+	.word	27853
 	.byte	10
 	.byte	'_Ifx_SCU_WDTCPU_SR_Bits',0,10,129,9,16,4,11
 	.byte	'AE',0,1
@@ -4547,23 +4525,23 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	16,0,2,35,2,0,28
 	.byte	'Ifx_SCU_WDTCPU_SR_Bits',0,10,142,9,3
-	.word	28096
+	.word	28091
 	.byte	10
 	.byte	'_Ifx_SCU_WDTS_CON0_Bits',0,10,145,9,16,4,11
 	.byte	'ENDINIT',0,4
-	.word	27712
+	.word	27707
 	.byte	1,31,2,35,0,11
 	.byte	'LCK',0,4
-	.word	27712
+	.word	27707
 	.byte	1,30,2,35,0,11
 	.byte	'PW',0,4
-	.word	27712
+	.word	27707
 	.byte	14,16,2,35,0,11
 	.byte	'REL',0,4
-	.word	27712
+	.word	27707
 	.byte	16,0,2,35,0,0,28
 	.byte	'Ifx_SCU_WDTS_CON0_Bits',0,10,151,9,3
-	.word	28319
+	.word	28314
 	.byte	10
 	.byte	'_Ifx_SCU_WDTS_CON1_Bits',0,10,154,9,16,4,11
 	.byte	'CLRIRF',0,1
@@ -4600,7 +4578,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	16,0,2,35,2,0,28
 	.byte	'Ifx_SCU_WDTS_CON1_Bits',0,10,167,9,3
-	.word	28445
+	.word	28440
 	.byte	10
 	.byte	'_Ifx_SCU_WDTS_SR_Bits',0,10,170,9,16,4,11
 	.byte	'AE',0,1
@@ -4637,7 +4615,7 @@ _999006_cur_enc2_chB:	.type	object
 	.word	467
 	.byte	16,0,2,35,2,0,28
 	.byte	'Ifx_SCU_WDTS_SR_Bits',0,10,183,9,3
-	.word	28697
+	.word	28692
 	.byte	12,10,191,9,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4646,10 +4624,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	10678
+	.word	10673
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_ACCEN0',0,10,196,9,3
-	.word	28916
+	.word	28911
 	.byte	12,10,199,9,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4658,10 +4636,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	11235
+	.word	11230
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_ACCEN1',0,10,204,9,3
-	.word	28980
+	.word	28975
 	.byte	12,10,207,9,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4670,10 +4648,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	11312
+	.word	11307
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_ARSTDIS',0,10,212,9,3
-	.word	29044
+	.word	29039
 	.byte	12,10,215,9,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4682,10 +4660,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	11448
+	.word	11443
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_CCUCON0',0,10,220,9,3
-	.word	29109
+	.word	29104
 	.byte	12,10,223,9,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4694,10 +4672,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	11729
+	.word	11724
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_CCUCON1',0,10,228,9,3
-	.word	29174
+	.word	29169
 	.byte	12,10,231,9,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4706,10 +4684,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	11969
+	.word	11964
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_CCUCON2',0,10,236,9,3
-	.word	29239
+	.word	29234
 	.byte	12,10,239,9,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4718,10 +4696,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	12097
+	.word	12092
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_CCUCON3',0,10,244,9,3
-	.word	29304
+	.word	29299
 	.byte	12,10,247,9,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4730,10 +4708,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	12340
+	.word	12335
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_CCUCON4',0,10,252,9,3
-	.word	29369
+	.word	29364
 	.byte	12,10,255,9,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4742,10 +4720,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	12575
+	.word	12570
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_CCUCON5',0,10,132,10,3
-	.word	29434
+	.word	29429
 	.byte	12,10,135,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4754,10 +4732,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	12703
+	.word	12698
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_CCUCON6',0,10,140,10,3
-	.word	29499
+	.word	29494
 	.byte	12,10,143,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4766,10 +4744,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	12803
+	.word	12798
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_CCUCON7',0,10,148,10,3
-	.word	29564
+	.word	29559
 	.byte	12,10,151,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4778,10 +4756,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	12903
+	.word	12898
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_CCUCON8',0,10,156,10,3
-	.word	29629
+	.word	29624
 	.byte	12,10,159,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4790,10 +4768,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	13003
+	.word	12998
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_CHIPID',0,10,164,10,3
-	.word	29694
+	.word	29689
 	.byte	12,10,167,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4802,10 +4780,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	13211
+	.word	13206
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_DTSCON',0,10,172,10,3
-	.word	29758
+	.word	29753
 	.byte	12,10,175,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4814,10 +4792,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	13376
+	.word	13371
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_DTSLIM',0,10,180,10,3
-	.word	29822
+	.word	29817
 	.byte	12,10,183,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4826,10 +4804,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	13559
+	.word	13554
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_DTSSTAT',0,10,188,10,3
-	.word	29886
+	.word	29881
 	.byte	12,10,191,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4838,10 +4816,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	13713
+	.word	13708
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EICR',0,10,196,10,3
-	.word	29951
+	.word	29946
 	.byte	12,10,199,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4850,10 +4828,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	14077
+	.word	14072
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EIFR',0,10,204,10,3
-	.word	30013
+	.word	30008
 	.byte	12,10,207,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4862,10 +4840,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	14288
+	.word	14283
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EMSR',0,10,212,10,3
-	.word	30075
+	.word	30070
 	.byte	12,10,215,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4874,10 +4852,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	14540
+	.word	14535
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_ESRCFG',0,10,220,10,3
-	.word	30137
+	.word	30132
 	.byte	12,10,223,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4886,10 +4864,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	14658
+	.word	14653
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_ESROCFG',0,10,228,10,3
-	.word	30201
+	.word	30196
 	.byte	12,10,231,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4898,10 +4876,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	14769
+	.word	14764
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVR13CON',0,10,236,10,3
-	.word	30266
+	.word	30261
 	.byte	12,10,239,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4910,10 +4888,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	14932
+	.word	14927
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVR33CON',0,10,244,10,3
-	.word	30332
+	.word	30327
 	.byte	12,10,247,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4922,10 +4900,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	15095
+	.word	15090
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRADCSTAT',0,10,252,10,3
-	.word	30398
+	.word	30393
 	.byte	12,10,255,10,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4934,10 +4912,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	15253
+	.word	15248
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRDVSTAT',0,10,132,11,3
-	.word	30466
+	.word	30461
 	.byte	12,10,135,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4946,10 +4924,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	15418
+	.word	15413
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRMONCTRL',0,10,140,11,3
-	.word	30533
+	.word	30528
 	.byte	12,10,143,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4958,10 +4936,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	15786
+	.word	15781
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVROVMON',0,10,148,11,3
-	.word	30601
+	.word	30596
 	.byte	12,10,151,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4970,10 +4948,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	15965
+	.word	15960
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRRSTCON',0,10,156,11,3
-	.word	30667
+	.word	30662
 	.byte	12,10,159,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4982,10 +4960,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	16230
+	.word	16225
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRSDCOEFF1',0,10,164,11,3
-	.word	30734
+	.word	30729
 	.byte	12,10,167,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -4994,10 +4972,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	16383
+	.word	16378
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRSDCOEFF2',0,10,172,11,3
-	.word	30803
+	.word	30798
 	.byte	12,10,175,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5006,10 +4984,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	16539
+	.word	16534
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRSDCOEFF3',0,10,180,11,3
-	.word	30872
+	.word	30867
 	.byte	12,10,183,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5018,10 +4996,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	16701
+	.word	16696
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRSDCOEFF4',0,10,188,11,3
-	.word	30941
+	.word	30936
 	.byte	12,10,191,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5030,10 +5008,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	16844
+	.word	16839
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRSDCOEFF5',0,10,196,11,3
-	.word	31010
+	.word	31005
 	.byte	12,10,199,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5042,10 +5020,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	17009
+	.word	17004
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRSDCOEFF6',0,10,204,11,3
-	.word	31079
+	.word	31074
 	.byte	12,10,207,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5054,10 +5032,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	17154
+	.word	17149
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRSDCTRL1',0,10,212,11,3
-	.word	31148
+	.word	31143
 	.byte	12,10,215,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5066,10 +5044,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	17335
+	.word	17330
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRSDCTRL2',0,10,220,11,3
-	.word	31216
+	.word	31211
 	.byte	12,10,223,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5078,10 +5056,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	17509
+	.word	17504
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRSDCTRL3',0,10,228,11,3
-	.word	31284
+	.word	31279
 	.byte	12,10,231,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5090,10 +5068,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	17669
+	.word	17664
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRSDCTRL4',0,10,236,11,3
-	.word	31352
+	.word	31347
 	.byte	12,10,239,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5102,10 +5080,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	17813
+	.word	17808
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRSTAT',0,10,244,11,3
-	.word	31420
+	.word	31415
 	.byte	12,10,247,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5114,10 +5092,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	18087
+	.word	18082
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRTRIM',0,10,252,11,3
-	.word	31485
+	.word	31480
 	.byte	12,10,255,11,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5126,10 +5104,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	18242
+	.word	18237
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EVRUVMON',0,10,132,12,3
-	.word	31550
+	.word	31545
 	.byte	12,10,135,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5138,10 +5116,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	18421
+	.word	18416
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_EXTCON',0,10,140,12,3
-	.word	31616
+	.word	31611
 	.byte	12,10,143,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5150,10 +5128,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	18639
+	.word	18634
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_FDR',0,10,148,12,3
-	.word	31680
+	.word	31675
 	.byte	12,10,151,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5162,10 +5140,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	18802
+	.word	18797
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_FMR',0,10,156,12,3
-	.word	31741
+	.word	31736
 	.byte	12,10,159,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5174,10 +5152,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	19138
+	.word	19133
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_ID',0,10,164,12,3
-	.word	31802
+	.word	31797
 	.byte	12,10,167,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5186,10 +5164,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	19245
+	.word	19240
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_IGCR',0,10,172,12,3
-	.word	31862
+	.word	31857
 	.byte	12,10,175,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5198,10 +5176,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	19697
+	.word	19692
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_IN',0,10,180,12,3
-	.word	31924
+	.word	31919
 	.byte	12,10,183,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5210,10 +5188,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	19796
+	.word	19791
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_IOCR',0,10,188,12,3
-	.word	31984
+	.word	31979
 	.byte	12,10,191,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5222,10 +5200,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	19946
+	.word	19941
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_LBISTCTRL0',0,10,196,12,3
-	.word	32046
+	.word	32041
 	.byte	12,10,199,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5234,10 +5212,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	20095
+	.word	20090
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_LBISTCTRL1',0,10,204,12,3
-	.word	32114
+	.word	32109
 	.byte	12,10,207,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5246,10 +5224,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	20256
+	.word	20251
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_LBISTCTRL2',0,10,212,12,3
-	.word	32182
+	.word	32177
 	.byte	12,10,215,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5258,10 +5236,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	20386
+	.word	20381
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_LCLCON',0,10,220,12,3
-	.word	32250
+	.word	32245
 	.byte	12,10,223,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5270,10 +5248,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	20518
+	.word	20513
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_LCLTEST',0,10,228,12,3
-	.word	32314
+	.word	32309
 	.byte	12,10,231,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5282,10 +5260,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	20633
+	.word	20628
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_MANID',0,10,236,12,3
-	.word	32379
+	.word	32374
 	.byte	12,10,239,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5294,10 +5272,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	20744
+	.word	20739
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_OMR',0,10,244,12,3
-	.word	32442
+	.word	32437
 	.byte	12,10,247,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5306,10 +5284,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	20902
+	.word	20897
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_OSCCON',0,10,252,12,3
-	.word	32503
+	.word	32498
 	.byte	12,10,255,12,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5318,10 +5296,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	21314
+	.word	21309
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_OUT',0,10,132,13,3
-	.word	32567
+	.word	32562
 	.byte	12,10,135,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5330,10 +5308,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	21415
+	.word	21410
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_OVCCON',0,10,140,13,3
-	.word	32628
+	.word	32623
 	.byte	12,10,143,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5342,10 +5320,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	21682
+	.word	21677
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_OVCENABLE',0,10,148,13,3
-	.word	32692
+	.word	32687
 	.byte	12,10,151,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5354,10 +5332,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	21818
+	.word	21813
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PDISC',0,10,156,13,3
-	.word	32759
+	.word	32754
 	.byte	12,10,159,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5366,10 +5344,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	21929
+	.word	21924
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PDR',0,10,164,13,3
-	.word	32822
+	.word	32817
 	.byte	12,10,167,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5378,10 +5356,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	22062
+	.word	22057
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PDRR',0,10,172,13,3
-	.word	32883
+	.word	32878
 	.byte	12,10,175,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5390,10 +5368,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	22265
+	.word	22260
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PLLCON0',0,10,180,13,3
-	.word	32945
+	.word	32940
 	.byte	12,10,183,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5402,10 +5380,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	22621
+	.word	22616
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PLLCON1',0,10,188,13,3
-	.word	33010
+	.word	33005
 	.byte	12,10,191,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5414,10 +5392,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	22799
+	.word	22794
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PLLCON2',0,10,196,13,3
-	.word	33075
+	.word	33070
 	.byte	12,10,199,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5426,10 +5404,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	22899
+	.word	22894
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PLLERAYCON0',0,10,204,13,3
-	.word	33140
+	.word	33135
 	.byte	12,10,207,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5438,10 +5416,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	23269
+	.word	23264
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PLLERAYCON1',0,10,212,13,3
-	.word	33209
+	.word	33204
 	.byte	12,10,215,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5450,10 +5428,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	23455
+	.word	23450
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PLLERAYSTAT',0,10,220,13,3
-	.word	33278
+	.word	33273
 	.byte	12,10,223,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5462,10 +5440,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	23653
+	.word	23648
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PLLSTAT',0,10,228,13,3
-	.word	33347
+	.word	33342
 	.byte	12,10,231,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5474,10 +5452,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	23886
+	.word	23881
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PMCSR',0,10,236,13,3
-	.word	33412
+	.word	33407
 	.byte	12,10,239,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5486,10 +5464,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	24038
+	.word	24033
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PMSWCR0',0,10,244,13,3
-	.word	33475
+	.word	33470
 	.byte	12,10,247,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5498,10 +5476,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	24586
+	.word	24581
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PMSWCR1',0,10,252,13,3
-	.word	33540
+	.word	33535
 	.byte	12,10,255,13,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5510,10 +5488,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	24831
+	.word	24826
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PMSWSTAT',0,10,132,14,3
-	.word	33605
+	.word	33600
 	.byte	12,10,135,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5522,10 +5500,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	25292
+	.word	25287
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_PMSWSTATCLR',0,10,140,14,3
-	.word	33671
+	.word	33666
 	.byte	12,10,143,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5534,10 +5512,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	25771
+	.word	25766
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_RSTCON',0,10,148,14,3
-	.word	33740
+	.word	33735
 	.byte	12,10,151,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5546,10 +5524,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	25562
+	.word	25557
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_RSTCON2',0,10,156,14,3
-	.word	33804
+	.word	33799
 	.byte	12,10,159,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5558,10 +5536,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	25982
+	.word	25977
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_RSTSTAT',0,10,164,14,3
-	.word	33869
+	.word	33864
 	.byte	12,10,167,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5570,10 +5548,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	26414
+	.word	26409
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_SAFECON',0,10,172,14,3
-	.word	33934
+	.word	33929
 	.byte	12,10,175,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5582,10 +5560,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	26510
+	.word	26505
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_STSTAT',0,10,180,14,3
-	.word	33999
+	.word	33994
 	.byte	12,10,183,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5594,10 +5572,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	26776
+	.word	26771
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_SWRSTCON',0,10,188,14,3
-	.word	34063
+	.word	34058
 	.byte	12,10,191,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5606,10 +5584,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	26901
+	.word	26896
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_SYSCON',0,10,196,14,3
-	.word	34129
+	.word	34124
 	.byte	12,10,199,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5618,10 +5596,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	27098
+	.word	27093
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_TRAPCLR',0,10,204,14,3
-	.word	34193
+	.word	34188
 	.byte	12,10,207,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5630,10 +5608,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	27251
+	.word	27246
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_TRAPDIS',0,10,212,14,3
-	.word	34258
+	.word	34253
 	.byte	12,10,215,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5642,10 +5620,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	27404
+	.word	27399
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_TRAPSET',0,10,220,14,3
-	.word	34323
+	.word	34318
 	.byte	12,10,223,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5654,10 +5632,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	27557
+	.word	27552
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_TRAPSTAT',0,10,228,14,3
-	.word	34388
+	.word	34383
 	.byte	12,10,231,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5666,10 +5644,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	27728
+	.word	27723
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_WDTCPU_CON0',0,10,236,14,3
-	.word	34454
+	.word	34449
 	.byte	12,10,239,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5678,10 +5656,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	27858
+	.word	27853
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_WDTCPU_CON1',0,10,244,14,3
-	.word	34523
+	.word	34518
 	.byte	12,10,247,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5690,10 +5668,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	28096
+	.word	28091
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_WDTCPU_SR',0,10,252,14,3
-	.word	34592
+	.word	34587
 	.byte	12,10,255,14,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5702,10 +5680,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	28319
+	.word	28314
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_WDTS_CON0',0,10,132,15,3
-	.word	34659
+	.word	34654
 	.byte	12,10,135,15,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5714,10 +5692,10 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	28445
+	.word	28440
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_WDTS_CON1',0,10,140,15,3
-	.word	34726
+	.word	34721
 	.byte	12,10,143,15,9,4,13
 	.byte	'U',0
 	.word	444
@@ -5726,47 +5704,47 @@ _999006_cur_enc2_chB:	.type	object
 	.word	460
 	.byte	4,2,35,0,13
 	.byte	'B',0
-	.word	28697
+	.word	28692
 	.byte	4,2,35,0,0,28
 	.byte	'Ifx_SCU_WDTS_SR',0,10,148,15,3
-	.word	34793
+	.word	34788
 	.byte	10
 	.byte	'_Ifx_SCU_WDTCPU',0,10,159,15,25,12,13
 	.byte	'CON0',0
-	.word	34454
+	.word	34449
 	.byte	4,2,35,0,13
 	.byte	'CON1',0
-	.word	34523
+	.word	34518
 	.byte	4,2,35,4,13
 	.byte	'SR',0
-	.word	34592
+	.word	34587
 	.byte	4,2,35,8,0,16
-	.word	34858
+	.word	34853
 	.byte	28
 	.byte	'Ifx_SCU_WDTCPU',0,10,164,15,3
-	.word	34921
+	.word	34916
 	.byte	10
 	.byte	'_Ifx_SCU_WDTS',0,10,167,15,25,12,13
 	.byte	'CON0',0
-	.word	34659
+	.word	34654
 	.byte	4,2,35,0,13
 	.byte	'CON1',0
-	.word	34726
+	.word	34721
 	.byte	4,2,35,4,13
 	.byte	'SR',0
-	.word	34793
+	.word	34788
 	.byte	4,2,35,8,0,16
-	.word	34950
+	.word	34945
 	.byte	28
 	.byte	'Ifx_SCU_WDTS',0,10,172,15,3
-	.word	35011
+	.word	35006
 	.byte	17,3,80,9,1,18
 	.byte	'IfxPort_InputMode_undefined',0,127,18
 	.byte	'IfxPort_InputMode_noPullDevice',0,0,18
 	.byte	'IfxPort_InputMode_pullDown',0,8,18
 	.byte	'IfxPort_InputMode_pullUp',0,16,0,28
 	.byte	'IfxPort_InputMode',0,3,86,3
-	.word	35038
+	.word	35033
 	.byte	17,3,117,9,1,18
 	.byte	'IfxPort_OutputIdx_general',0,128,1,18
 	.byte	'IfxPort_OutputIdx_alt1',0,136,1,18
@@ -5777,13 +5755,13 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	'IfxPort_OutputIdx_alt6',0,176,1,18
 	.byte	'IfxPort_OutputIdx_alt7',0,184,1,0,28
 	.byte	'IfxPort_OutputIdx',0,3,127,3
-	.word	35189
+	.word	35184
 	.byte	17,3,131,1,9,1,18
 	.byte	'IfxPort_OutputMode_none',0,0,18
 	.byte	'IfxPort_OutputMode_pushPull',0,128,1,18
 	.byte	'IfxPort_OutputMode_openDrain',0,192,1,0,28
 	.byte	'IfxPort_OutputMode',0,3,136,1,3
-	.word	35432
+	.word	35427
 	.byte	17,3,142,1,9,1,18
 	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed1',0,0,18
 	.byte	'IfxPort_PadDriver_cmosAutomotiveSpeed2',0,1,18
@@ -5798,7 +5776,7 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	'IfxPort_PadDriver_ttlSpeed3',0,10,18
 	.byte	'IfxPort_PadDriver_ttlSpeed4',0,11,0,28
 	.byte	'IfxPort_PadDriver',0,3,156,1,3
-	.word	35556
+	.word	35551
 	.byte	28
 	.byte	'IfxPort_State',0,3,176,1,3
 	.word	8299
@@ -5820,7 +5798,7 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	1,1,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L36:
+.L42:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
 	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
 	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,3,8,58,15,59,15
@@ -5832,12 +5810,12 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	73,19,0,0,29,21,0,54,15,0,0,30,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L37:
-	.word	.L121-.L120
-.L120:
+.L43:
+	.word	.L136-.L135
+.L135:
 	.half	3
-	.word	.L123-.L122
-.L122:
+	.word	.L138-.L137
+.L137:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D\\\\_Reg',0
 	.byte	'C:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio',0
@@ -5858,618 +5836,572 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	0,0,0
 	.byte	'IfxScu_regdef.h',0,1,0,0
 	.byte	'IfxPort_PinMap.h',0,4,0,0,0
-.L123:
-.L121:
+.L138:
+.L136:
 	.sdecl	'.debug_info',debug,cluster('initEncoder')
 	.sect	'.debug_info'
-.L38:
+.L44:
 	.word	387
 	.half	3
-	.word	.L39
+	.word	.L45
 	.byte	4,1
 	.byte	'../includes/hardware/encoder/encoder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L41,.L40
+	.word	.L47,.L46
 	.byte	2
-	.word	.L34
+	.word	.L40
 	.byte	3
-	.byte	'initEncoder',0,1,20,6,1,1,1
-	.word	.L31,.L56,.L30
+	.byte	'initEncoder',0,1,26,6,1,1,1
+	.word	.L37,.L62,.L36
 	.byte	4
-	.word	.L31,.L56
+	.word	.L37,.L62
 	.byte	5
-	.word	.L57,.L58,.L59
+	.word	.L63,.L64,.L65
 	.byte	6
-	.word	.L60,.L61
+	.word	.L66,.L67
 	.byte	7
-	.word	.L62,.L58,.L59
+	.word	.L68,.L64,.L65
 	.byte	0,5
-	.word	.L57,.L63,.L64
+	.word	.L63,.L69,.L70
 	.byte	6
-	.word	.L60,.L61
+	.word	.L66,.L67
 	.byte	7
-	.word	.L62,.L63,.L64
+	.word	.L68,.L69,.L70
 	.byte	0,5
-	.word	.L57,.L65,.L66
+	.word	.L63,.L71,.L72
 	.byte	6
-	.word	.L60,.L61
+	.word	.L66,.L67
 	.byte	7
-	.word	.L62,.L65,.L66
+	.word	.L68,.L71,.L72
 	.byte	0,5
-	.word	.L57,.L67,.L68
+	.word	.L63,.L73,.L74
 	.byte	6
-	.word	.L60,.L61
+	.word	.L66,.L67
 	.byte	7
-	.word	.L62,.L67,.L68
+	.word	.L68,.L73,.L74
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('initEncoder')
 	.sect	'.debug_abbrev'
-.L39:
+.L45:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,29,1,49,16,17,1,18,1,0,0,6,5,0,49,16,2,6,0,0,7,11
 	.byte	0,49,16,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('initEncoder')
 	.sect	'.debug_line'
-.L40:
-	.word	.L125-.L124
-.L124:
+.L46:
+	.word	.L140-.L139
+.L139:
 	.half	3
-	.word	.L127-.L126
-.L126:
+	.word	.L142-.L141
+.L141:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio',0,0
 	.byte	'../includes/hardware/encoder/encoder.c',0,0,0,0
 	.byte	'gpio.h',0,1,0,0,0
-.L127:
+.L142:
 	.byte	5,17,7,0,5,2
-	.word	.L31
-	.byte	3,21,1,4,2,5,21,9
-	.half	.L58-.L31
-	.byte	3,235,0,1,4,1,5,17,9
-	.half	.L59-.L58
-	.byte	3,150,127,1,4,2,5,21,9
-	.half	.L63-.L59
-	.byte	3,234,0,1,4,1,5,17,9
-	.half	.L64-.L63
-	.byte	3,151,127,1,4,2,5,21,9
+	.word	.L37
+	.byte	3,27,1,4,2,5,21,9
+	.half	.L64-.L37
+	.byte	3,8,1,4,1,5,17,9
 	.half	.L65-.L64
-	.byte	3,233,0,1,4,1,5,17,9
-	.half	.L66-.L65
-	.byte	3,152,127,1,4,2,5,21,9
-	.half	.L67-.L66
-	.byte	3,232,0,1,4,1,5,1,9
-	.half	.L68-.L67
-	.byte	3,153,127,1,7,9
-	.half	.L42-.L68
+	.byte	3,121,1,4,2,5,21,9
+	.half	.L69-.L65
+	.byte	3,7,1,4,1,5,17,9
+	.half	.L70-.L69
+	.byte	3,122,1,4,2,5,21,9
+	.half	.L71-.L70
+	.byte	3,6,1,4,1,5,17,9
+	.half	.L72-.L71
+	.byte	3,123,1,4,2,5,21,9
+	.half	.L73-.L72
+	.byte	3,5,1,4,1,5,1,9
+	.half	.L74-.L73
+	.byte	3,124,1,7,9
+	.half	.L48-.L74
 	.byte	0,1,1
-.L125:
+.L140:
 	.sdecl	'.debug_ranges',debug,cluster('initEncoder')
 	.sect	'.debug_ranges'
-.L41:
-	.word	-1,.L31,0,.L42-.L31,0,0
+.L47:
+	.word	-1,.L37,0,.L48-.L37,0,0
 	.sdecl	'.debug_info',debug,cluster('countEncTicks')
 	.sect	'.debug_info'
-.L43:
-	.word	1252
+.L49:
+	.word	1413
 	.half	3
-	.word	.L44
+	.word	.L50
 	.byte	4,1
 	.byte	'../includes/hardware/encoder/encoder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L46,.L45
+	.word	.L52,.L51
 	.byte	2
-	.word	.L34
+	.word	.L40
 	.byte	3
-	.byte	'countEncTicks',0,1,28,6,1,1,1
-	.word	.L33,.L69,.L32
+	.byte	'countEncTicks',0,1,34,6,1,1,1
+	.word	.L39,.L75,.L38
 	.byte	4
-	.word	.L33,.L69
+	.word	.L39,.L75
 	.byte	5
-	.byte	'prev_enc1_chA',0,1,30,20
-	.word	.L70
+	.byte	'prev_enc1_chA',0,1,37,20
+	.word	.L76
 	.byte	5,3
 	.word	_999001_prev_enc1_chA
 	.byte	5
-	.byte	'prev_enc1_chB',0,1,31,20
-	.word	.L70
+	.byte	'prev_enc1_chB',0,1,38,20
+	.word	.L76
 	.byte	5,3
 	.word	_999002_prev_enc1_chB
 	.byte	5
-	.byte	'prev_enc2_chA',0,1,32,20
-	.word	.L70
+	.byte	'prev_enc2_chA',0,1,39,20
+	.word	.L76
 	.byte	5,3
 	.word	_999003_prev_enc2_chA
 	.byte	5
-	.byte	'prev_enc2_chB',0,1,33,20
-	.word	.L70
+	.byte	'prev_enc2_chB',0,1,40,20
+	.word	.L76
 	.byte	5,3
 	.word	_999004_prev_enc2_chB
 	.byte	6
-	.byte	'cur_enc1_chA',0,1,35,13
-	.word	.L70,.L71
+	.byte	'cur_enc1_chA',0,1,43,13
+	.word	.L76,.L77
 	.byte	6
-	.byte	'cur_enc1_chB',0,1,36,13
-	.word	.L70,.L72
-	.byte	5
-	.byte	'cur_enc2_chA',0,1,37,20
-	.word	.L70
-	.byte	5,3
-	.word	_999005_cur_enc2_chA
-	.byte	5
-	.byte	'cur_enc2_chB',0,1,38,20
-	.word	.L70
-	.byte	5,3
-	.word	_999006_cur_enc2_chB
+	.byte	'cur_enc1_chB',0,1,44,13
+	.word	.L76,.L78
+	.byte	6
+	.byte	'cur_enc2_chA',0,1,45,13
+	.word	.L76,.L79
+	.byte	6
+	.byte	'cur_enc2_chB',0,1,46,13
+	.word	.L76,.L80
 	.byte	7
-	.word	.L73,.L74,.L5
+	.word	.L81,.L82,.L5
 	.byte	8
-	.word	.L75,.L76
+	.word	.L83,.L84
 	.byte	9
-	.word	.L77,.L78
+	.word	.L85,.L86
 	.byte	7
-	.word	.L85,.L86,.L4
+	.word	.L93,.L94,.L4
 	.byte	8
-	.word	.L87,.L88
+	.word	.L95,.L96
 	.byte	8
-	.word	.L89,.L90
+	.word	.L97,.L98
 	.byte	10
-	.word	.L91,.L92
+	.word	.L99,.L100
 	.byte	0,7
-	.word	.L85,.L79,.L80
+	.word	.L93,.L87,.L88
 	.byte	8
-	.word	.L87,.L88
+	.word	.L95,.L96
 	.byte	8
-	.word	.L89,.L90
+	.word	.L97,.L98
 	.byte	0,7
-	.word	.L85,.L81,.L82
+	.word	.L93,.L89,.L90
 	.byte	8
-	.word	.L87,.L88
+	.word	.L95,.L96
 	.byte	8
-	.word	.L89,.L90
+	.word	.L97,.L98
 	.byte	0,7
-	.word	.L85,.L83,.L84
+	.word	.L93,.L91,.L92
 	.byte	8
-	.word	.L87,.L88
+	.word	.L95,.L96
 	.byte	8
-	.word	.L89,.L90
+	.word	.L97,.L98
 	.byte	0,0,0,7
-	.word	.L73,.L93,.L9
+	.word	.L81,.L101,.L9
 	.byte	8
-	.word	.L75,.L76
+	.word	.L83,.L84
 	.byte	9
-	.word	.L77,.L94
+	.word	.L85,.L102
 	.byte	7
-	.word	.L85,.L100,.L8
+	.word	.L93,.L108,.L8
 	.byte	8
-	.word	.L87,.L88
+	.word	.L95,.L96
 	.byte	8
-	.word	.L89,.L90
+	.word	.L97,.L98
 	.byte	10
-	.word	.L91,.L101
+	.word	.L99,.L109
 	.byte	0,7
-	.word	.L85,.L80,.L95
+	.word	.L93,.L88,.L103
 	.byte	8
-	.word	.L87,.L88
+	.word	.L95,.L96
 	.byte	8
-	.word	.L89,.L90
+	.word	.L97,.L98
 	.byte	0,7
-	.word	.L85,.L96,.L97
+	.word	.L93,.L104,.L105
 	.byte	8
-	.word	.L87,.L88
+	.word	.L95,.L96
 	.byte	8
-	.word	.L89,.L90
+	.word	.L97,.L98
 	.byte	0,7
-	.word	.L85,.L98,.L99
+	.word	.L93,.L106,.L107
 	.byte	8
-	.word	.L87,.L88
+	.word	.L95,.L96
 	.byte	8
-	.word	.L89,.L90
+	.word	.L97,.L98
 	.byte	0,0,0,7
-	.word	.L73,.L102,.L13
+	.word	.L81,.L110,.L13
 	.byte	8
-	.word	.L75,.L76
+	.word	.L83,.L84
 	.byte	9
-	.word	.L77,.L103
+	.word	.L85,.L111
 	.byte	7
-	.word	.L85,.L106,.L12
+	.word	.L93,.L118,.L12
 	.byte	8
-	.word	.L87,.L88
+	.word	.L95,.L96
 	.byte	8
-	.word	.L89,.L90
+	.word	.L97,.L98
 	.byte	10
-	.word	.L91,.L107
+	.word	.L99,.L119
 	.byte	0,7
-	.word	.L85,.L104,.L105
+	.word	.L93,.L112,.L113
 	.byte	8
-	.word	.L87,.L88
+	.word	.L95,.L96
 	.byte	8
-	.word	.L89,.L90
+	.word	.L97,.L98
+	.byte	0,7
+	.word	.L93,.L114,.L115
+	.byte	8
+	.word	.L95,.L96
+	.byte	8
+	.word	.L97,.L98
+	.byte	0,7
+	.word	.L93,.L116,.L117
+	.byte	8
+	.word	.L95,.L96
+	.byte	8
+	.word	.L97,.L98
 	.byte	0,0,0,7
-	.word	.L73,.L104,.L105
+	.word	.L81,.L120,.L17
 	.byte	8
-	.word	.L75,.L76
-	.byte	0,7
-	.word	.L73,.L108,.L17
-	.byte	8
-	.word	.L75,.L76
+	.word	.L83,.L84
 	.byte	9
-	.word	.L77,.L109
+	.word	.L85,.L121
 	.byte	7
-	.word	.L85,.L114,.L16
+	.word	.L93,.L127,.L16
 	.byte	8
-	.word	.L87,.L88
+	.word	.L95,.L96
 	.byte	8
-	.word	.L89,.L90
+	.word	.L97,.L98
 	.byte	10
-	.word	.L91,.L115
+	.word	.L99,.L128
 	.byte	0,7
-	.word	.L85,.L110,.L111
+	.word	.L93,.L113,.L122
 	.byte	8
-	.word	.L87,.L88
+	.word	.L95,.L96
 	.byte	8
-	.word	.L89,.L90
+	.word	.L97,.L98
 	.byte	0,7
-	.word	.L85,.L112,.L113
+	.word	.L93,.L123,.L124
 	.byte	8
-	.word	.L87,.L88
+	.word	.L95,.L96
 	.byte	8
-	.word	.L89,.L90
+	.word	.L97,.L98
+	.byte	0,7
+	.word	.L93,.L125,.L126
+	.byte	8
+	.word	.L95,.L96
+	.byte	8
+	.word	.L97,.L98
 	.byte	0,0,0,7
-	.word	.L73,.L110,.L111
+	.word	.L81,.L87,.L88
 	.byte	8
-	.word	.L75,.L76
+	.word	.L83,.L84
 	.byte	0,7
-	.word	.L73,.L79,.L80
+	.word	.L81,.L88,.L103
 	.byte	8
-	.word	.L75,.L76
+	.word	.L83,.L84
 	.byte	0,7
-	.word	.L73,.L80,.L95
+	.word	.L81,.L112,.L113
 	.byte	8
-	.word	.L75,.L76
+	.word	.L83,.L84
 	.byte	0,7
-	.word	.L73,.L112,.L113
+	.word	.L81,.L113,.L122
 	.byte	8
-	.word	.L75,.L76
+	.word	.L83,.L84
 	.byte	0,7
-	.word	.L73,.L81,.L82
+	.word	.L81,.L89,.L90
 	.byte	8
-	.word	.L75,.L76
+	.word	.L83,.L84
 	.byte	0,7
-	.word	.L73,.L96,.L97
+	.word	.L81,.L104,.L105
 	.byte	8
-	.word	.L75,.L76
+	.word	.L83,.L84
 	.byte	0,7
-	.word	.L73,.L83,.L84
+	.word	.L81,.L114,.L115
 	.byte	8
-	.word	.L75,.L76
+	.word	.L83,.L84
 	.byte	0,7
-	.word	.L73,.L98,.L99
+	.word	.L81,.L123,.L124
 	.byte	8
-	.word	.L75,.L76
+	.word	.L83,.L84
+	.byte	0,7
+	.word	.L81,.L91,.L92
+	.byte	8
+	.word	.L83,.L84
+	.byte	0,7
+	.word	.L81,.L106,.L107
+	.byte	8
+	.word	.L83,.L84
+	.byte	0,7
+	.word	.L81,.L116,.L117
+	.byte	8
+	.word	.L83,.L84
+	.byte	0,7
+	.word	.L81,.L125,.L126
+	.byte	8
+	.word	.L83,.L84
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('countEncTicks')
 	.sect	'.debug_abbrev'
-.L44:
+.L50:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,6,52,0
 	.byte	3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,1,49,16,85,6,0
 	.byte	0,10,11,0,49,16,85,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('countEncTicks')
 	.sect	'.debug_line'
-.L45:
-	.word	.L129-.L128
-.L128:
+.L51:
+	.word	.L144-.L143
+.L143:
 	.half	3
-	.word	.L131-.L130
-.L130:
+	.word	.L146-.L145
+.L145:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio',0,0
 	.byte	'../includes/hardware/encoder/encoder.c',0,0,0,0
 	.byte	'gpio.h',0,1,0,0
 	.byte	'C:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\Port\\Std\\IfxPort.h',0
 	.byte	0,0,0,0
-.L131:
+.L146:
 	.byte	5,40,7,0,5,2
-	.word	.L33
-	.byte	3,34,1,4,2,5,35,9
-	.half	.L74-.L33
-	.byte	3,252,0,1,5,45,9
-	.half	.L132-.L74
+	.word	.L39
+	.byte	3,42,1,4,2,5,35,9
+	.half	.L82-.L39
+	.byte	3,23,1,5,45,9
+	.half	.L147-.L82
 	.byte	1,4,3,5,13,9
-	.half	.L86-.L132
-	.byte	3,141,3,1,5,12,9
-	.half	.L133-.L86
+	.half	.L94-.L147
+	.byte	3,234,3,1,5,12,9
+	.half	.L148-.L94
 	.byte	1,5,51,7,9
-	.half	.L134-.L133
+	.half	.L149-.L148
 	.byte	1,5,58,9
-	.half	.L118-.L134
+	.half	.L131-.L149
 	.byte	1,5,51,9
-	.half	.L2-.L118
+	.half	.L2-.L131
 	.byte	1,5,5,9
 	.half	.L3-.L2
 	.byte	1,4,2,9
 	.half	.L4-.L3
-	.byte	3,243,124,1,4,1,5,40,9
+	.byte	3,150,124,1,4,1,5,40,9
 	.half	.L5-.L4
-	.byte	3,133,127,1,4,2,5,35,9
-	.half	.L93-.L5
-	.byte	3,251,0,1,5,45,9
-	.half	.L135-.L93
+	.byte	3,106,1,4,2,5,35,9
+	.half	.L101-.L5
+	.byte	3,22,1,5,45,9
+	.half	.L150-.L101
 	.byte	1,4,3,5,13,9
-	.half	.L100-.L135
-	.byte	3,141,3,1,5,12,9
-	.half	.L136-.L100
+	.half	.L108-.L150
+	.byte	3,234,3,1,5,12,9
+	.half	.L151-.L108
 	.byte	1,5,51,7,9
-	.half	.L137-.L136
+	.half	.L152-.L151
 	.byte	1,5,58,9
-	.half	.L119-.L137
+	.half	.L132-.L152
 	.byte	1,5,51,9
-	.half	.L6-.L119
+	.half	.L6-.L132
 	.byte	1,5,5,9
 	.half	.L7-.L6
 	.byte	1,4,2,9
 	.half	.L8-.L7
-	.byte	3,243,124,1,4,1,5,32,9
+	.byte	3,150,124,1,4,1,5,40,9
 	.half	.L9-.L8
-	.byte	3,137,127,1,4,2,5,35,9
-	.half	.L102-.L9
-	.byte	3,247,0,1,5,45,9
-	.half	.L138-.L102
+	.byte	3,107,1,4,2,5,35,9
+	.half	.L110-.L9
+	.byte	3,21,1,5,45,9
+	.half	.L153-.L110
 	.byte	1,4,3,5,13,9
-	.half	.L106-.L138
-	.byte	3,141,3,1,5,12,9
-	.half	.L139-.L106
+	.half	.L118-.L153
+	.byte	3,234,3,1,5,12,9
+	.half	.L154-.L118
 	.byte	1,5,51,7,9
-	.half	.L140-.L139
+	.half	.L155-.L154
 	.byte	1,5,58,9
-	.half	.L141-.L140
+	.half	.L133-.L155
 	.byte	1,5,51,9
-	.half	.L10-.L141
+	.half	.L10-.L133
 	.byte	1,5,5,9
 	.half	.L11-.L10
 	.byte	1,4,2,9
 	.half	.L12-.L11
-	.byte	3,243,124,1,4,1,9
+	.byte	3,150,124,1,4,1,5,40,9
 	.half	.L13-.L12
-	.byte	3,137,127,1,5,18,9
-	.half	.L104-.L13
-	.byte	1,5,32,9
-	.half	.L105-.L104
-	.byte	3,1,1,4,2,5,35,9
-	.half	.L108-.L105
-	.byte	3,246,0,1,5,45,9
-	.half	.L142-.L108
+	.byte	3,108,1,4,2,5,35,9
+	.half	.L120-.L13
+	.byte	3,20,1,5,45,9
+	.half	.L156-.L120
 	.byte	1,4,3,5,13,9
-	.half	.L114-.L142
-	.byte	3,141,3,1,5,12,9
-	.half	.L143-.L114
+	.half	.L127-.L156
+	.byte	3,234,3,1,5,12,9
+	.half	.L157-.L127
 	.byte	1,5,51,7,9
-	.half	.L144-.L143
+	.half	.L158-.L157
 	.byte	1,5,58,9
-	.half	.L145-.L144
+	.half	.L134-.L158
 	.byte	1,5,51,9
-	.half	.L14-.L145
+	.half	.L14-.L134
 	.byte	1,5,5,9
 	.half	.L15-.L14
 	.byte	1,4,2,9
 	.half	.L16-.L15
-	.byte	3,243,124,1,4,1,9
+	.byte	3,150,124,1,4,1,5,10,9
 	.half	.L17-.L16
-	.byte	3,138,127,1,5,18,9
-	.half	.L110-.L17
-	.byte	1,5,10,9
-	.half	.L111-.L110
-	.byte	3,2,1,5,9,9
-	.half	.L146-.L111
+	.byte	3,111,1,5,9,9
+	.half	.L159-.L17
 	.byte	1,5,51,7,9
-	.half	.L79-.L146
+	.half	.L87-.L159
 	.byte	1,5,22,7,9
-	.half	.L80-.L79
+	.half	.L88-.L87
 	.byte	3,2,1,5,46,7,9
-	.half	.L95-.L80
+	.half	.L103-.L88
 	.byte	1,5,50,9
-	.half	.L147-.L95
+	.half	.L160-.L103
 	.byte	1,5,46,9
-	.half	.L20-.L147
+	.half	.L20-.L160
 	.byte	1,5,9,9
 	.half	.L21-.L20
 	.byte	1,5,20,9
-	.half	.L148-.L21
+	.half	.L161-.L21
+	.byte	1,5,54,9
+	.half	.L162-.L161
 	.byte	1,5,10,9
-	.half	.L18-.L148
-	.byte	3,3,1,5,9,9
-	.half	.L149-.L18
-	.byte	1,5,38,7,9
-	.half	.L150-.L149
-	.byte	1,5,51,9
-	.half	.L151-.L150
+	.half	.L22-.L162
+	.byte	3,7,1,5,9,9
+	.half	.L163-.L22
+	.byte	1,5,51,7,9
+	.half	.L112-.L163
 	.byte	1,5,22,7,9
-	.half	.L112-.L151
-	.byte	3,2,1,5,46,7,9
 	.half	.L113-.L112
+	.byte	3,2,1,5,46,7,9
+	.half	.L122-.L113
 	.byte	1,5,50,9
-	.half	.L152-.L113
+	.half	.L164-.L122
 	.byte	1,5,46,9
-	.half	.L24-.L152
+	.half	.L25-.L164
 	.byte	1,5,9,9
-	.half	.L25-.L24
+	.half	.L26-.L25
 	.byte	1,5,20,9
-	.half	.L153-.L25
-	.byte	1,5,9,9
-	.half	.L22-.L153
-	.byte	3,3,1,5,5,9
-	.half	.L81-.L22
-	.byte	1,5,9,7,9
-	.half	.L82-.L81
-	.byte	3,2,1,5,24,9
-	.half	.L154-.L82
-	.byte	1,5,35,9
-	.half	.L155-.L154
-	.byte	1,5,37,9
-	.half	.L156-.L155
-	.byte	1,5,20,9
-	.half	.L157-.L156
-	.byte	1,5,9,9
-	.half	.L26-.L157
-	.byte	3,2,1,5,5,9
-	.half	.L96-.L26
-	.byte	1,5,9,7,9
-	.half	.L97-.L96
-	.byte	3,2,1,5,24,9
-	.half	.L158-.L97
-	.byte	1,5,35,9
-	.half	.L159-.L158
-	.byte	1,5,37,9
-	.half	.L160-.L159
-	.byte	1,5,20,9
-	.half	.L161-.L160
-	.byte	1,5,9,9
-	.half	.L27-.L161
-	.byte	3,3,1,5,26,9
-	.half	.L162-.L27
-	.byte	1,5,5,9
-	.half	.L163-.L162
-	.byte	1,5,9,7,9
-	.half	.L164-.L163
-	.byte	3,2,1,5,24,9
-	.half	.L165-.L164
-	.byte	1,5,35,9
+	.half	.L165-.L26
+	.byte	1,5,54,9
 	.half	.L166-.L165
-	.byte	1,5,37,9
-	.half	.L167-.L166
-	.byte	1,5,20,9
-	.half	.L168-.L167
 	.byte	1,5,9,9
-	.half	.L28-.L168
-	.byte	3,2,1,5,26,9
-	.half	.L169-.L28
-	.byte	1,5,5,9
-	.half	.L170-.L169
+	.half	.L27-.L166
+	.byte	3,8,1,5,5,9
+	.half	.L89-.L27
 	.byte	1,5,9,7,9
-	.half	.L171-.L170
+	.half	.L90-.L89
 	.byte	3,2,1,5,24,9
-	.half	.L172-.L171
+	.half	.L167-.L90
+	.byte	1,5,35,9
+	.half	.L168-.L167
+	.byte	1,5,37,9
+	.half	.L169-.L168
+	.byte	1,5,20,9
+	.half	.L170-.L169
+	.byte	1,5,53,9
+	.half	.L171-.L170
+	.byte	1,5,9,9
+	.half	.L29-.L171
+	.byte	3,7,1,5,5,9
+	.half	.L104-.L29
+	.byte	1,5,9,7,9
+	.half	.L105-.L104
+	.byte	3,2,1,5,24,9
+	.half	.L172-.L105
 	.byte	1,5,35,9
 	.half	.L173-.L172
 	.byte	1,5,37,9
 	.half	.L174-.L173
 	.byte	1,5,20,9
 	.half	.L175-.L174
-	.byte	1,5,5,9
-	.half	.L29-.L175
-	.byte	3,3,1,5,19,9
-	.half	.L83-.L29
-	.byte	1,5,5,9
-	.half	.L84-.L83
-	.byte	3,1,1,5,19,9
-	.half	.L98-.L84
-	.byte	1,5,5,9
-	.half	.L99-.L98
-	.byte	3,1,1,5,21,9
-	.half	.L176-.L99
-	.byte	1,5,19,9
-	.half	.L177-.L176
-	.byte	1,5,5,9
+	.byte	1,5,53,9
+	.half	.L176-.L175
+	.byte	1,5,9,9
+	.half	.L31-.L176
+	.byte	3,8,1,5,5,9
+	.half	.L114-.L31
+	.byte	1,5,9,7,9
+	.half	.L115-.L114
+	.byte	3,2,1,5,24,9
+	.half	.L177-.L115
+	.byte	1,5,35,9
 	.half	.L178-.L177
-	.byte	3,1,1,5,21,9
+	.byte	1,5,37,9
 	.half	.L179-.L178
-	.byte	1,5,19,9
+	.byte	1,5,20,9
 	.half	.L180-.L179
-	.byte	1,5,1,9
+	.byte	1,5,53,9
 	.half	.L181-.L180
+	.byte	1,5,9,9
+	.half	.L33-.L181
+	.byte	3,7,1,5,5,9
+	.half	.L123-.L33
+	.byte	1,5,9,7,9
+	.half	.L124-.L123
+	.byte	3,2,1,5,24,9
+	.half	.L182-.L124
+	.byte	1,5,35,9
+	.half	.L183-.L182
+	.byte	1,5,37,9
+	.half	.L184-.L183
+	.byte	1,5,20,9
+	.half	.L185-.L184
+	.byte	1,5,53,9
+	.half	.L186-.L185
+	.byte	1,5,5,9
+	.half	.L35-.L186
+	.byte	3,8,1,5,19,9
+	.half	.L91-.L35
+	.byte	1,5,5,9
+	.half	.L92-.L91
+	.byte	3,1,1,5,19,9
+	.half	.L106-.L92
+	.byte	1,5,5,9
+	.half	.L107-.L106
+	.byte	3,1,1,5,19,9
+	.half	.L116-.L107
+	.byte	1,5,5,9
+	.half	.L117-.L116
+	.byte	3,1,1,5,19,9
+	.half	.L125-.L117
+	.byte	1,5,1,9
+	.half	.L126-.L125
 	.byte	3,1,1,7,9
-	.half	.L47-.L181
+	.half	.L53-.L126
 	.byte	0,1,1
-.L129:
+.L144:
 	.sdecl	'.debug_ranges',debug,cluster('countEncTicks')
 	.sect	'.debug_ranges'
-.L46:
-	.word	-1,.L33,0,.L47-.L33,0,0
-.L78:
-	.word	-1,.L33,.L74-.L33,.L5-.L33,.L79-.L33,.L80-.L33,.L81-.L33,.L82-.L33,.L83-.L33,.L84-.L33,0,0
-.L92:
-	.word	-1,.L33,.L86-.L33,.L4-.L33,.L79-.L33,.L80-.L33,.L81-.L33,.L82-.L33,.L83-.L33,.L84-.L33,0,0
-.L94:
-	.word	-1,.L33,.L93-.L33,.L9-.L33,.L80-.L33,.L95-.L33,.L96-.L33,.L97-.L33,.L98-.L33,.L99-.L33,0,0
-.L101:
-	.word	-1,.L33,.L100-.L33,.L8-.L33,.L80-.L33,.L95-.L33,.L96-.L33,.L97-.L33,.L98-.L33,.L99-.L33,0,0
-.L103:
-	.word	-1,.L33,.L102-.L33,.L13-.L33,.L104-.L33,.L105-.L33,0,0
-.L107:
-	.word	-1,.L33,.L106-.L33,.L12-.L33,.L104-.L33,.L105-.L33,0,0
-.L109:
-	.word	-1,.L33,.L108-.L33,.L17-.L33,.L110-.L33,.L111-.L33,.L112-.L33,.L113-.L33,0,0
-.L115:
-	.word	-1,.L33,.L114-.L33,.L16-.L33,.L110-.L33,.L111-.L33,.L112-.L33,.L113-.L33,0,0
-	.sdecl	'.debug_info',debug,cluster('g_dir_enc1')
-	.sect	'.debug_info'
-.L48:
-	.word	219
-	.half	3
-	.word	.L49
-	.byte	4,1
-	.byte	'../includes/hardware/encoder/encoder.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L34
-	.byte	3
-	.byte	'g_dir_enc1',0,6,11,7
-	.word	.L116
-	.byte	1,5,3
-	.word	g_dir_enc1
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('g_dir_enc1')
-	.sect	'.debug_abbrev'
-.L49:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('g_dir_enc2')
-	.sect	'.debug_info'
-.L50:
-	.word	219
-	.half	3
-	.word	.L51
-	.byte	4,1
-	.byte	'../includes/hardware/encoder/encoder.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L34
-	.byte	3
-	.byte	'g_dir_enc2',0,6,12,7
-	.word	.L116
-	.byte	1,5,3
-	.word	g_dir_enc2
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('g_dir_enc2')
-	.sect	'.debug_abbrev'
-.L51:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('g_pos_enc1')
-	.sect	'.debug_info'
 .L52:
-	.word	219
-	.half	3
-	.word	.L53
-	.byte	4,1
-	.byte	'../includes/hardware/encoder/encoder.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L34
-	.byte	3
-	.byte	'g_pos_enc1',0,6,14,9
-	.word	.L117
-	.byte	1,5,3
-	.word	g_pos_enc1
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('g_pos_enc1')
-	.sect	'.debug_abbrev'
-.L53:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('g_pos_enc2')
+	.word	-1,.L39,0,.L53-.L39,0,0
+.L86:
+	.word	-1,.L39,.L82-.L39,.L5-.L39,.L87-.L39,.L88-.L39,.L89-.L39,.L90-.L39,.L91-.L39,.L92-.L39,0,0
+.L100:
+	.word	-1,.L39,.L94-.L39,.L4-.L39,.L87-.L39,.L88-.L39,.L89-.L39,.L90-.L39,.L91-.L39,.L92-.L39,0,0
+.L102:
+	.word	-1,.L39,.L101-.L39,.L9-.L39,.L88-.L39,.L103-.L39,.L104-.L39,.L105-.L39,.L106-.L39,.L107-.L39,0,0
+.L109:
+	.word	-1,.L39,.L108-.L39,.L8-.L39,.L88-.L39,.L103-.L39,.L104-.L39,.L105-.L39,.L106-.L39,.L107-.L39,0,0
+.L111:
+	.word	-1,.L39,.L110-.L39,.L13-.L39,.L112-.L39,.L113-.L39,.L114-.L39,.L115-.L39,.L116-.L39,.L117-.L39,0,0
+.L119:
+	.word	-1,.L39,.L118-.L39,.L12-.L39,.L112-.L39,.L113-.L39,.L114-.L39,.L115-.L39,.L116-.L39,.L117-.L39,0,0
+.L121:
+	.word	-1,.L39,.L120-.L39,.L17-.L39,.L113-.L39,.L122-.L39,.L123-.L39,.L124-.L39,.L125-.L39,.L126-.L39,0,0
+.L128:
+	.word	-1,.L39,.L127-.L39,.L16-.L39,.L113-.L39,.L122-.L39,.L123-.L39,.L124-.L39,.L125-.L39,.L126-.L39,0,0
+	.sdecl	'.debug_info',debug,cluster('g_pos_enc1')
 	.sect	'.debug_info'
 .L54:
 	.word	219
@@ -6479,83 +6411,165 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	'../includes/hardware/encoder/encoder.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L34
+	.word	.L40
 	.byte	3
-	.byte	'g_pos_enc2',0,6,15,9
-	.word	.L117
+	.byte	'g_pos_enc1',0,6,20,9
+	.word	.L129
+	.byte	1,5,3
+	.word	g_pos_enc1
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('g_pos_enc1')
+	.sect	'.debug_abbrev'
+.L55:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('g_pos_enc2')
+	.sect	'.debug_info'
+.L56:
+	.word	219
+	.half	3
+	.word	.L57
+	.byte	4,1
+	.byte	'../includes/hardware/encoder/encoder.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
+	.word	.L40
+	.byte	3
+	.byte	'g_pos_enc2',0,6,21,9
+	.word	.L129
 	.byte	1,5,3
 	.word	g_pos_enc2
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('g_pos_enc2')
 	.sect	'.debug_abbrev'
-.L55:
+.L57:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('g_dir_enc1')
+	.sect	'.debug_info'
+.L58:
+	.word	219
+	.half	3
+	.word	.L59
+	.byte	4,1
+	.byte	'../includes/hardware/encoder/encoder.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
+	.word	.L40
+	.byte	3
+	.byte	'g_dir_enc1',0,6,17,7
+	.word	.L130
+	.byte	1,5,3
+	.word	g_dir_enc1
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('g_dir_enc1')
+	.sect	'.debug_abbrev'
+.L59:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('g_dir_enc2')
+	.sect	'.debug_info'
+.L60:
+	.word	219
+	.half	3
+	.word	.L61
+	.byte	4,1
+	.byte	'../includes/hardware/encoder/encoder.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
+	.word	.L40
+	.byte	3
+	.byte	'g_dir_enc2',0,6,18,7
+	.word	.L130
+	.byte	1,5,3
+	.word	g_dir_enc2
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('g_dir_enc2')
+	.sect	'.debug_abbrev'
+.L61:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('countEncTicks')
 	.sect	'.debug_loc'
-.L32:
-	.word	-1,.L33,0,.L69-.L33
+.L38:
+	.word	-1,.L39,0,.L75-.L39
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L71:
-	.word	-1,.L33,.L118-.L33,.L2-.L33
+.L77:
+	.word	-1,.L39,.L131-.L39,.L2-.L39
 	.half	1
 	.byte	83
-	.word	.L3-.L33,.L69-.L33
+	.word	.L3-.L39,.L75-.L39
 	.half	1
 	.byte	83
 	.word	0,0
-.L72:
-	.word	-1,.L33,.L119-.L33,.L6-.L33
+.L78:
+	.word	-1,.L39,.L132-.L39,.L6-.L39
 	.half	1
 	.byte	84
-	.word	.L7-.L33,.L69-.L33
+	.word	.L7-.L39,.L75-.L39
 	.half	1
 	.byte	84
 	.word	0,0
-.L76:
-	.word	-1,.L33,.L74-.L33,.L86-.L33
+.L79:
+	.word	-1,.L39,.L133-.L39,.L10-.L39
+	.half	1
+	.byte	85
+	.word	.L11-.L39,.L75-.L39
+	.half	1
+	.byte	85
+	.word	0,0
+.L80:
+	.word	-1,.L39,.L134-.L39,.L14-.L39
+	.half	1
+	.byte	86
+	.word	.L15-.L39,.L75-.L39
+	.half	1
+	.byte	86
+	.word	0,0
+.L84:
+	.word	-1,.L39,.L82-.L39,.L94-.L39
 	.half	2
 	.byte	144,32
-	.word	.L93-.L33,.L100-.L33
+	.word	.L101-.L39,.L108-.L39
 	.half	2
 	.byte	144,32
-	.word	.L102-.L33,.L106-.L33
+	.word	.L110-.L39,.L118-.L39
 	.half	2
 	.byte	144,32
-	.word	.L108-.L33,.L114-.L33
+	.word	.L120-.L39,.L127-.L39
 	.half	2
 	.byte	144,32
 	.word	0,0
-.L90:
+.L98:
 	.word	0,0
-.L88:
+.L96:
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('initEncoder')
 	.sect	'.debug_loc'
-.L30:
-	.word	-1,.L31,0,.L56-.L31
+.L36:
+	.word	-1,.L37,0,.L62-.L37
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L61:
-	.word	-1,.L31,.L58-.L31,.L59-.L31
+.L67:
+	.word	-1,.L37,.L64-.L37,.L65-.L37
 	.half	2
 	.byte	144,34
-	.word	.L63-.L31,.L64-.L31
+	.word	.L69-.L37,.L70-.L37
 	.half	2
 	.byte	144,34
-	.word	.L65-.L31,.L66-.L31
+	.word	.L71-.L37,.L72-.L37
 	.half	2
 	.byte	144,34
-	.word	.L67-.L31,.L68-.L31
+	.word	.L73-.L37,.L74-.L37
 	.half	2
 	.byte	144,34
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L182:
+.L187:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -6563,10 +6577,10 @@ _999006_cur_enc2_chB:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('initEncoder')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L182,.L31,.L56-.L31
+	.word	.L187,.L37,.L62-.L37
 	.sdecl	'.debug_frame',debug,cluster('countEncTicks')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L182,.L33,.L69-.L33
+	.word	.L187,.L39,.L75-.L39
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	; Module end

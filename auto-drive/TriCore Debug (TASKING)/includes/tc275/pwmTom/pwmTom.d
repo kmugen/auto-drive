@@ -102,8 +102,8 @@ includes/tc275/pwmTom/pwmTom.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/i
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm.h :
 includes/tc275/pwmTom/pwmTom.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Cmu.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Cmu.h :
-includes/tc275/pwmTom/pwmTom.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/toutMap.h
-c:/auto-drive/auto-drive/auto-drive/includes/tc275/toutMap.h :
+includes/tc275/pwmTom/pwmTom.o :	../includes/tc275/pwmTom/toutMap.h
+../includes/tc275/pwmTom/toutMap.h :
 includes/tc275/pwmTom/pwmTom.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_Impl/IfxGtm_cfg.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_Impl/IfxGtm_cfg.h :
 includes/tc275/pwmTom/pwmTom.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Cpu/Std/IfxCpu.h

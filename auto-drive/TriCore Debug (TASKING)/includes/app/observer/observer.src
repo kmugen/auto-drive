@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc8548a --dep-file=includes/app/observer/observer.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc27xd -D__CPU_TC27XD__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc27xd -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Configurations -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D\\\\_Reg -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom\\\\PwmHl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom\\\\Timer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Impl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_PinMap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\lpf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\observer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\pid -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\taskScheduler -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\buzzer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\dial -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\encoder -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\motor -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\switch -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\ultrasonic -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275 -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\delay -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\extIrq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmHl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmTom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\uart -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o includes/app/observer/observer.src ../includes/app/observer/observer.c"
+	.compiler_invocation	"ctc -f cc14508a --dep-file=includes/app/observer/observer.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc27xd -D__CPU_TC27XD__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc27xd -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Configurations -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D\\\\_Reg -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Impl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_PinMap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\lpf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\observer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\pid -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\taskScheduler -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\buzzer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\dial -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\encoder -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\motor -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\switch -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\ultrasonic -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275 -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\delay -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\extIrq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmTom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\uart -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o includes/app/observer/observer.src ../includes/app/observer/observer.c"
 	.compiler_name		"ctc"
 	;source	'../includes/app/observer/observer.c'
 
@@ -17,226 +17,226 @@ $TC16X
 observeMotor:	.type	func
 	movh.a	a15,#@his(theta_tilde)
 	lea	a15,[a15]@los(theta_tilde)
-.L73:
-	mul	d15,d4,#4
-.L74:
-	movh.a	a2,#@his(g_theta_h)
-	lea	a2,[a2]@los(g_theta_h)
-.L75:
-	addsc.a	a2,a2,d15,#0
-	ld.w	d15,[a2]
-.L76:
-	sub.f	d15,d6,d15
-.L77:
-	st.w	[a15],d15
 .L78:
 	mul	d15,d4,#4
 .L79:
-	movh.a	a15,#@his(g_int_theta_h)
-	lea	a15,[a15]@los(g_int_theta_h)
+	movh.a	a2,#@his(g_theta_h)
+	lea	a2,[a2]@los(g_theta_h)
 .L80:
-	addsc.a	a15,a15,d15,#0
+	addsc.a	a2,a2,d15,#0
+	ld.w	d15,[a2]
 .L81:
-	movh.a	a2,#@his(theta_tilde)
-	lea	a2,[a2]@los(theta_tilde)
-	ld.w	d0,[a2]
+	sub.f	d15,d6,d15
 .L82:
-	mov.u	d1,#62287
-	addih	d1,d1,#17502
+	st.w	[a15],d15
 .L83:
 	mul	d15,d4,#4
 .L84:
-	movh.a	a2,#@his(g_w_h)
-	lea	a2,[a2]@los(g_w_h)
+	movh.a	a15,#@his(g_int_theta_h)
+	lea	a15,[a15]@los(g_int_theta_h)
 .L85:
-	addsc.a	a2,a2,d15,#0
-	ld.w	d15,[a2]
+	addsc.a	a15,a15,d15,#0
 .L86:
-	madd.f	d0,d15,d0,d1
+	movh.a	a2,#@his(theta_tilde)
+	lea	a2,[a2]@los(theta_tilde)
+	ld.w	d0,[a2]
 .L87:
-	mov	d1,#4719
-	addih	d1,d1,#14979
+	mov.u	d1,#62287
+	addih	d1,d1,#17502
 .L88:
 	mul	d15,d4,#4
 .L89:
-	movh.a	a2,#@his(g_int_theta_h)
-	lea	a2,[a2]@los(g_int_theta_h)
+	movh.a	a2,#@his(g_w_h)
+	lea	a2,[a2]@los(g_w_h)
 .L90:
 	addsc.a	a2,a2,d15,#0
 	ld.w	d15,[a2]
 .L91:
-	madd.f	d15,d15,d0,d1
-	st.w	[a15],d15
+	madd.f	d0,d15,d0,d1
 .L92:
-	mul	d15,d4,#4
+	mov	d1,#4719
+	addih	d1,d1,#14979
 .L93:
-	movh.a	a15,#@his(g_theta_h)
-	lea	a15,[a15]@los(g_theta_h)
-.L94:
-	addsc.a	a15,a15,d15,#0
-.L95:
 	mul	d15,d4,#4
-.L96:
+.L94:
 	movh.a	a2,#@his(g_int_theta_h)
 	lea	a2,[a2]@los(g_int_theta_h)
-.L97:
+.L95:
 	addsc.a	a2,a2,d15,#0
 	ld.w	d15,[a2]
-.L98:
+.L96:
+	madd.f	d15,d15,d0,d1
 	st.w	[a15],d15
-.L99:
+.L97:
 	mul	d15,d4,#4
-.L100:
-	movh.a	a15,#@his(g_int_w_h)
-	lea	a15,[a15]@los(g_int_w_h)
-.L101:
+.L98:
+	movh.a	a15,#@his(g_theta_h)
+	lea	a15,[a15]@los(g_theta_h)
+.L99:
 	addsc.a	a15,a15,d15,#0
+.L100:
+	mul	d15,d4,#4
+.L101:
+	movh.a	a2,#@his(g_int_theta_h)
+	lea	a2,[a2]@los(g_int_theta_h)
 .L102:
-	movh.a	a2,#@his(theta_tilde)
-	lea	a2,[a2]@los(theta_tilde)
-	ld.w	d0,[a2]
+	addsc.a	a2,a2,d15,#0
+	ld.w	d15,[a2]
 .L103:
-	mov	d1,#11712
-	addih	d1,d1,#18560
+	st.w	[a15],d15
 .L104:
 	mul	d15,d4,#4
 .L105:
-	movh.a	a2,#@his(g_i_h)
-	lea	a2,[a2]@los(g_i_h)
+	movh.a	a15,#@his(g_int_w_h)
+	lea	a15,[a15]@los(g_int_w_h)
 .L106:
-	addsc.a	a2,a2,d15,#0
-	ld.w	d2,[a2]
+	addsc.a	a15,a15,d15,#0
 .L107:
-	mov	d3,#12855
-	addih	d3,d3,#17659
-.L108:
-	mul	d15,d4,#4
-.L109:
-	movh.a	a2,#@his(g_w_h)
-	lea	a2,[a2]@los(g_w_h)
-.L110:
-	addsc.a	a2,a2,d15,#0
-	ld.w	d15,[a2]
-.L111:
-	mov.u	d6,#63967
-.L64:
-	addih	d6,d6,#49012
-.L112:
-	mul.f	d15,d15,d6
-.L113:
-	madd.f	d15,d15,d2,d3
-.L114:
-	madd.f	d0,d15,d0,d1
-.L115:
-	mov	d1,#4719
-	addih	d1,d1,#14979
-.L116:
-	mul	d15,d4,#4
-.L117:
-	movh.a	a2,#@his(g_int_w_h)
-	lea	a2,[a2]@los(g_int_w_h)
-.L118:
-	addsc.a	a2,a2,d15,#0
-	ld.w	d15,[a2]
-.L119:
-	madd.f	d15,d15,d0,d1
-	st.w	[a15],d15
-.L120:
-	mul	d15,d4,#4
-.L121:
-	movh.a	a15,#@his(g_w_h)
-	lea	a15,[a15]@los(g_w_h)
-.L122:
-	addsc.a	a15,a15,d15,#0
-.L123:
-	mul	d15,d4,#4
-.L124:
-	movh.a	a2,#@his(g_int_w_h)
-	lea	a2,[a2]@los(g_int_w_h)
-.L125:
-	addsc.a	a2,a2,d15,#0
-	ld.w	d15,[a2]
-.L126:
-	st.w	[a15],d15
-.L127:
-	mul	d15,d4,#4
-.L128:
-	movh.a	a15,#@his(g_int_i_h)
-	lea	a15,[a15]@los(g_int_i_h)
-.L129:
-	addsc.a	a15,a15,d15,#0
-.L130:
 	movh.a	a2,#@his(theta_tilde)
 	lea	a2,[a2]@los(theta_tilde)
 	ld.w	d0,[a2]
+.L108:
+	mov	d1,#11712
+	addih	d1,d1,#18560
+.L109:
+	mul	d15,d4,#4
+.L110:
+	movh.a	a2,#@his(g_i_h)
+	lea	a2,[a2]@los(g_i_h)
+.L111:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d2,[a2]
+.L112:
+	mov	d3,#12855
+	addih	d3,d3,#17659
+.L113:
+	mul	d15,d4,#4
+.L114:
+	movh.a	a2,#@his(g_w_h)
+	lea	a2,[a2]@los(g_w_h)
+.L115:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d15,[a2]
+.L116:
+	mov.u	d6,#63967
+.L69:
+	addih	d6,d6,#49012
+.L117:
+	mul.f	d15,d15,d6
+.L118:
+	madd.f	d15,d15,d2,d3
+.L119:
+	madd.f	d0,d15,d0,d1
+.L120:
+	mov	d1,#4719
+	addih	d1,d1,#14979
+.L121:
+	mul	d15,d4,#4
+.L122:
+	movh.a	a2,#@his(g_int_w_h)
+	lea	a2,[a2]@los(g_int_w_h)
+.L123:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d15,[a2]
+.L124:
+	madd.f	d15,d15,d0,d1
+	st.w	[a15],d15
+.L125:
+	mul	d15,d4,#4
+.L126:
+	movh.a	a15,#@his(g_w_h)
+	lea	a15,[a15]@los(g_w_h)
+.L127:
+	addsc.a	a15,a15,d15,#0
+.L128:
+	mul	d15,d4,#4
+.L129:
+	movh.a	a2,#@his(g_int_w_h)
+	lea	a2,[a2]@los(g_int_w_h)
+.L130:
+	addsc.a	a2,a2,d15,#0
+	ld.w	d15,[a2]
 .L131:
-	mov	d1,#23552
-	addih	d1,d1,#17986
+	st.w	[a15],d15
 .L132:
 	mul	d15,d4,#4
 .L133:
+	movh.a	a15,#@his(g_int_i_h)
+	lea	a15,[a15]@los(g_int_i_h)
+.L134:
+	addsc.a	a15,a15,d15,#0
+.L135:
+	movh.a	a2,#@his(theta_tilde)
+	lea	a2,[a2]@los(theta_tilde)
+	ld.w	d0,[a2]
+.L136:
+	mov	d1,#23552
+	addih	d1,d1,#17986
+.L137:
+	mul	d15,d4,#4
+.L138:
 	movh.a	a2,#@his(g_i_h)
 	lea	a2,[a2]@los(g_i_h)
-.L134:
+.L139:
 	addsc.a	a2,a2,d15,#0
 	ld.w	d2,[a2]
-.L135:
+.L140:
 	mov.u	d3,#47457
 	addih	d3,d3,#49383
-.L136:
+.L141:
 	mul	d15,d4,#4
 	movh.a	a2,#@his(g_int_w_h)
 	lea	a2,[a2]@los(g_int_w_h)
 	addsc.a	a2,a2,d15,#0
 	ld.w	d15,[a2]
-.L137:
+.L142:
 	mov	d6,#19887
 	addih	d6,d6,#48404
-.L138:
+.L143:
 	mul.f	d15,d15,d6
-.L139:
+.L144:
 	madd.f	d15,d15,d2,d3
-.L140:
+.L145:
 	mov	d2,#31457
 	addih	d2,d2,#16276
-.L141:
+.L146:
 	div.f	d2,d5,d2
-.L142:
+.L147:
 	add.f	d15,d15,d2
-.L143:
+.L148:
 	madd.f	d0,d15,d0,d1
-.L144:
+.L149:
 	mov	d1,#4719
 	addih	d1,d1,#14979
-.L145:
+.L150:
 	mul	d15,d4,#4
-.L146:
+.L151:
 	movh.a	a2,#@his(g_int_i_h)
 	lea	a2,[a2]@los(g_int_i_h)
-.L147:
+.L152:
 	addsc.a	a2,a2,d15,#0
 	ld.w	d15,[a2]
-.L148:
+.L153:
 	madd.f	d15,d15,d0,d1
 	st.w	[a15],d15
-.L149:
+.L154:
 	mul	d15,d4,#4
-.L150:
+.L155:
 	movh.a	a15,#@his(g_i_h)
 	lea	a15,[a15]@los(g_i_h)
-.L151:
+.L156:
 	addsc.a	a15,a15,d15,#0
-.L152:
+.L157:
 	mul	d15,d4,#4
-.L153:
+.L158:
 	movh.a	a2,#@his(g_int_i_h)
 	lea	a2,[a2]@los(g_int_i_h)
-.L154:
+.L159:
 	addsc.a	a2,a2,d15,#0
 	ld.w	d15,[a2]
-.L155:
+.L160:
 	st.w	[a15],d15
-.L156:
+.L161:
 	ret
 .L51:
 	
@@ -254,17 +254,17 @@ __observeMotor_function_end:
 .L8:
 getThetaHat:	.type	func
 	mul	d15,d4,#4
-.L161:
+.L166:
 	movh.a	a15,#@his(g_theta_h)
 	lea	a15,[a15]@los(g_theta_h)
-.L162:
+.L167:
 	addsc.a	a15,a15,d15,#0
 	ld.w	d2,[a15]
-.L163:
+.L168:
 	j	.L2
 .L2:
 	ret
-.L57:
+.L59:
 	
 __getThetaHat_function_end:
 	.size	getThetaHat,__getThetaHat_function_end-getThetaHat
@@ -280,17 +280,17 @@ __getThetaHat_function_end:
 .L10:
 getWHat:	.type	func
 	mul	d15,d4,#4
-.L168:
+.L173:
 	movh.a	a15,#@his(g_w_h)
 	lea	a15,[a15]@los(g_w_h)
-.L169:
+.L174:
 	addsc.a	a15,a15,d15,#0
 	ld.w	d2,[a15]
-.L170:
+.L175:
 	j	.L3
 .L3:
 	ret
-.L59:
+.L62:
 	
 __getWHat_function_end:
 	.size	getWHat,__getWHat_function_end-getWHat
@@ -306,17 +306,17 @@ __getWHat_function_end:
 .L12:
 getIHat:	.type	func
 	mul	d15,d4,#4
-.L175:
+.L180:
 	movh.a	a15,#@his(g_i_h)
 	lea	a15,[a15]@los(g_i_h)
-.L176:
+.L181:
 	addsc.a	a15,a15,d15,#0
 	ld.w	d2,[a15]
-.L177:
+.L182:
 	j	.L4
 .L4:
 	ret
-.L61:
+.L65:
 	
 __getIHat_function_end:
 	.size	getIHat,__getIHat_function_end-getIHat
@@ -365,8 +365,8 @@ g_int_w_h:	.type	object
 g_int_i_h:	.type	object
 	.size	g_int_i_h,8
 	.space	8
-	.sdecl	'.bss.observer.theta_tilde',data,cluster('theta_tilde')
-	.sect	'.bss.observer.theta_tilde'
+	.sdecl	'.data.observer.theta_tilde',data,cluster('theta_tilde')
+	.sect	'.data.observer.theta_tilde'
 	.global	theta_tilde
 	.align	2
 theta_tilde:	.type	object
@@ -379,7 +379,7 @@ theta_tilde:	.type	object
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L14:
-	.word	567
+	.word	597
 	.half	3
 	.word	.L15
 	.byte	4
@@ -389,87 +389,106 @@ theta_tilde:	.type	object
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1
 	.word	.L16
-.L52:
 	.byte	2
 	.byte	'unsigned char',0,1,8
+.L52:
+	.byte	3
+	.word	192
+.L58:
+	.byte	2
+	.byte	'float',0,4,4
 .L54:
+	.byte	3
+	.word	214
+.L56:
+	.byte	3
+	.word	214
+.L60:
+	.byte	3
+	.word	192
+.L63:
+	.byte	3
+	.word	192
+.L66:
+	.byte	3
+	.word	192
 	.byte	2
-	.byte	'float',0,4,4,2
-	.byte	'short int',0,2,5,3
+	.byte	'short int',0,2,5,4
 	.byte	'__wchar_t',0,1,1,1
-	.word	218
+	.word	248
 	.byte	2
-	.byte	'unsigned int',0,4,7,3
+	.byte	'unsigned int',0,4,7,4
 	.byte	'__size_t',0,1,1,1
-	.word	249
+	.word	279
 	.byte	2
-	.byte	'int',0,4,5,3
+	.byte	'int',0,4,5,4
 	.byte	'__ptrdiff_t',0,1,1,1
-	.word	282
-	.byte	4,1,5
-	.word	309
-	.byte	3
+	.word	312
+	.byte	5,1,6
+	.word	339
+	.byte	4
 	.byte	'__codeptr',0,1,1,1
-	.word	311
-	.byte	3
+	.word	341
+	.byte	4
 	.byte	'uint8',0,2,108,29
 	.word	192
 	.byte	2
-	.byte	'unsigned short int',0,2,7,3
+	.byte	'unsigned short int',0,2,7,4
 	.byte	'uint16',0,2,112,29
-	.word	348
+	.word	378
 	.byte	2
-	.byte	'unsigned long int',0,4,7,3
+	.byte	'unsigned long int',0,4,7,4
 	.byte	'uint32',0,2,116,29
-	.word	385
-	.byte	3
+	.word	415
+	.byte	4
 	.byte	'sint16',0,2,129,1,29
-	.word	218
+	.word	248
 	.byte	2
-	.byte	'long int',0,4,5,3
+	.byte	'long int',0,4,5,4
 	.byte	'sint32',0,2,134,1,29
-	.word	437
+	.word	467
 	.byte	2
-	.byte	'long long int',0,8,5,3
+	.byte	'long long int',0,8,5,4
 	.byte	'sint64',0,2,141,1,29
-	.word	465
-	.byte	3
+	.word	495
+	.byte	4
 	.byte	'float32',0,2,170,1,29
-	.word	209
-	.byte	6
-	.byte	'void',0,5
-	.word	515
-	.byte	3
+	.word	214
+	.byte	7
+	.byte	'void',0,6
+	.word	545
+	.byte	4
 	.byte	'pvoid',0,3,54,28
-	.word	521
-	.byte	3
+	.word	551
+	.byte	4
 	.byte	'Ifx_TickTime',0,3,76,28
-	.word	465
-.L63:
-	.byte	7,8
-	.word	209
-	.byte	8,1,0,0
+	.word	495
+.L68:
+	.byte	8,8
+	.word	214
+	.byte	9,1,0,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
 .L15:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,22,0,3,8,58,15,59,15,57,15
-	.byte	73,19,0,0,4,21,0,54,15,0,0,5,15,0,73,19,0,0,6,59,0,3,8,0,0,7,1,1,11,15,73,19,0,0,8,33,0,47,15,0,0,0
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,22,0,3,8,58
+	.byte	15,59,15,57,15,73,19,0,0,5,21,0,54,15,0,0,6,15,0,73,19,0,0,7,59,0,3,8,0,0,8,1,1,11,15,73,19,0,0,9,33,0
+	.byte	47,15,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
 .L16:
-	.word	.L66-.L65
-.L65:
+	.word	.L71-.L70
+.L70:
 	.half	3
-	.word	.L68-.L67
-.L67:
+	.word	.L73-.L72
+.L72:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Std',0
 	.byte	0
 	.byte	'../includes/app/observer/observer.c',0,0,0,0
 	.byte	'Platform_Types.h',0,1,0,0
 	.byte	'Ifx_Types.h',0,1,0,0,0
-.L68:
-.L66:
+.L73:
+.L71:
 	.sdecl	'.debug_info',debug,cluster('observeMotor')
 	.sect	'.debug_info'
 .L17:
@@ -484,17 +503,17 @@ theta_tilde:	.type	object
 	.byte	2
 	.word	.L13
 	.byte	3
-	.byte	'observeMotor',0,1,37,6,1,1,1
+	.byte	'observeMotor',0,1,43,6,1,1,1
 	.word	.L6,.L51,.L5
 	.byte	4
-	.byte	'chn',0,1,37,25
+	.byte	'chn',0,1,43,31
 	.word	.L52,.L53
 	.byte	4
-	.byte	'v_in',0,1,37,38
+	.byte	'v_in',0,1,43,50
 	.word	.L54,.L55
 	.byte	4
-	.byte	'theta',0,1,37,52
-	.word	.L54,.L56
+	.byte	'theta',0,1,43,70
+	.word	.L56,.L57
 	.byte	5
 	.word	.L6,.L51
 	.byte	0,0
@@ -506,188 +525,188 @@ theta_tilde:	.type	object
 	.sdecl	'.debug_line',debug,cluster('observeMotor')
 	.sect	'.debug_line'
 .L19:
-	.word	.L70-.L69
-.L69:
+	.word	.L75-.L74
+.L74:
 	.half	3
-	.word	.L72-.L71
-.L71:
+	.word	.L77-.L76
+.L76:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../includes/app/observer/observer.c',0,0,0,0,0
-.L72:
+.L77:
 	.byte	5,5,7,0,5,2
 	.word	.L6
-	.byte	3,38,1,5,36,9
-	.half	.L73-.L6
+	.byte	3,50,1,5,36,9
+	.half	.L78-.L6
 	.byte	1,5,27,9
-	.half	.L74-.L73
-	.byte	1,5,36,9
-	.half	.L75-.L74
-	.byte	1,5,25,9
-	.half	.L76-.L75
-	.byte	1,5,17,9
-	.half	.L77-.L76
-	.byte	1,5,18,9
-	.half	.L78-.L77
-	.byte	3,2,1,5,5,9
 	.half	.L79-.L78
-	.byte	1,5,18,9
+	.byte	1,5,36,9
 	.half	.L80-.L79
-	.byte	1,5,42,9
+	.byte	1,5,25,9
 	.half	.L81-.L80
-	.byte	1,5,56,9
+	.byte	1,5,17,9
 	.half	.L82-.L81
-	.byte	1,5,33,9
+	.byte	1,5,18,9
 	.half	.L83-.L82
-	.byte	1,5,28,9
+	.byte	3,4,1,5,5,9
 	.half	.L84-.L83
-	.byte	1,5,33,9
+	.byte	1,5,18,9
 	.half	.L85-.L84
-	.byte	1,5,39,9
+	.byte	1,5,42,9
 	.half	.L86-.L85
-	.byte	1,5,63,9
+	.byte	1,5,56,9
 	.half	.L87-.L86
-	.byte	1,5,18,9
+	.byte	1,5,33,9
 	.half	.L88-.L87
-	.byte	1,5,5,9
+	.byte	1,5,28,9
 	.half	.L89-.L88
-	.byte	1,5,18,9
+	.byte	1,5,33,9
 	.half	.L90-.L89
-	.byte	1,5,24,9
+	.byte	1,5,39,9
 	.half	.L91-.L90
-	.byte	1,5,14,9
+	.byte	1,5,63,9
 	.half	.L92-.L91
-	.byte	3,1,1,5,5,9
+	.byte	1,5,18,9
 	.half	.L93-.L92
-	.byte	1,5,14,9
+	.byte	1,5,5,9
 	.half	.L94-.L93
-	.byte	1,5,35,9
+	.byte	1,5,18,9
 	.half	.L95-.L94
-	.byte	1,5,22,9
+	.byte	1,5,24,9
 	.half	.L96-.L95
-	.byte	1,5,35,9
+	.byte	1,5,14,9
 	.half	.L97-.L96
-	.byte	1,5,20,9
+	.byte	3,1,1,5,5,9
 	.half	.L98-.L97
 	.byte	1,5,14,9
 	.half	.L99-.L98
-	.byte	3,2,1,5,5,9
+	.byte	1,5,35,9
 	.half	.L100-.L99
-	.byte	1,5,14,9
+	.byte	1,5,22,9
 	.half	.L101-.L100
-	.byte	1,5,73,9
+	.byte	1,5,35,9
 	.half	.L102-.L101
-	.byte	1,5,87,9
+	.byte	1,5,20,9
 	.half	.L103-.L102
-	.byte	1,5,39,9
+	.byte	1,5,14,9
 	.half	.L104-.L103
-	.byte	1,5,34,9
+	.byte	3,3,1,5,5,9
 	.half	.L105-.L104
-	.byte	1,5,39,9
+	.byte	1,5,14,9
 	.half	.L106-.L105
-	.byte	1,5,28,9
+	.byte	1,5,73,9
 	.half	.L107-.L106
-	.byte	1,5,63,9
-	.half	.L108-.L107
-	.byte	1,5,58,9
-	.half	.L109-.L108
-	.byte	1,5,63,9
-	.half	.L110-.L109
-	.byte	1,5,52,9
-	.half	.L111-.L110
-	.byte	1,5,63,9
-	.half	.L112-.L111
-	.byte	1,5,46,9
-	.half	.L113-.L112
-	.byte	1,5,70,9
-	.half	.L114-.L113
-	.byte	1,5,94,9
-	.half	.L115-.L114
-	.byte	1,5,14,9
-	.half	.L116-.L115
-	.byte	1,5,5,9
-	.half	.L117-.L116
-	.byte	1,5,14,9
-	.half	.L118-.L117
-	.byte	1,5,20,9
-	.half	.L119-.L118
-	.byte	1,5,10,9
-	.half	.L120-.L119
-	.byte	3,1,1,5,5,9
-	.half	.L121-.L120
-	.byte	1,5,10,9
-	.half	.L122-.L121
-	.byte	1,5,27,9
-	.half	.L123-.L122
-	.byte	1,5,18,9
-	.half	.L124-.L123
-	.byte	1,5,27,9
-	.half	.L125-.L124
-	.byte	1,5,16,9
-	.half	.L126-.L125
-	.byte	1,5,14,9
-	.half	.L127-.L126
-	.byte	3,2,1,5,5,9
-	.half	.L128-.L127
-	.byte	1,5,14,9
-	.half	.L129-.L128
 	.byte	1,5,87,9
-	.half	.L130-.L129
-	.byte	1,5,101,9
-	.half	.L131-.L130
+	.half	.L108-.L107
 	.byte	1,5,39,9
-	.half	.L132-.L131
+	.half	.L109-.L108
 	.byte	1,5,34,9
-	.half	.L133-.L132
+	.half	.L110-.L109
 	.byte	1,5,39,9
-	.half	.L134-.L133
+	.half	.L111-.L110
 	.byte	1,5,28,9
-	.half	.L135-.L134
-	.byte	1,5,64,9
-	.half	.L136-.L135
-	.byte	1,5,53,9
-	.half	.L137-.L136
-	.byte	1,5,64,9
-	.half	.L138-.L137
+	.half	.L112-.L111
+	.byte	1,5,63,9
+	.half	.L113-.L112
+	.byte	1,5,58,9
+	.half	.L114-.L113
+	.byte	1,5,63,9
+	.half	.L115-.L114
+	.byte	1,5,52,9
+	.half	.L116-.L115
+	.byte	1,5,63,9
+	.half	.L117-.L116
 	.byte	1,5,46,9
-	.half	.L139-.L138
-	.byte	1,5,81,9
-	.half	.L140-.L139
-	.byte	1,5,79,9
-	.half	.L141-.L140
-	.byte	1,5,71,9
-	.half	.L142-.L141
-	.byte	1,5,84,9
-	.half	.L143-.L142
-	.byte	1,5,108,9
-	.half	.L144-.L143
+	.half	.L118-.L117
+	.byte	1,5,70,9
+	.half	.L119-.L118
+	.byte	1,5,94,9
+	.half	.L120-.L119
 	.byte	1,5,14,9
-	.half	.L145-.L144
+	.half	.L121-.L120
 	.byte	1,5,5,9
-	.half	.L146-.L145
+	.half	.L122-.L121
 	.byte	1,5,14,9
-	.half	.L147-.L146
+	.half	.L123-.L122
 	.byte	1,5,20,9
-	.half	.L148-.L147
+	.half	.L124-.L123
 	.byte	1,5,10,9
-	.half	.L149-.L148
+	.half	.L125-.L124
 	.byte	3,1,1,5,5,9
-	.half	.L150-.L149
+	.half	.L126-.L125
 	.byte	1,5,10,9
-	.half	.L151-.L150
+	.half	.L127-.L126
 	.byte	1,5,27,9
-	.half	.L152-.L151
+	.half	.L128-.L127
 	.byte	1,5,18,9
-	.half	.L153-.L152
+	.half	.L129-.L128
 	.byte	1,5,27,9
-	.half	.L154-.L153
+	.half	.L130-.L129
 	.byte	1,5,16,9
+	.half	.L131-.L130
+	.byte	1,5,14,9
+	.half	.L132-.L131
+	.byte	3,3,1,5,5,9
+	.half	.L133-.L132
+	.byte	1,5,14,9
+	.half	.L134-.L133
+	.byte	1,5,87,9
+	.half	.L135-.L134
+	.byte	1,5,101,9
+	.half	.L136-.L135
+	.byte	1,5,39,9
+	.half	.L137-.L136
+	.byte	1,5,34,9
+	.half	.L138-.L137
+	.byte	1,5,39,9
+	.half	.L139-.L138
+	.byte	1,5,28,9
+	.half	.L140-.L139
+	.byte	1,5,64,9
+	.half	.L141-.L140
+	.byte	1,5,53,9
+	.half	.L142-.L141
+	.byte	1,5,64,9
+	.half	.L143-.L142
+	.byte	1,5,46,9
+	.half	.L144-.L143
+	.byte	1,5,81,9
+	.half	.L145-.L144
+	.byte	1,5,79,9
+	.half	.L146-.L145
+	.byte	1,5,71,9
+	.half	.L147-.L146
+	.byte	1,5,84,9
+	.half	.L148-.L147
+	.byte	1,5,108,9
+	.half	.L149-.L148
+	.byte	1,5,14,9
+	.half	.L150-.L149
+	.byte	1,5,5,9
+	.half	.L151-.L150
+	.byte	1,5,14,9
+	.half	.L152-.L151
+	.byte	1,5,20,9
+	.half	.L153-.L152
+	.byte	1,5,10,9
+	.half	.L154-.L153
+	.byte	3,1,1,5,5,9
 	.half	.L155-.L154
-	.byte	1,5,1,9
+	.byte	1,5,10,9
 	.half	.L156-.L155
+	.byte	1,5,27,9
+	.half	.L157-.L156
+	.byte	1,5,18,9
+	.half	.L158-.L157
+	.byte	1,5,27,9
+	.half	.L159-.L158
+	.byte	1,5,16,9
+	.half	.L160-.L159
+	.byte	1,5,1,9
+	.half	.L161-.L160
 	.byte	3,1,1,7,9
-	.half	.L21-.L156
+	.half	.L21-.L161
 	.byte	0,1,1
-.L70:
+.L75:
 	.sdecl	'.debug_ranges',debug,cluster('observeMotor')
 	.sect	'.debug_ranges'
 .L20:
@@ -706,15 +725,15 @@ theta_tilde:	.type	object
 	.byte	2
 	.word	.L13
 	.byte	3
-	.byte	'getThetaHat',0,1,51,9
-	.word	.L54
+	.byte	'getThetaHat',0,1,68,9
+	.word	.L58
 	.byte	1,1,1
-	.word	.L8,.L57,.L7
+	.word	.L8,.L59,.L7
 	.byte	4
-	.byte	'chn',0,1,51,27
-	.word	.L52,.L58
+	.byte	'chn',0,1,68,33
+	.word	.L60,.L61
 	.byte	5
-	.word	.L8,.L57
+	.word	.L8,.L59
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('getThetaHat')
 	.sect	'.debug_abbrev'
@@ -724,28 +743,28 @@ theta_tilde:	.type	object
 	.sdecl	'.debug_line',debug,cluster('getThetaHat')
 	.sect	'.debug_line'
 .L24:
-	.word	.L158-.L157
-.L157:
+	.word	.L163-.L162
+.L162:
 	.half	3
-	.word	.L160-.L159
-.L159:
+	.word	.L165-.L164
+.L164:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../includes/app/observer/observer.c',0,0,0,0,0
-.L160:
+.L165:
 	.byte	5,21,7,0,5,2
 	.word	.L8
-	.byte	3,52,1,5,12,9
-	.half	.L161-.L8
+	.byte	3,197,0,1,5,12,9
+	.half	.L166-.L8
 	.byte	1,5,21,9
-	.half	.L162-.L161
+	.half	.L167-.L166
 	.byte	1,5,5,9
-	.half	.L163-.L162
+	.half	.L168-.L167
 	.byte	1,5,1,9
-	.half	.L2-.L163
+	.half	.L2-.L168
 	.byte	3,1,1,7,9
 	.half	.L26-.L2
 	.byte	0,1,1
-.L158:
+.L163:
 	.sdecl	'.debug_ranges',debug,cluster('getThetaHat')
 	.sect	'.debug_ranges'
 .L25:
@@ -764,15 +783,15 @@ theta_tilde:	.type	object
 	.byte	2
 	.word	.L13
 	.byte	3
-	.byte	'getWHat',0,1,56,9
-	.word	.L54
+	.byte	'getWHat',0,1,74,9
+	.word	.L58
 	.byte	1,1,1
-	.word	.L10,.L59,.L9
+	.word	.L10,.L62,.L9
 	.byte	4
-	.byte	'chn',0,1,56,23
-	.word	.L52,.L60
+	.byte	'chn',0,1,74,29
+	.word	.L63,.L64
 	.byte	5
-	.word	.L10,.L59
+	.word	.L10,.L62
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('getWHat')
 	.sect	'.debug_abbrev'
@@ -782,28 +801,28 @@ theta_tilde:	.type	object
 	.sdecl	'.debug_line',debug,cluster('getWHat')
 	.sect	'.debug_line'
 .L29:
-	.word	.L165-.L164
-.L164:
+	.word	.L170-.L169
+.L169:
 	.half	3
-	.word	.L167-.L166
-.L166:
+	.word	.L172-.L171
+.L171:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../includes/app/observer/observer.c',0,0,0,0,0
-.L167:
+.L172:
 	.byte	5,17,7,0,5,2
 	.word	.L10
-	.byte	3,57,1,5,12,9
-	.half	.L168-.L10
+	.byte	3,203,0,1,5,12,9
+	.half	.L173-.L10
 	.byte	1,5,17,9
-	.half	.L169-.L168
+	.half	.L174-.L173
 	.byte	1,5,5,9
-	.half	.L170-.L169
+	.half	.L175-.L174
 	.byte	1,5,1,9
-	.half	.L3-.L170
+	.half	.L3-.L175
 	.byte	3,1,1,7,9
 	.half	.L31-.L3
 	.byte	0,1,1
-.L165:
+.L170:
 	.sdecl	'.debug_ranges',debug,cluster('getWHat')
 	.sect	'.debug_ranges'
 .L30:
@@ -822,15 +841,15 @@ theta_tilde:	.type	object
 	.byte	2
 	.word	.L13
 	.byte	3
-	.byte	'getIHat',0,1,61,9
-	.word	.L54
+	.byte	'getIHat',0,1,80,9
+	.word	.L58
 	.byte	1,1,1
-	.word	.L12,.L61,.L11
+	.word	.L12,.L65,.L11
 	.byte	4
-	.byte	'chn',0,1,61,23
-	.word	.L52,.L62
+	.byte	'chn',0,1,80,29
+	.word	.L66,.L67
 	.byte	5
-	.word	.L12,.L61
+	.word	.L12,.L65
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('getIHat')
 	.sect	'.debug_abbrev'
@@ -840,28 +859,28 @@ theta_tilde:	.type	object
 	.sdecl	'.debug_line',debug,cluster('getIHat')
 	.sect	'.debug_line'
 .L34:
-	.word	.L172-.L171
-.L171:
+	.word	.L177-.L176
+.L176:
 	.half	3
-	.word	.L174-.L173
-.L173:
+	.word	.L179-.L178
+.L178:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../includes/app/observer/observer.c',0,0,0,0,0
-.L174:
+.L179:
 	.byte	5,17,7,0,5,2
 	.word	.L12
-	.byte	3,62,1,5,12,9
-	.half	.L175-.L12
+	.byte	3,209,0,1,5,12,9
+	.half	.L180-.L12
 	.byte	1,5,17,9
-	.half	.L176-.L175
+	.half	.L181-.L180
 	.byte	1,5,5,9
-	.half	.L177-.L176
+	.half	.L182-.L181
 	.byte	1,5,1,9
-	.half	.L4-.L177
+	.half	.L4-.L182
 	.byte	3,1,1,7,9
 	.half	.L36-.L4
 	.byte	0,1,1
-.L172:
+.L177:
 	.sdecl	'.debug_ranges',debug,cluster('getIHat')
 	.sect	'.debug_ranges'
 .L35:
@@ -878,8 +897,8 @@ theta_tilde:	.type	object
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L13
 	.byte	3
-	.byte	'g_theta_h',0,1,25,9
-	.word	.L63
+	.byte	'g_theta_h',0,1,28,9
+	.word	.L68
 	.byte	1,5,3
 	.word	g_theta_h
 	.byte	0
@@ -900,8 +919,8 @@ theta_tilde:	.type	object
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L13
 	.byte	3
-	.byte	'g_w_h',0,1,26,9
-	.word	.L63
+	.byte	'g_w_h',0,1,29,9
+	.word	.L68
 	.byte	1,5,3
 	.word	g_w_h
 	.byte	0
@@ -922,8 +941,8 @@ theta_tilde:	.type	object
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L13
 	.byte	3
-	.byte	'g_i_h',0,1,27,9
-	.word	.L63
+	.byte	'g_i_h',0,1,30,9
+	.word	.L68
 	.byte	1,5,3
 	.word	g_i_h
 	.byte	0
@@ -944,8 +963,8 @@ theta_tilde:	.type	object
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L13
 	.byte	3
-	.byte	'g_int_theta_h',0,1,29,9
-	.word	.L63
+	.byte	'g_int_theta_h',0,1,32,9
+	.word	.L68
 	.byte	1,5,3
 	.word	g_int_theta_h
 	.byte	0
@@ -966,8 +985,8 @@ theta_tilde:	.type	object
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L13
 	.byte	3
-	.byte	'g_int_w_h',0,1,30,9
-	.word	.L63
+	.byte	'g_int_w_h',0,1,33,9
+	.word	.L68
 	.byte	1,5,3
 	.word	g_int_w_h
 	.byte	0
@@ -988,8 +1007,8 @@ theta_tilde:	.type	object
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L13
 	.byte	3
-	.byte	'g_int_i_h',0,1,31,9
-	.word	.L63
+	.byte	'g_int_i_h',0,1,34,9
+	.word	.L68
 	.byte	1,5,3
 	.word	g_int_i_h
 	.byte	0
@@ -1010,8 +1029,8 @@ theta_tilde:	.type	object
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
 	.word	.L13
 	.byte	3
-	.byte	'theta_tilde',0,1,33,9
-	.word	.L54
+	.byte	'theta_tilde',0,1,36,9
+	.word	.L58
 	.byte	1,5,3
 	.word	theta_tilde
 	.byte	0
@@ -1022,37 +1041,37 @@ theta_tilde:	.type	object
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('getIHat')
 	.sect	'.debug_loc'
-.L62:
-	.word	-1,.L12,0,.L61-.L12
+.L67:
+	.word	-1,.L12,0,.L65-.L12
 	.half	1
 	.byte	84
 	.word	0,0
 .L11:
-	.word	-1,.L12,0,.L61-.L12
+	.word	-1,.L12,0,.L65-.L12
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('getThetaHat')
 	.sect	'.debug_loc'
-.L58:
-	.word	-1,.L8,0,.L57-.L8
+.L61:
+	.word	-1,.L8,0,.L59-.L8
 	.half	1
 	.byte	84
 	.word	0,0
 .L7:
-	.word	-1,.L8,0,.L57-.L8
+	.word	-1,.L8,0,.L59-.L8
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('getWHat')
 	.sect	'.debug_loc'
-.L60:
-	.word	-1,.L10,0,.L59-.L10
+.L64:
+	.word	-1,.L10,0,.L62-.L10
 	.half	1
 	.byte	84
 	.word	0,0
 .L9:
-	.word	-1,.L10,0,.L59-.L10
+	.word	-1,.L10,0,.L62-.L10
 	.half	2
 	.byte	138,0
 	.word	0,0
@@ -1068,8 +1087,8 @@ theta_tilde:	.type	object
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L56:
-	.word	-1,.L6,0,.L64-.L6
+.L57:
+	.word	-1,.L6,0,.L69-.L6
 	.half	1
 	.byte	86
 	.word	0,0
@@ -1080,7 +1099,7 @@ theta_tilde:	.type	object
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L178:
+.L183:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -1088,21 +1107,21 @@ theta_tilde:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('observeMotor')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L178,.L6,.L51-.L6
+	.word	.L183,.L6,.L51-.L6
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	.sdecl	'.debug_frame',debug,cluster('getThetaHat')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L178,.L8,.L57-.L8
+	.word	.L183,.L8,.L59-.L8
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('getWHat')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L178,.L10,.L59-.L10
+	.word	.L183,.L10,.L62-.L10
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	.sdecl	'.debug_frame',debug,cluster('getIHat')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L178,.L12,.L61-.L12
+	.word	.L183,.L12,.L65-.L12
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	; Module end

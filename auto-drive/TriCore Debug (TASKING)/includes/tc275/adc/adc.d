@@ -1,7 +1,7 @@
 includes/tc275/adc/adc.o :	../includes/tc275/adc/adc.c
 ../includes/tc275/adc/adc.c :
-includes/tc275/adc/adc.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/adc/adc.h
-c:/auto-drive/auto-drive/auto-drive/includes/tc275/adc/adc.h :
+includes/tc275/adc/adc.o :	../includes/tc275/adc/adc.h
+../includes/tc275/adc/adc.h :
 includes/tc275/adc/adc.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Cpu/Std/Platform_Types.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Cpu/Std/Platform_Types.h :
 includes/tc275/adc/adc.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Vadc/Adc/IfxVadc_Adc.h

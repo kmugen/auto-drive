@@ -6,12 +6,21 @@
 /*********************************************************************************************************************/
 #include "Platform_Types.h"
 
-#define W_CUT           80
+#define W_CUT           80.0f  // Cut-Off Frequency
+
 /*********************************************************************************************************************/
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
 /*********************************************************************************************************************/
-static inline float32 lowPassFilter(float32 w_ref, float32 prevLpf, float32 t_s)
+
+// 저역 통과 필터 LPF
+static inline float32 lowPassFilter(const float32 w_ref, const float32 prevLpf, const float32 t_s)
 {
+    /*
+     * w_ref : LPF 입력으로 들어오는 신호.
+     * prevLpf : LPF 통과한 이전 값.
+     * t_s : sampling time.
+     * W_CUT : Cut-Off Frequency
+    */
     return (prevLpf + (t_s * W_CUT * w_ref)) / (1 + t_s * W_CUT);
 }
 

@@ -54,5 +54,7 @@ includes/hardware/encoder/encoder.o :	c:/auto-drive/auto-drive/auto-drive/Librar
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuWdt.asm.h :
 includes/hardware/encoder/encoder.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h :
+includes/hardware/encoder/encoder.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpioMap.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpioMap.h :
 includes/hardware/encoder/encoder.o :	c:/auto-drive/auto-drive/auto-drive/includes/pinSettings.h
 c:/auto-drive/auto-drive/auto-drive/includes/pinSettings.h :

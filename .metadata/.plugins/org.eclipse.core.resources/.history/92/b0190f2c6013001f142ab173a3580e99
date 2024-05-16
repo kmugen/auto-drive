@@ -1,0 +1,84 @@
+/*********************************************************************************************************************/
+/*-----------------------------------------------------Includes------------------------------------------------------*/
+/*********************************************************************************************************************/
+#include "encoder.h"
+#include "gpio.h"
+#include "pinSettings.h"
+
+/*********************************************************************************************************************/
+/*------------------------------------------------------Macros-------------------------------------------------------*/
+/*********************************************************************************************************************/
+#define TICKS_PER_REV           44                          // 1 회전당 틱의 개수 (cpr)
+#define RADIAN_PER_TICK         2 * PI / TICKS_PER_REV      // 1 틱당 각위치 변화량 (rad)
+
+/*********************************************************************************************************************/
+/*-------------------------------------------------Global variables--------------------------------------------------*/
+/*********************************************************************************************************************/
+sint8 g_dir_enc1 = 1;
+sint8 g_dir_enc2 = 1;
+
+float32 g_pos_enc1 = 0.0f;
+float32 g_pos_enc2 = 0.0f;
+
+/*********************************************************************************************************************/
+/*---------------------------------------------Function Implementations----------------------------------------------*/
+/*********************************************************************************************************************/
+void initEncoder(void)
+{
+    setPinInput(PIN_ENC1_CHA);
+    setPinInput(PIN_ENC1_CHB);
+    setPinInput(PIN_ENC2_CHA);
+    setPinInput(PIN_ENC2_CHB);
+}
+
+void countEncTicks(void)
+{
+    // 엣지 탐지를 위한 이전 출력 상태
+    static boolean prev_enc1_chA = FALSE;
+    static boolean prev_enc1_chB = FALSE;
+    static boolean prev_enc2_chA = FALSE;
+    static boolean prev_enc2_chB = FALSE;
+
+    // 엔코더 디지털 입력
+    boolean cur_enc1_chA = getPinState(PIN_ENC1_CHA);
+    boolean cur_enc1_chB = getPinState(PIN_ENC1_CHB);
+    boolean cur_enc2_chA = getPinState(PIN_ENC2_CHA);
+    boolean cur_enc2_chB = getPinState(PIN_ENC2_CHB);
+
+    // 엔코더 chA가 상승 엣지일 때, 회전 방향 측정
+    if ((prev_enc1_chA == FALSE) && (cur_enc1_chA == TRUE))
+    {
+        g_dir_enc1 = (cur_enc1_chB == FALSE) ? 1 : -1;
+    }
+
+    if ((prev_enc2_chA == FALSE) && (cur_enc2_chA == TRUE))
+    {
+        g_dir_enc2 = (cur_enc2_chB == FALSE) ? 1 : -1;
+    }
+
+    // 엔코더 1번 각 채널 엣지에서 각위치 측정
+    if (prev_enc1_chA != cur_enc1_chA)
+    {
+        g_pos_enc1 += (g_dir_enc1 * RADIAN_PER_TICK);
+    }
+    if (prev_enc1_chB != cur_enc1_chB)
+    {
+        g_pos_enc1 += (g_dir_enc1 * RADIAN_PER_TICK);
+    }
+
+    // 엔코더 1번 각 채널 엣지에서 각위치 측정
+    if (prev_enc2_chA != cur_enc2_chA)
+    {
+        g_pos_enc2 += (g_dir_enc2 * RADIAN_PER_TICK);
+    }
+    if (prev_enc2_chB != cur_enc2_chB)
+    {
+        g_pos_enc2 += (g_dir_enc2 * RADIAN_PER_TICK);
+    }
+
+    // 이전 엔코더 펄스 저장
+    prev_enc1_chA = cur_enc1_chA;
+    prev_enc1_chB = cur_enc1_chB;
+    prev_enc2_chA = cur_enc2_chA;
+    prev_enc2_chB = cur_enc2_chB;
+}

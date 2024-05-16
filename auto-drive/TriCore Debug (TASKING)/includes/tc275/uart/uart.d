@@ -150,3 +150,5 @@ includes/tc275/uart/uart.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h :
 includes/tc275/uart/uart.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h :
+includes/tc275/uart/uart.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpioMap.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpioMap.h :

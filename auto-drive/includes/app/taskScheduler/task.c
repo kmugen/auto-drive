@@ -10,18 +10,10 @@
 #include "gpio.h"
 #include "ultrasonic.h"
 #include "uart.h"
-
-/*********************************************************************************************************************/
-/*------------------------------------------------------Macros-------------------------------------------------------*/
-/*********************************************************************************************************************/
-
-/*********************************************************************************************************************/
-/*-------------------------------------------------Global variables--------------------------------------------------*/
-/*********************************************************************************************************************/
-
-/*********************************************************************************************************************/
-/*--------------------------------------------Private Variables/Constants--------------------------------------------*/
-/*********************************************************************************************************************/
+#include "motor.h"
+#include "encoder.h"
+#include "dial.h"
+#include "switch.h"
 
 /*********************************************************************************************************************/
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
@@ -72,6 +64,10 @@ void taskMotorCtrl(const float32 w_ref, const uint8 motor_on, const uint8 dir)
     float32 w_ref_1 = 0.0f;
     float32 w_ref_2 = 0.0f;
 
+    /* 옵저버에 입력할 각위치 (rad) */
+    float32 theta_1 = 0.0f;
+    float32 theta_2 = 0.0f;
+
     /* 옵저버 측정 각속도 (rad/s) */
     float32 w_1 = 0.0f;
     float32 w_2 = 0.0f;
@@ -89,8 +85,8 @@ void taskMotorCtrl(const float32 w_ref, const uint8 motor_on, const uint8 dir)
     float32 w_err_2 = 0.0f;
 
     /* 모터에 인가할 전압 (V) */
-    float32 v_in_1 = 0.0f;
-    float32 v_in_2 = 0.0f;
+    static float32 v_in_1 = 0.0f;
+    static float32 v_in_2 = 0.0f;
 
     /* 태스크 실행 주기 */
     const float32 t_s = 0.001f;
@@ -128,11 +124,19 @@ void taskMotorCtrl(const float32 w_ref, const uint8 motor_on, const uint8 dir)
     v_in_2 = pidController(MOTOR2, w_err_2, w_ref_2);
 
     /* 입력 전압이 0 ~ 12V 사이에 위치하도록 saturation 수행 */
-    v_in_1 = saturation(V_MIN, V_MAX);
-    v_in_2 = saturation(V_MIN, V_MAX);
+    v_in_1 = saturation(v_in_1, V_MIN, V_MAX);
+    v_in_2 = saturation(v_in_2, V_MIN, V_MAX);
 
     /* 0 ~ 1 사이의 듀티비를 모터 파워에 인가 */
     setMotorPower(v_in_1 / V_MAX, v_in_2 / V_MAX);
+
+    /* 관측기 동작을 위한 각위치 측정 */
+    theta_1 = getEncPos(MOTOR1);
+    theta_2 = getEncPos(MOTOR2);
+
+    /* 모터 관측 */
+    observeMotor(MOTOR1, v_in_1, theta_1);
+    observeMotor(MOTOR2, v_in_2, theta_2);
 }
 
 void taskBuzzerCtrl(const uint8 buzzer_on, const uint8 motor_on)
@@ -154,7 +158,7 @@ void taskBuzzerCtrl(const uint8 buzzer_on, const uint8 motor_on)
     }
 }
 
-void taskUltrasonic(const float32 *w_ref, const float32 *dist, const uint8 motor_on)
+void taskUltrasonic(float32 *w_ref, float32 *dist, const uint8 motor_on)
 {
     static float32 dist_prev = 0.0f; /* LPF를 위한 이전 거리 */
     const float32 t_s = 0.01f; /* 10ms 주기 */
@@ -165,7 +169,7 @@ void taskUltrasonic(const float32 *w_ref, const float32 *dist, const uint8 motor
         trigUltrasonic();
         *dist = getUsDist();
 
-        *dist = lowPassFilter(*dist, dist_prev, 0.01);
+        *dist = lowPassFilter(*dist, dist_prev, t_s);
         dist_prev = *dist;
     }
 
@@ -180,7 +184,7 @@ void taskUltrasonic(const float32 *w_ref, const float32 *dist, const uint8 motor
     }
 }
 
-void taskBuzzerMode(const uint32 time_100ms, const float32 dist, const uint8 *buzzer_on)
+void taskBuzzerMode(const uint32 time_100ms, const float32 dist, uint8 *buzzer_on)
 {
     if (dist < 10.0f) /* 10cm 미만이면 0.1s 주기 부저 */
     {
@@ -232,7 +236,7 @@ void taskBuzzerMode(const uint32 time_100ms, const float32 dist, const uint8 *bu
     }
 }
 
-void taskBluetooth(const uint8 *bt_on, const uint8 *motor_on, const uint32 time_100ms, const float32 *w_ref, const uint8 *dir)
+void taskBluetooth(uint8 *bt_on, uint8 *motor_on, const uint32 time_100ms, float32 *w_ref, uint8 *dir)
 {
     if (g_bt_cmd == 'A') /* 블루투스 시작 */
     {
@@ -267,10 +271,10 @@ void taskBluetooth(const uint8 *bt_on, const uint8 *motor_on, const uint32 time_
             *motor_on = FALSE; /* 모터 off */
             break;
         case 'T':
-            *w_ref = ((w_ref + W_STEP) > W_MAX) ? W_MAX : (w_ref + W_STEP);     /* 모터 속도 증가 */
+            *w_ref = ((*w_ref + W_STEP) > W_MAX) ? W_MAX : (*w_ref + W_STEP);     /* 모터 속도 증가 */
             break;
         case 'X':
-            *w_ref = ((w_ref - W_STEP) < W_MIN) ? W_MIN : (w_ref - W_STEP);     /* 모터 속도 감소 */
+            *w_ref = ((*w_ref - W_STEP) < W_MIN) ? W_MIN : (*w_ref - W_STEP);     /* 모터 속도 감소 */
             break;
         default:
             break;
@@ -284,7 +288,7 @@ void taskBluetooth(const uint8 *bt_on, const uint8 *motor_on, const uint32 time_
     g_bt_cmd = '\0';    /* 블루투스 버퍼 clear */
 }
 
-void taskSW(const uint8 bt_on, const uint8 *motor_on)
+void taskSW(const uint8 bt_on, uint8 *motor_on)
 {
     /* 블루투스 제어 아닐 때, 스위치를 눌러 모터 on/off 변경 */
     if (bt_on == FALSE)
@@ -304,7 +308,7 @@ void taskSW(const uint8 bt_on, const uint8 *motor_on)
     }
 }
 
-void taskDial(const uint8 bt_on, const uint8 motor_on, const float32 dist, const float32 *w_ref)
+void taskDial(const uint8 bt_on, const uint8 motor_on, const float32 dist, float32 *w_ref)
 {
     /* 블루투스 제어 아니고, 모터 동작 가능하고, 안전한 거리일 때, 목표 속도 제어 가능 */
     if ((bt_on == FALSE) && (motor_on == TRUE) && (dist >= 10))

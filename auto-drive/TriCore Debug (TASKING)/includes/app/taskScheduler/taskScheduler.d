@@ -96,3 +96,13 @@ includes/app/taskScheduler/taskScheduler.o :	../includes/app/taskScheduler/task.
 ../includes/app/taskScheduler/task.h :
 includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/encoder/encoder.h
 c:/auto-drive/auto-drive/auto-drive/includes/hardware/encoder/encoder.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/pinSettings.h
+c:/auto-drive/auto-drive/auto-drive/includes/pinSettings.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h :
+includes/app/taskScheduler/taskScheduler.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpioMap.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpioMap.h :

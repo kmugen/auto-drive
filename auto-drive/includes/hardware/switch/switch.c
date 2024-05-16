@@ -13,12 +13,18 @@ uint8 getSW(void)
     uint8 ret = FALSE;
     static uint8 prev_sw = TRUE;
 
+    // 스위치의 현재 값과 이전 값이 다를 때 -> falling edge가 발생할 때(스위치 : pull-up 기본(1), 눌렸을 때(0)), 스위치 push
     uint8 cur_sw = getPinState(PIN_SW);
     if ((prev_sw == TRUE) && (cur_sw == FALSE))
     {
         ret = TRUE;
     }
+    else
+    {
+        ;
+    }
 
+    // 이전 값 업데이트
     prev_sw = cur_sw;
 
     return ret;

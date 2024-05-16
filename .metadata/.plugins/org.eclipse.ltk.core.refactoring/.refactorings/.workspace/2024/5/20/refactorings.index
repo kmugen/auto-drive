@@ -8,3 +8,5 @@
 1715844950202	Delete resource 'auto-drive/includes/tc275/adc/adcMap.h'
 1715844997109	Delete resource 'auto-drive/includes/tc275/pwmHl'
 1715845065213	Delete resource 'auto-drive/includes/app/lpf/lpf.c'
+1715846277684	Delete resource 'auto-drive/includes/hardware/buzzer/buzzer.c'
+1715846311919	Delete resource 'auto-drive/includes/hardware/dial/dial.c'

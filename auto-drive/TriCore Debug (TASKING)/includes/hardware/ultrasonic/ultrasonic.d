@@ -94,15 +94,19 @@ includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.h :
 includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h :
-includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/extIrq/extIrq.h
-c:/auto-drive/auto-drive/auto-drive/includes/tc275/extIrq/extIrq.h :
-includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxScu_PinMap.h
-c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxScu_PinMap.h :
+includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpioMap.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpioMap.h :
 includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/delay/delay.h
 c:/auto-drive/auto-drive/auto-drive/includes/tc275/delay/delay.h :
 includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.h :
 includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.h :
+includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/extIrq/extIrq.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/extIrq/extIrq.h :
+includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxScu_PinMap.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxScu_PinMap.h :
+includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/extIrq/extIrqMap.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/extIrq/extIrqMap.h :
 includes/hardware/ultrasonic/ultrasonic.o :	c:/auto-drive/auto-drive/auto-drive/includes/isrPrio.h
 c:/auto-drive/auto-drive/auto-drive/includes/isrPrio.h :

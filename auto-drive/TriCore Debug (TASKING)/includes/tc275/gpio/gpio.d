@@ -52,6 +52,8 @@ includes/tc275/gpio/gpio.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Cpu/Std/Ifx_Types.h :
 includes/tc275/gpio/gpio.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h :
+includes/tc275/gpio/gpio.o :	../includes/tc275/gpio/gpioMap.h
+../includes/tc275/gpio/gpioMap.h :
 includes/tc275/gpio/gpio.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Cpu/Std/IfxCpu.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Cpu/Std/IfxCpu.h :
 includes/tc275/gpio/gpio.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_Impl/IfxCpu_cfg.h

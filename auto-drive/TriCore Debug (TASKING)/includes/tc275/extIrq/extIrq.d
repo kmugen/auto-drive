@@ -50,6 +50,8 @@ includes/tc275/extIrq/extIrq.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/i
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuWdt.asm.h :
 includes/tc275/extIrq/extIrq.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Cpu/Std/Ifx_Types.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Cpu/Std/Ifx_Types.h :
+includes/tc275/extIrq/extIrq.o :	../includes/tc275/extIrq/extIrqMap.h
+../includes/tc275/extIrq/extIrqMap.h :
 includes/tc275/extIrq/extIrq.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuEru.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuEru.h :
 includes/tc275/extIrq/extIrq.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Cpu/Std/IfxCpu.h
