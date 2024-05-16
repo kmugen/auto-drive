@@ -5,3 +5,6 @@
 1715665685983	Delete resource 'auto-drive/TriCore Debug (TASKING)'
 1715820485326	Delete resource 'tmp'
 1715822688643	Delete resource 'iLLD_TC375_ADS_Bluetooth_RFCOMM'
+1715844950202	Delete resource 'auto-drive/includes/tc275/adc/adcMap.h'
+1715844997109	Delete resource 'auto-drive/includes/tc275/pwmHl'
+1715845065213	Delete resource 'auto-drive/includes/app/lpf/lpf.c'

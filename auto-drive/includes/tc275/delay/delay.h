@@ -36,6 +36,5 @@ static inline void delaySec(uint32 delay)
 
 static inline uint64 getCurStmTicks(void) {
     return IfxStm_get(&MODULE_STM0);
-//    / IfxStm_getFrequency(&MODULE_STM0) * 1000000
 }
 #endif /* SRC_TC275_DELAY_DELAY_H_ */

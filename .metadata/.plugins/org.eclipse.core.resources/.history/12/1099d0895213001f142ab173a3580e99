@@ -1,0 +1,179 @@
+/*********************************************************************************************************************/
+/*-----------------------------------------------------Includes------------------------------------------------------*/
+/*********************************************************************************************************************/
+#include "Ifx_Types.h"
+#include "observer.h"
+#include "commonMacros.h"
+#include "lpf.h"
+#include "pid.h"
+#include "pinSettings.h"
+#include "gpio.h"
+#include "ultrasonic.h"
+
+/*********************************************************************************************************************/
+/*------------------------------------------------------Macros-------------------------------------------------------*/
+/*********************************************************************************************************************/
+
+/*********************************************************************************************************************/
+/*-------------------------------------------------Global variables--------------------------------------------------*/
+/*********************************************************************************************************************/
+
+/*********************************************************************************************************************/
+/*--------------------------------------------Private Variables/Constants--------------------------------------------*/
+/*********************************************************************************************************************/
+
+/*********************************************************************************************************************/
+/*------------------------------------------------Function Prototypes------------------------------------------------*/
+/*********************************************************************************************************************/
+/**
+ * @ breif : 입력이 min과 max를 넘어서지 않도록 포화
+ *
+ * @ param const float32 in  : 입력
+ * @ param const float32 min : 최소값
+ * @ param const float32 max : 최대값
+ *
+ * @ return : 없음
+ */
+static float32 saturation(const float32 in, const float32 min, const float32 max);
+
+/*********************************************************************************************************************/
+/*---------------------------------------------Function Implementations----------------------------------------------*/
+/*********************************************************************************************************************/
+static float32 saturation(const float32 in, const float32 min, const float32 max)
+{
+    float32 ret = in;
+
+    if (ret < min)
+    {
+        ret = min;
+    }
+    else
+    {
+        ;
+    }
+
+    if (ret > max)
+    {
+        ret = max;
+    }
+    else
+    {
+        ;
+    }
+
+    return ret;
+}
+
+void taskMotorCtrl(const float32 w_ref, const uint8 motor_on, const uint8 dir)
+{
+    /* 모터별 목표 각속도 (rad/s) */
+    float32 w_ref_1 = 0.0f;
+    float32 w_ref_2 = 0.0f;
+
+    /* 옵저버 측정 각속도 (rad/s) */
+    float32 w_1 = 0.0f;
+    float32 w_2 = 0.0f;
+
+    /* 필터를 거친 각속도 (rad/s) */
+    float32 w_lpf_1 = 0.0f;
+    float32 w_lpf_2 = 0.0f;
+
+    /* LPF를 위한 이전 각속도 (rad/s) */
+    static float32 w_lpf_prev_1 = 0.0f;
+    static float32 w_lpf_prev_2 = 0.0f;
+
+    /* 목표 각속도와 실제 각속도 사이의 오차 (rad/s) */
+    float32 w_err_1 = 0.0f;
+    float32 w_err_2 = 0.0f;
+
+    /* 모터에 인가할 전압 (V) */
+    float32 v_in_1 = 0.0f;
+    float32 v_in_2 = 0.0f;
+
+    /* 태스크 실행 주기 */
+    const float32 t_s = 0.001f;
+
+    /* 1번 모터와 2번 모터의 회전 방향은 반대 */
+    w_ref_1 = -1.0f * w_ref;
+    w_ref_2 = w_ref;
+
+    /* 관측기로 w_hat 측정 */
+    w_1 = getWHat(MOTOR1);
+    w_2 = getWHat(MOTOR2);
+
+    /* LPF 각속도 필터링 */
+    w_lpf_1 = lowPassFilter(w_lpf_1, w_lpf_prev_1, t_s);
+    w_lpf_2 = lowPassFilter(w_lpf_2, w_lpf_prev_2, t_s);
+
+    w_lpf_prev_1 = w_lpf_1;
+    w_lpf_prev_2 = w_lpf_2;
+
+    /* 오차 계산 */
+    w_err_1 = w_ref_1 - w_lpf_1;
+    w_err_2 = w_ref_2 - w_lpf_2;
+
+    /* PI 제어를 통해 인가할 전압 계산 */
+    v_in_1 = pidController(MOTOR1, w_err_1, w_ref_1);
+    v_in_2 = pidController(MOTOR2, w_err_2, w_ref_2);
+
+    /* 입력 전압이 0 ~ 12V 사이에 위치하도록 saturation 수행 */
+    v_in_1 = saturation(V_MIN, V_MAX);
+    v_in_2 = saturation(V_MIN, V_MAX);
+
+    /* 0 ~ 1 사이의 듀티비를 모터 파워에 인가 */
+    setMotorPower(v_in_1 / V_MAX, v_in_2 / V_MAX);
+}
+
+void taskBuzzerCtrl(const uint8 buzzer_on, const uint8 motor_on)
+{
+    if (motor_on == TRUE) /* 모터가 동작 중에만 부저 출력 */
+    {
+        if (buzzer_on == TRUE)
+        {
+            togglePin(PIN_BUZZER); /* 1ms 태스크이므로 1ms 마다 toggle -> 2ms 주기의 주파수 출력 */
+        }
+        else
+        {
+            ;
+        }
+    }
+    else
+    {
+        setPinLow(PIN_BUZZER);
+    }
+}
+
+void taskUltrasonic(const float32 *w_ref, const float32 *dist, const uint8 motor_on)
+{
+    static float32 dist_prev = 0.0f; /* LPF를 위한 이전 거리 */
+    const float32 t_s = 0.01; /* 10ms 주기 */
+
+    /* 모터 제어 중에만 거리 측정 */
+    if (motor_on == TRUE)
+    {
+        trigUltrasonic();
+        *dist = getUsDist();
+
+        *dist = lowPassFilter(*dist, dist_prev, 0.01);
+        dist_prev = *dist;
+    }
+
+    /* 거리가 10cm 이하가 되면, 모터 목표 속도 0 */
+    if (*dist < 10.0f)
+    {
+        *w_ref = 0;
+    }
+    else
+    {
+        ;
+    }
+}
+
+void taskBuzzerMode(const uint32 time_100ms, const float32 dist, const uint8 *buzzer_on)
+{
+    if (dist < 10.0)
+}
+
+void taskBluetooth(uint8 *bt_on, uint8 *motor_on, uint32 time_100ms, float32 *w_ref, uint8 *dir);
+void taskSW(uint8 bt_on, uint8 *motor_on);
+void taskDial(uint8 bt_on, uint8 motor_on, float32 dist, float32 *w_ref);

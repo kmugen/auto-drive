@@ -56,7 +56,7 @@ extern void taskMotorCtrl(const float32 w_ref, const uint8 motor_on, const uint8
  *
  * @ return 없음
  */
-extern void taskBuzzerCtrl(uint8 buzzer_on, uint8 motor_on);
+extern void taskBuzzerCtrl(const uint8 buzzer_on, const uint8 motor_on);
 
 /**
  * @ brief : 모터 동작 중에, 초음파 센서로 거리를 측정하여, 10cm 이하의 거리에 장애물이 감지되면 목표 속도를 0으로 설정
@@ -67,7 +67,7 @@ extern void taskBuzzerCtrl(uint8 buzzer_on, uint8 motor_on);
  *
  * @ return 없음
  */
-extern void taskUltrasonic(float32 *w_ref, float32 *dist, uint8 motor_on);
+extern void taskUltrasonic(const float32 *w_ref, const float32 *dist, const uint8 motor_on);
 
 /**
  * @ brief : 장애물 거리 기반으로 부저 on/off 모드를 조작하여 부저 주파수 결정
@@ -78,7 +78,7 @@ extern void taskUltrasonic(float32 *w_ref, float32 *dist, uint8 motor_on);
  *
  * @ return 없음
  */
-extern void taskBuzzerMode(uint32 time_100ms, float32 dist, uint8 *buzzer_on);
+extern void taskBuzzerMode(const uint32 time_100ms, const float32 dist, const uint8 *buzzer_on);
 
 /**
  * @ brief : 블루투스 제어를 on/off 할 수 있고, 블루투스 제어가 on인 동안은 모터의 동작을 제어할 수 있음
@@ -91,7 +91,7 @@ extern void taskBuzzerMode(uint32 time_100ms, float32 dist, uint8 *buzzer_on);
  *
  * @ return 없음
  */
-extern void taskBluetooth(uint8 *bt_on, uint8 *motor_on, uint32 time_100ms, float32 *w_ref, uint8 *dir);
+extern void taskBluetooth(const uint8 *bt_on, const uint8 *motor_on, const uint32 time_100ms, const float32 *w_ref, const uint8 *dir);
 
 /**
  * @ brief : 스위치로 모터 동작 on/off 제어
@@ -101,7 +101,7 @@ extern void taskBluetooth(uint8 *bt_on, uint8 *motor_on, uint32 time_100ms, floa
  *
  * @ return 없음
  */
-extern void taskSW(uint8 bt_on, uint8 *motor_on);
+extern void taskSW(const uint8 bt_on, const uint8 *motor_on);
 
 /**
  * @ brief : 다이얼로 모터의 목표 각속도 설정
@@ -113,5 +113,5 @@ extern void taskSW(uint8 bt_on, uint8 *motor_on);
  *
  * @ return 없음
  */
-extern void taskDial(uint8 bt_on, uint8 motor_on, float32 dist, float32 *w_ref);
+extern void taskDial(const uint8 bt_on, const uint8 motor_on, const float32 dist, const float32 *w_ref);
 #endif /* INCLUDES_APP_TASKSCHEDULER_TASK_H_ */

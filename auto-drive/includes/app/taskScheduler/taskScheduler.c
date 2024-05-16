@@ -7,37 +7,28 @@
 #include "task.h"
 #include "Ifx_Types.h"
 #include "encoder.h"
-
-/*********************************************************************************************************************/
-/*-------------------------------------------------Data Structures---------------------------------------------------*/
-/*********************************************************************************************************************/
- typedef struct
-{
-        uint32 cnt_1ms;
-        uint32 cnt_10ms;
-        uint32 cnt_100ms;
-}TestCnt;
+#include "pinSettings.h"
+#include "gpio.h"
 
 /*********************************************************************************************************************/
 /*-------------------------------------------------Global variables--------------------------------------------------*/
 /*********************************************************************************************************************/
-TestCnt stTestCnt;
 
-float32 g_w_ref;
+/* 태스크간 공유해야한는 데이터들 */
+float32 g_w_ref = 0.0f; /* 목표 각속도 */
 
-float32 g_w_ref_1;
-float32 g_w_ref_2;
+float32 g_dist = 0.0f; /* 장애물 거리 */
 
-float32 g_dist;
+uint8 g_motor_on = TRUE; /* 모터 동작 on/off 모드 */
 
-uint8 g_motor_on = TRUE;
+uint8 g_bt_on = FALSE; /* 블루투스 on/off 모드 */
 
-uint8 g_bt_on = FALSE;
-boolean g_buzzer_on = FALSE;
+boolean g_buzzer_on = FALSE; /* 부저 on/off 모드 */
 
-uint8 g_dir = FORWARD;
+uint8 g_dir = FORWARD; /* rc카 진행 방향 */
 
-char str[40];
+uint32 g_cnt_100ms = 0;
+
 /*********************************************************************************************************************/
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
 /*********************************************************************************************************************/
@@ -50,41 +41,56 @@ static void Task100ms(void);
 /*********************************************************************************************************************/
 void appNoTask(void)
 {
+    /* 좌/우 모터의 엔코더 틱 계산 */
     countEncTicks();
 }
 
 static void Task1ms(void)
 {
+    /* 모터 pid 제어 */
     taskMotorCtrl(g_w_ref, g_motor_on, g_dir);
 
+    /* 부저 제어 */
     taskBuzzerCtrl(g_buzzer_on, g_motor_on);
-
-    stTestCnt.cnt_1ms++;
 }
 
 static void Task10ms(void)
 {
+    /* 장애물 거리 측정 및, 안전 거리 넘어서면 정지 */
     taskUltrasonic(&g_w_ref, &g_dist, g_motor_on);
-
-    stTestCnt.cnt_10ms++;
 }
 
 static void Task100ms(void)
 {
-    taskBuzzerMode(stTestCnt.cnt_100ms, g_dist, &g_buzzer_on);
+    /* 거리에 따른 부저 출력 주기 결정 */
+    taskBuzzerMode(g_cnt_100ms, g_dist, &g_buzzer_on);
 
-    taskBluetooth(&g_bt_on, &g_motor_on, stTestCnt.cnt_100ms, &g_w_ref, &g_dir);
+    /* 블루투스로 모터 제어 */
+    taskBluetooth(&g_bt_on, &g_motor_on, g_cnt_100ms, &g_w_ref, &g_dir);
 
+    /* 스위치로 모터 on/off */
     taskSW(g_bt_on, &g_motor_on);
 
+    /* 다이얼로 목표 각속도 설정 */
     taskDial(g_bt_on, g_motor_on, g_dist, &g_w_ref);
 
+    /* 모터 동작 모드를 나타내는 LED */
+    if (g_motor_on == TRUE)
+    {
+        setPinLow(PIN_LED);
+    }
+    else
+    {
+        setPinHigh(PIN_LED);
+    }
 
-    stTestCnt.cnt_100ms++;
+    /* 0.1s 단위로 시스템 시간 계산 */
+    g_cnt_100ms++;
 }
 
 void taskScheduler(void)
 {
+    /* 주기별 태스크 수행 */
     if(schedulingInfo.f_1ms == 1)
     {
         schedulingInfo.f_1ms = 0;

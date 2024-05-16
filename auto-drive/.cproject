@@ -89,7 +89,6 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/includes/tc275/delay}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/includes/tc275/extIrq}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/includes/tc275/gpio}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/includes/tc275/pwmHl}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/includes/tc275/pwmTom}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/includes/tc275/stm}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/includes/tc275/uart}&quot;"/>
