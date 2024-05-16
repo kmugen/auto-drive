@@ -40,9 +40,9 @@
 /**
  * @ brief : 관측기로 각속도를 계산하여 w_ref와 w_h 사이의 오차를 regulation하는 pi 제어를 수행
  *
- * @ param float32 w_ref  : 목표 각속도
+ * @ param float32 w_ref : 목표 각속도
  * @ param uint8 motor_on : 모터 on/off 모드
- * @ param uint8 dir      : 좌/우, 직진을 가리키는 방향
+ * @ param uint8 dir : 좌/우, 직진을 가리키는 방향
  *
  * @ return 없음
  */
@@ -52,7 +52,7 @@ extern void taskMotorCtrl(float32 w_ref, uint8 motor_on, uint8 dir);
  * @ brief : 모터가 동작하는 중에, 부저가 켜지면, 1000hz의 부저 출력
  *
  * @ param uint8 buzzer_on : 부저 on/off 모드
- * @ param uint8 motor_on  : 모터 on/off 모드
+ * @ param uint8 motor_on : 모터 on/off 모드
  *
  * @ return 없음
  */
@@ -62,7 +62,7 @@ extern void taskBuzzerCtrl(uint8 buzzer_on, uint8 motor_on);
  * @ brief : 모터 동작 중에, 초음파 센서로 거리를 측정하여, 10cm 이하의 거리에 장애물이 감지되면 목표 속도를 0으로 설정
  *
  * @ param float32 *w_ref : 목표 각속도
- * @ param float32 *dist  : 초음파 센서 거리
+ * @ param float32 *dist : 초음파 센서 거리
  * @ param uint8 motor_on : 모터 on/off 모드
  *
  * @ return 없음
@@ -70,48 +70,16 @@ extern void taskBuzzerCtrl(uint8 buzzer_on, uint8 motor_on);
 extern void taskUltrasonic(float32 *w_ref, float32 *dist, uint8 motor_on);
 
 /**
- * @ brief : 장애물 거리 기반으로 부저 on/off 모드를 조작하여 부저 주파수 결정
+ * @ brief : 장애물 거리 기반으로 부저 on/off 모드 조작으로 부저 주파수 결정
  *
- * @ param uint32 time_100ms : 0.1s 단위의 시스템 동작 시간
- * @ param float32 dist      : 초음파 센서 거리
- * @ param uint8 *buzzer_on  : 부저 on/off 모드
+ * @ param time_100ms : 0.1s 단위의 시스템 동작 시간
+ * @ param float32 dist : 초음파 센서 거리
+ * @ param uint8 *buzzer_on : 부저 on/off 모드
  *
  * @ return 없음
  */
 extern void taskBuzzerMode(uint32 time_100ms, float32 dist, uint8 *buzzer_on);
-
-/**
- * @ brief : 블루투스 제어를 on/off 할 수 있고, 블루투스 제어가 on인 동안은 모터의 동작을 제어할 수 있음
- *
- * @ param uint8 *bt_on      : 블루투스 제어 on/off 모드
- * @ param uint8 *motor_on   : 모터 제어 on/off 모드
- * @ param uint32 time_100ms : 0.1s 단위의 시스템 동작 시간
- * @ param float32 *w_ref    : 목표 각속도
- * @ param uint8 *dir        : rc카 진행 방향
- *
- * @ return 없음
- */
 extern void taskBluetooth(uint8 *bt_on, uint8 *motor_on, uint32 time_100ms, float32 *w_ref, uint8 *dir);
-
-/**
- * @ brief : 스위치로 모터 동작 on/off 제어
- *
- * @ param uint8 bt_on      : 블루투스 제어 on/off 모드
- * @ param uint8 *motor_on   : 모터 제어 on/off 모드
- *
- * @ return 없음
- */
 extern void taskSW(uint8 bt_on, uint8 *motor_on);
-
-/**
- * @ brief : 다이얼로 모터의 목표 각속도 설정
- *
- * @ param uint8 bt_on      : 블루투스 제어 on/off 모드
- * @ param uint8 *motor_on  : 모터 제어 on/off 모드
- * @ param float32 dist     : 장애물과의 거리
- * @ param float32 *w_ref   : 목표 각속도
- *
- * @ return 없음
- */
 extern void taskDial(uint8 bt_on, uint8 motor_on, float32 dist, float32 *w_ref);
 #endif /* INCLUDES_APP_TASKSCHEDULER_TASK_H_ */
