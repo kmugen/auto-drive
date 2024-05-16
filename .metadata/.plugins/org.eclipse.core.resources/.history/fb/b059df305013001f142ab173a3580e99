@@ -55,7 +55,7 @@ static float32 saturation(const float32 in, const float32 min, const float32 max
     return ret;
 }
 
-void taskMotorCtrl(const float32 w_ref, const uint8 motor_on, const uint8 dir)
+void taskMotorCtrl(float32 w_ref, uint8 motor_on, uint8 dir)
 {
     /* 모터별 목표 각속도 (rad/s) */
     float32 w_ref_1 = 0.0f;
@@ -115,16 +115,9 @@ void taskMotorCtrl(const float32 w_ref, const uint8 motor_on, const uint8 dir)
     setMotorPower(v_in_1 / V_MAX, v_in_2 / V_MAX);
 }
 
-void taskBuzzerCtrl(const uint8 buzzer_on, const uint8 motor_on)
+void taskBuzzerCtrl(uint8 buzzer_on, uint8 motor_on)
 {
-    if (motor_on == TRUE)
-    {
 
-    }
-    else
-    {
-
-    }
 }
 
 void taskUltrasonic(float32 *w_ref, float32 *dist, uint8 motor_on);

@@ -22,17 +22,14 @@
 /*********************************************************************************************************************/
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
 /*********************************************************************************************************************/
-/**
- * @ breif : 입
- */
-static float32 saturation(const float32 in, const float32 min, const float32 max);
+static float32 saturation(float32 min, float32 max);
 
 /*********************************************************************************************************************/
 /*---------------------------------------------Function Implementations----------------------------------------------*/
 /*********************************************************************************************************************/
-static float32 saturation(const float32 in, const float32 min, const float32 max)
+static float32 saturation(float32 min, float32 max)
 {
-    float32 ret = in;
+    float32 ret = 0.0;
 
     if (ret < min)
     {
@@ -55,7 +52,7 @@ static float32 saturation(const float32 in, const float32 min, const float32 max
     return ret;
 }
 
-void taskMotorCtrl(const float32 w_ref, const uint8 motor_on, const uint8 dir)
+void taskMotorCtrl(float32 w_ref, uint8 motor_on, uint8 dir)
 {
     /* 모터별 목표 각속도 (rad/s) */
     float32 w_ref_1 = 0.0f;
@@ -107,26 +104,13 @@ void taskMotorCtrl(const float32 w_ref, const uint8 motor_on, const uint8 dir)
     v_in_1 = pidController(MOTOR1, w_err_1, w_ref_1);
     v_in_2 = pidController(MOTOR2, w_err_2, w_ref_2);
 
-    /* 입력 전압이 0 ~ 12V 사이에 위치하도록 saturation 수행 */
-    v_in_1 = saturation(V_MIN, V_MAX);
-    v_in_2 = saturation(V_MIN, V_MAX);
-
-    /* 0 ~ 1 사이의 듀티비를 모터 파워에 인가 */
-    setMotorPower(v_in_1 / V_MAX, v_in_2 / V_MAX);
-}
-
-void taskBuzzerCtrl(const uint8 buzzer_on, const uint8 motor_on)
-{
-    if (motor_on == TRUE)
-    {
-
-    }
-    else
+    if (v_in_1 < 0)
     {
 
     }
 }
 
+void taskBuzzerCtrl(uint8 buzzer_on, uint8 motor_on);
 void taskUltrasonic(float32 *w_ref, float32 *dist, uint8 motor_on);
 void taskBuzzerMode(uint32 time_100ms, float32 dist, uint8 *buzzer_on);
 void taskBluetooth(uint8 *bt_on, uint8 *motor_on, uint32 time_100ms, float32 *w_ref, uint8 *dir);

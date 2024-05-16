@@ -46,7 +46,7 @@
  *
  * @ return 없음
  */
-extern void taskMotorCtrl(const float32 w_ref, const uint8 motor_on, const uint8 dir);
+extern void taskMotorCtrl(float32 w_ref, uint8 motor_on, uint8 dir);
 
 /**
  * @ brief : 모터가 동작하는 중에, 부저가 켜지면, 1000hz의 부저 출력
