@@ -28,3 +28,10 @@ void initMotor(void)
     initTomPwm(&PIN_MOTOR1_POWER, 0);
     initTomPwm(&PIN_MOTOR2_POWER, 0);
 }
+
+
+void setMotorPower(float32 power_motor1, float32 power_motor2)
+{
+    setTomPwmDutyRatio(&PIN_MOTOR1_POWER, power_motor1 * 100.0f);
+    setTomPwmDutyRatio(&PIN_MOTOR2_POWER, power_motor2 * 100.0f);
+}

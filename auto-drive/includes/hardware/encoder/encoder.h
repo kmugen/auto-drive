@@ -12,6 +12,8 @@
 /*********************************************************************************************************************/
 extern float32 g_pos_enc1;
 extern float32 g_pos_enc2;
+extern sint8 g_dir_enc1;
+extern sint8 g_dir_enc2;
 
 /*********************************************************************************************************************/
 /*------------------------------------------------Function Prototypes------------------------------------------------*/
@@ -27,4 +29,8 @@ static inline float32 getEncPos(uint8 chn)
     return ((chn == ENC1) ? g_pos_enc1 : g_pos_enc2);
 }
 
+static inline sint8 getEncDir(uint8 chn)
+{
+    return ((chn == ENC1) ? g_dir_enc1 : g_dir_enc2);
+}
 #endif /* INCLUDES_ENCODER_H_ */

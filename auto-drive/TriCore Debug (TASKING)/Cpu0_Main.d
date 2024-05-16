@@ -216,20 +216,6 @@ Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h
 c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h :
 Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/ultrasonic/ultrasonic.h
 c:/auto-drive/auto-drive/auto-drive/includes/hardware/ultrasonic/ultrasonic.h :
-Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h
-c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h :
-Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/delay/delay.h
-c:/auto-drive/auto-drive/auto-drive/includes/tc275/delay/delay.h :
-Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.h
-c:/auto-drive/auto-drive/auto-drive/Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.h :
-Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h
-c:/auto-drive/auto-drive/auto-drive/Libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h :
-Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h
-c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h :
-Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.h
-c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.h :
-Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuCcu.h
-c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuCcu.h :
 Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/switch/switch.h
 c:/auto-drive/auto-drive/auto-drive/includes/hardware/switch/switch.h :
 Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h
@@ -266,5 +252,3 @@ Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Service/CpuGeneric/_
 c:/auto-drive/auto-drive/auto-drive/Libraries/Service/CpuGeneric/_Utilities/Ifx_Assert.h :
 Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/hardware/dial/dial.h
 c:/auto-drive/auto-drive/auto-drive/includes/hardware/dial/dial.h :
-Cpu0_Main.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/adc/adc.h
-c:/auto-drive/auto-drive/auto-drive/includes/tc275/adc/adc.h :

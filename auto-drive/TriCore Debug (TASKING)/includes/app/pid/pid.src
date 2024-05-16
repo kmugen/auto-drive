@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc12636a --dep-file=includes/app/pid/pid.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc27xd -D__CPU_TC27XD__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc27xd -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Configurations -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D\\\\_Reg -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Impl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_PinMap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\lpf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\observer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\pid -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\taskScheduler -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\buzzer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\dial -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\encoder -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\motor -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\switch -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\ultrasonic -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275 -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\delay -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\extIrq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmTom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\uart -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o includes/app/pid/pid.src ../includes/app/pid/pid.c"
+	.compiler_invocation	"ctc -f cc3476a --dep-file=includes/app/pid/pid.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc27xd -D__CPU_TC27XD__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc27xd -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Configurations -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D\\\\_Reg -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Impl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_PinMap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\lpf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\observer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\pid -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\taskScheduler -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\buzzer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\dial -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\encoder -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\motor -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\switch -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\ultrasonic -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275 -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\delay -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\extIrq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmTom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\uart -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o includes/app/pid/pid.src ../includes/app/pid/pid.c"
 	.compiler_name		"ctc"
 	;source	'../includes/app/pid/pid.c'
 
@@ -13,128 +13,164 @@ $TC16X
 	
 	.global	pidController
 ; Function pidController
-.L6:
+.L10:
 pidController:	.type	func
 	jne	d4,#0,.L2
-.L64:
+.L68:
 	movh.a	a15,#@his(g_prev_int_err_chA)
 	lea	a15,[a15]@los(g_prev_int_err_chA)
-.L65:
+.L69:
 	movh.a	a2,#@his(t_s)
 	lea	a2,[a2]@los(t_s)
 	ld.w	d15,[a2]
-.L66:
+.L70:
 	movh.a	a2,#@his(g_prev_int_err_chA)
 	lea	a2,[a2]@los(g_prev_int_err_chA)
 	ld.w	d0,[a2]
-.L67:
-	madd.f	d15,d0,d5,d15
-.L68:
-	st.w	[a15],d15
-.L69:
-	movh.a	a15,#@his(g_prev_err_chA)
-	lea	a15,[a15]@los(g_prev_err_chA)
-	ld.w	d15,[a15]
-.L70:
-	sub.f	d15,d5,d15
 .L71:
-	movh.a	a15,#@his(t_s)
-	lea	a15,[a15]@los(t_s)
-	ld.w	d0,[a15]
+	madd.f	d15,d0,d5,d15
 .L72:
-	div.f	d15,d15,d0
+	st.w	[a15],d15
 .L73:
-	movh.a	a15,#@his(K_d_chA)
-	lea	a15,[a15]@los(K_d_chA)
-	ld.w	d0,[a15]
-.L74:
-	movh.a	a15,#@his(K_p_chA)
-	lea	a15,[a15]@los(K_p_chA)
-	ld.w	d1,[a15]
-.L75:
 	movh.a	a15,#@his(g_prev_int_err_chA)
 	lea	a15,[a15]@los(g_prev_int_err_chA)
-	ld.w	d2,[a15]
+	ld.w	d15,[a15]
+.L74:
+	movh	d0,#16688
+.L75:
+	cmp.f	d15,d15,d0
+	jnz.t	d15:2,.L3
 .L76:
+	movh.a	a15,#@his(g_prev_int_err_chA)
+	lea	a15,[a15]@los(g_prev_int_err_chA)
+	ld.w	d15,[a15]
+.L77:
+	j	.L4
+.L3:
+	movh	d15,#16688
+.L4:
+	movh.a	a15,#@his(g_prev_int_err_chA)
+	lea	a15,[a15]@los(g_prev_int_err_chA)
+.L78:
+	st.w	[a15],d15
+.L79:
+	movh.a	a15,#@his(g_prev_err_chA)
+	lea	a15,[a15]@los(g_prev_err_chA)
+	ld.w	d0,[a15]
+.L80:
+	sub.f	d0,d5,d0
+.L81:
+	movh.a	a15,#@his(t_s)
+	lea	a15,[a15]@los(t_s)
+	ld.w	d1,[a15]
+.L82:
+	div.f	d0,d0,d1
+.L83:
+	movh.a	a15,#@his(K_d_chA)
+	lea	a15,[a15]@los(K_d_chA)
+	ld.w	d1,[a15]
+.L84:
+	movh.a	a15,#@his(K_p_chA)
+	lea	a15,[a15]@los(K_p_chA)
+	ld.w	d2,[a15]
+.L85:
 	movh.a	a15,#@his(K_i_chA)
 	lea	a15,[a15]@los(K_i_chA)
 	ld.w	d3,[a15]
-.L77:
-	mul.f	d2,d2,d3
-.L78:
-	madd.f	d1,d2,d5,d1
-.L79:
-	madd.f	d2,d1,d15,d0
-.L54:
+.L86:
+	mul.f	d15,d15,d3
+.L87:
+	madd.f	d15,d15,d5,d2
+.L88:
+	madd.f	d2,d15,d0,d1
+.L58:
 	movh.a	a15,#@his(g_prev_err_chA)
 	lea	a15,[a15]@los(g_prev_err_chA)
-.L80:
+.L89:
 	st.w	[a15],d5
-.L81:
-	j	.L3
+.L90:
+	j	.L5
 .L2:
 	movh.a	a15,#@his(g_prev_int_err_chB)
 	lea	a15,[a15]@los(g_prev_int_err_chB)
-.L82:
+.L91:
 	movh.a	a2,#@his(t_s)
 	lea	a2,[a2]@los(t_s)
 	ld.w	d15,[a2]
-.L83:
+.L92:
 	movh.a	a2,#@his(g_prev_int_err_chB)
 	lea	a2,[a2]@los(g_prev_int_err_chB)
 	ld.w	d0,[a2]
-.L84:
+.L93:
 	madd.f	d15,d0,d5,d15
-.L85:
+.L94:
 	st.w	[a15],d15
-.L86:
-	movh.a	a15,#@his(g_prev_err_chA)
-	lea	a15,[a15]@los(g_prev_err_chA)
-	ld.w	d15,[a15]
-.L87:
-	sub.f	d15,d5,d15
-.L88:
-	movh.a	a15,#@his(t_s)
-	lea	a15,[a15]@los(t_s)
-	ld.w	d0,[a15]
-.L89:
-	div.f	d15,d15,d0
-.L90:
-	movh.a	a15,#@his(K_d_chA)
-	lea	a15,[a15]@los(K_d_chA)
-	ld.w	d0,[a15]
-.L91:
-	movh.a	a15,#@his(K_p_chB)
-	lea	a15,[a15]@los(K_p_chB)
-	ld.w	d1,[a15]
-.L92:
+.L95:
 	movh.a	a15,#@his(g_prev_int_err_chB)
 	lea	a15,[a15]@los(g_prev_int_err_chB)
+	ld.w	d15,[a15]
+.L96:
+	movh	d0,#16688
+.L97:
+	cmp.f	d15,d15,d0
+	jnz.t	d15:2,.L6
+.L98:
+	movh.a	a15,#@his(g_prev_int_err_chB)
+	lea	a15,[a15]@los(g_prev_int_err_chB)
+	ld.w	d15,[a15]
+.L99:
+	j	.L7
+.L6:
+	movh	d15,#16688
+.L7:
+	movh.a	a15,#@his(g_prev_int_err_chB)
+	lea	a15,[a15]@los(g_prev_int_err_chB)
+.L100:
+	st.w	[a15],d15
+.L101:
+	movh.a	a15,#@his(g_prev_err_chA)
+	lea	a15,[a15]@los(g_prev_err_chA)
+	ld.w	d0,[a15]
+.L102:
+	sub.f	d0,d5,d0
+.L103:
+	movh.a	a15,#@his(t_s)
+	lea	a15,[a15]@los(t_s)
+	ld.w	d1,[a15]
+.L104:
+	div.f	d0,d0,d1
+.L105:
+	movh.a	a15,#@his(K_d_chA)
+	lea	a15,[a15]@los(K_d_chA)
+	ld.w	d1,[a15]
+.L106:
+	movh.a	a15,#@his(K_p_chB)
+	lea	a15,[a15]@los(K_p_chB)
 	ld.w	d2,[a15]
-.L93:
+.L107:
 	movh.a	a15,#@his(K_i_chB)
 	lea	a15,[a15]@los(K_i_chB)
 	ld.w	d3,[a15]
-.L94:
-	mul.f	d2,d2,d3
-.L95:
-	madd.f	d1,d2,d5,d1
-.L96:
-	madd.f	d2,d1,d15,d0
-.L55:
+.L108:
+	mul.f	d15,d15,d3
+.L109:
+	madd.f	d15,d15,d5,d2
+.L110:
+	madd.f	d2,d15,d0,d1
+.L59:
 	movh.a	a15,#@his(g_prev_err_chB)
 	lea	a15,[a15]@los(g_prev_err_chB)
-.L97:
+.L111:
 	st.w	[a15],d5
-.L3:
-	j	.L4
-.L4:
+.L5:
+	j	.L8
+.L8:
 	ret
-.L39:
+.L43:
 	
 __pidController_function_end:
 	.size	pidController,__pidController_function_end-pidController
-.L15:
+.L19:
 	; End of function
 	
 	.sdecl	'.rodata.pid.t_s',data,rom,cluster('t_s')
@@ -150,14 +186,14 @@ t_s:	.type	object
 	.align	2
 K_p_chA:	.type	object
 	.size	K_p_chA,4
-	.word	1073741824
+	.word	1065353216
 	.sdecl	'.rodata.pid.K_i_chA',data,rom,cluster('K_i_chA')
 	.sect	'.rodata.pid.K_i_chA'
 	.global	K_i_chA
 	.align	2
 K_i_chA:	.type	object
 	.size	K_i_chA,4
-	.word	1065353216
+	.word	1077936128
 	.sdecl	'.rodata.pid.K_d_chA',data,rom,cluster('K_d_chA')
 	.sect	'.rodata.pid.K_d_chA'
 	.global	K_d_chA
@@ -171,14 +207,14 @@ K_d_chA:	.type	object
 	.align	2
 K_p_chB:	.type	object
 	.size	K_p_chB,4
-	.word	1073741824
+	.word	1065353216
 	.sdecl	'.rodata.pid.K_i_chB',data,rom,cluster('K_i_chB')
 	.sect	'.rodata.pid.K_i_chB'
 	.global	K_i_chB
 	.align	2
 K_i_chB:	.type	object
 	.size	K_i_chB,4
-	.word	1065353216
+	.word	1077936128
 	.sdecl	'.rodata.pid.K_d_chB',data,rom,cluster('K_d_chB')
 	.sect	'.rodata.pid.K_d_chB'
 	.global	K_d_chB
@@ -217,28 +253,28 @@ g_prev_int_err_chB:	.type	object
 	.calls	'pidController','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L8:
+.L12:
 	.word	598
 	.half	3
-	.word	.L9
+	.word	.L13
 	.byte	4
-.L7:
+.L11:
 	.byte	1
 	.byte	'../includes/app/pid/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L10
-.L38:
+	.word	.L14
+.L42:
 	.byte	2
 	.byte	'float',0,4,4,2
 	.byte	'unsigned char',0,1,8
-.L40:
+.L44:
 	.byte	3
 	.word	191
-.L42:
+.L46:
 	.byte	3
 	.word	182
-.L44:
+.L48:
 	.byte	3
 	.word	182
 	.byte	2
@@ -292,18 +328,6 @@ g_prev_int_err_chB:	.type	object
 	.byte	4
 	.byte	'Ifx_TickTime',0,3,76,28
 	.word	470
-.L47:
-	.byte	3
-	.word	182
-.L48:
-	.byte	3
-	.word	182
-.L49:
-	.byte	3
-	.word	182
-.L50:
-	.byte	3
-	.word	182
 .L51:
 	.byte	3
 	.word	182
@@ -313,233 +337,229 @@ g_prev_int_err_chB:	.type	object
 .L53:
 	.byte	3
 	.word	182
+.L54:
+	.byte	3
+	.word	182
+.L55:
+	.byte	3
+	.word	182
+.L56:
+	.byte	3
+	.word	182
+.L57:
+	.byte	3
+	.word	182
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L9:
+.L13:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,22,0,3,8,58
 	.byte	15,59,15,57,15,73,19,0,0,5,21,0,54,15,0,0,6,15,0,73,19,0,0,7,59,0,3,8,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L10:
-	.word	.L57-.L56
-.L56:
+.L14:
+	.word	.L61-.L60
+.L60:
 	.half	3
-	.word	.L59-.L58
-.L58:
+	.word	.L63-.L62
+.L62:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'C:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Std',0
 	.byte	0
 	.byte	'../includes/app/pid/pid.c',0,0,0,0
 	.byte	'Platform_Types.h',0,1,0,0
 	.byte	'Ifx_Types.h',0,1,0,0,0
-.L59:
-.L57:
+.L63:
+.L61:
 	.sdecl	'.debug_info',debug,cluster('pidController')
 	.sect	'.debug_info'
-.L11:
+.L15:
 	.word	306
 	.half	3
-	.word	.L12
+	.word	.L16
 	.byte	4,1
 	.byte	'../includes/app/pid/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1
-	.word	.L14,.L13
+	.word	.L18,.L17
 	.byte	2
-	.word	.L7
+	.word	.L11
 	.byte	3
 	.byte	'pidController',0,1,36,9
-	.word	.L38
+	.word	.L42
 	.byte	1,1,1
-	.word	.L6,.L39,.L5
+	.word	.L10,.L43,.L9
 	.byte	4
 	.byte	'channel',0,1,36,35
-	.word	.L40,.L41
+	.word	.L44,.L45
 	.byte	4
 	.byte	'err',0,1,36,58
-	.word	.L42,.L43
+	.word	.L46,.L47
 	.byte	4
 	.byte	'w_ref',0,1,36,77
-	.word	.L44,.L45
+	.word	.L48,.L49
 	.byte	5
-	.word	.L6,.L39
+	.word	.L10,.L43
 	.byte	6
 	.byte	'ret',0,1,44,13
-	.word	.L38,.L46
+	.word	.L42,.L50
 	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('pidController')
 	.sect	'.debug_abbrev'
-.L12:
+.L16:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('pidController')
 	.sect	'.debug_line'
-.L13:
-	.word	.L61-.L60
-.L60:
+.L17:
+	.word	.L65-.L64
+.L64:
 	.half	3
-	.word	.L63-.L62
-.L62:
+	.word	.L67-.L66
+.L66:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../includes/app/pid/pid.c',0,0,0,0,0
-.L63:
+.L67:
 	.byte	5,5,7,0,5,2
-	.word	.L6
+	.word	.L10
 	.byte	3,44,1,5,9,7,9
-	.half	.L64-.L6
+	.half	.L68-.L10
 	.byte	3,2,1,5,57,9
-	.half	.L65-.L64
-	.byte	1,5,30,9
-	.half	.L66-.L65
-	.byte	1,5,49,9
-	.half	.L67-.L66
-	.byte	1,5,28,9
-	.half	.L68-.L67
-	.byte	1,5,76,9
 	.half	.L69-.L68
-	.byte	3,1,1,5,74,9
-	.half	.L70-.L69
-	.byte	1,5,94,9
-	.half	.L71-.L70
-	.byte	1,5,92,9
-	.half	.L72-.L71
-	.byte	1,5,100,9
-	.half	.L73-.L72
-	.byte	1,5,23,9
-	.half	.L74-.L73
-	.byte	1,5,35,9
-	.half	.L75-.L74
-	.byte	1,5,56,9
-	.half	.L76-.L75
-	.byte	1,5,54,9
-	.half	.L77-.L76
-	.byte	1,5,32,9
-	.half	.L78-.L77
-	.byte	1,5,66,9
-	.half	.L79-.L78
-	.byte	1,5,9,9
-	.half	.L54-.L79
-	.byte	3,2,1,5,24,9
-	.half	.L80-.L54
-	.byte	1,5,60,9
-	.half	.L81-.L80
-	.byte	3,125,1,5,9,9
-	.half	.L2-.L81
-	.byte	3,7,1,5,57,9
-	.half	.L82-.L2
 	.byte	1,5,30,9
-	.half	.L83-.L82
+	.half	.L70-.L69
 	.byte	1,5,49,9
-	.half	.L84-.L83
+	.half	.L71-.L70
 	.byte	1,5,28,9
-	.half	.L85-.L84
-	.byte	1,5,76,9
-	.half	.L86-.L85
-	.byte	3,1,1,5,74,9
-	.half	.L87-.L86
-	.byte	1,5,94,9
-	.half	.L88-.L87
-	.byte	1,5,92,9
-	.half	.L89-.L88
-	.byte	1,5,100,9
-	.half	.L90-.L89
-	.byte	1,5,23,9
-	.half	.L91-.L90
-	.byte	1,5,35,9
-	.half	.L92-.L91
-	.byte	1,5,56,9
-	.half	.L93-.L92
-	.byte	1,5,54,9
-	.half	.L94-.L93
-	.byte	1,5,32,9
-	.half	.L95-.L94
-	.byte	1,5,66,9
-	.half	.L96-.L95
+	.half	.L72-.L71
+	.byte	1,5,31,9
+	.half	.L73-.L72
+	.byte	3,1,1,5,52,9
+	.half	.L74-.L73
+	.byte	1,5,30,9
+	.half	.L75-.L74
+	.byte	1,5,63,9
+	.half	.L76-.L75
+	.byte	1,5,61,9
+	.half	.L77-.L76
+	.byte	1,5,58,9
+	.half	.L3-.L77
 	.byte	1,5,9,9
-	.half	.L55-.L96
-	.byte	3,2,1,5,24,9
-	.half	.L97-.L55
-	.byte	1,5,5,9
-	.half	.L3-.L97
-	.byte	3,3,1,5,1,9
 	.half	.L4-.L3
+	.byte	1,5,28,9
+	.half	.L78-.L4
+	.byte	1,5,76,9
+	.half	.L79-.L78
+	.byte	3,1,1,5,74,9
+	.half	.L80-.L79
+	.byte	1,5,94,9
+	.half	.L81-.L80
+	.byte	1,5,92,9
+	.half	.L82-.L81
+	.byte	1,5,100,9
+	.half	.L83-.L82
+	.byte	1,5,23,9
+	.half	.L84-.L83
+	.byte	1,5,56,9
+	.half	.L85-.L84
+	.byte	1,5,54,9
+	.half	.L86-.L85
+	.byte	1,5,32,9
+	.half	.L87-.L86
+	.byte	1,5,66,9
+	.half	.L88-.L87
+	.byte	1,5,9,9
+	.half	.L58-.L88
+	.byte	3,2,1,5,24,9
+	.half	.L89-.L58
+	.byte	1,5,81,9
+	.half	.L90-.L89
+	.byte	3,125,1,5,9,9
+	.half	.L2-.L90
+	.byte	3,7,1,5,57,9
+	.half	.L91-.L2
+	.byte	1,5,30,9
+	.half	.L92-.L91
+	.byte	1,5,49,9
+	.half	.L93-.L92
+	.byte	1,5,28,9
+	.half	.L94-.L93
+	.byte	1,5,31,9
+	.half	.L95-.L94
+	.byte	3,1,1,5,52,9
+	.half	.L96-.L95
+	.byte	1,5,30,9
+	.half	.L97-.L96
+	.byte	1,5,63,9
+	.half	.L98-.L97
+	.byte	1,5,61,9
+	.half	.L99-.L98
+	.byte	1,5,58,9
+	.half	.L6-.L99
+	.byte	1,5,9,9
+	.half	.L7-.L6
+	.byte	1,5,28,9
+	.half	.L100-.L7
+	.byte	1,5,76,9
+	.half	.L101-.L100
+	.byte	3,1,1,5,74,9
+	.half	.L102-.L101
+	.byte	1,5,94,9
+	.half	.L103-.L102
+	.byte	1,5,92,9
+	.half	.L104-.L103
+	.byte	1,5,100,9
+	.half	.L105-.L104
+	.byte	1,5,23,9
+	.half	.L106-.L105
+	.byte	1,5,56,9
+	.half	.L107-.L106
+	.byte	1,5,54,9
+	.half	.L108-.L107
+	.byte	1,5,32,9
+	.half	.L109-.L108
+	.byte	1,5,66,9
+	.half	.L110-.L109
+	.byte	1,5,9,9
+	.half	.L59-.L110
+	.byte	3,2,1,5,24,9
+	.half	.L111-.L59
+	.byte	1,5,5,9
+	.half	.L5-.L111
+	.byte	3,3,1,5,1,9
+	.half	.L8-.L5
 	.byte	3,1,1,7,9
-	.half	.L15-.L4
+	.half	.L19-.L8
 	.byte	0,1,1
-.L61:
+.L65:
 	.sdecl	'.debug_ranges',debug,cluster('pidController')
 	.sect	'.debug_ranges'
-.L14:
-	.word	-1,.L6,0,.L15-.L6,0,0
+.L18:
+	.word	-1,.L10,0,.L19-.L10,0,0
 	.sdecl	'.debug_info',debug,cluster('t_s')
 	.sect	'.debug_info'
-.L16:
-	.word	199
-	.half	3
-	.word	.L17
-	.byte	4,1
-	.byte	'../includes/app/pid/pid.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L7
-	.byte	3
-	.byte	't_s',0,1,10,15
-	.word	.L47
-	.byte	1,5,3
-	.word	t_s
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('t_s')
-	.sect	'.debug_abbrev'
-.L17:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('K_p_chA')
-	.sect	'.debug_info'
-.L18:
-	.word	203
-	.half	3
-	.word	.L19
-	.byte	4,1
-	.byte	'../includes/app/pid/pid.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L7
-	.byte	3
-	.byte	'K_p_chA',0,1,16,15
-	.word	.L48
-	.byte	1,5,3
-	.word	K_p_chA
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('K_p_chA')
-	.sect	'.debug_abbrev'
-.L19:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('K_i_chA')
-	.sect	'.debug_info'
 .L20:
-	.word	203
+	.word	199
 	.half	3
 	.word	.L21
 	.byte	4,1
 	.byte	'../includes/app/pid/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L7
+	.word	.L11
 	.byte	3
-	.byte	'K_i_chA',0,1,17,15
-	.word	.L49
+	.byte	't_s',0,1,10,15
+	.word	.L51
 	.byte	1,5,3
-	.word	K_i_chA
+	.word	t_s
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('K_i_chA')
+	.sdecl	'.debug_abbrev',debug,cluster('t_s')
 	.sect	'.debug_abbrev'
 .L21:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('K_d_chA')
+	.sdecl	'.debug_info',debug,cluster('K_p_chA')
 	.sect	'.debug_info'
 .L22:
 	.word	203
@@ -549,19 +569,19 @@ g_prev_int_err_chB:	.type	object
 	.byte	'../includes/app/pid/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L7
+	.word	.L11
 	.byte	3
-	.byte	'K_d_chA',0,1,18,15
-	.word	.L50
+	.byte	'K_p_chA',0,1,16,15
+	.word	.L52
 	.byte	1,5,3
-	.word	K_d_chA
+	.word	K_p_chA
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('K_d_chA')
+	.sdecl	'.debug_abbrev',debug,cluster('K_p_chA')
 	.sect	'.debug_abbrev'
 .L23:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('K_p_chB')
+	.sdecl	'.debug_info',debug,cluster('K_i_chA')
 	.sect	'.debug_info'
 .L24:
 	.word	203
@@ -571,19 +591,19 @@ g_prev_int_err_chB:	.type	object
 	.byte	'../includes/app/pid/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L7
+	.word	.L11
 	.byte	3
-	.byte	'K_p_chB',0,1,20,15
-	.word	.L51
+	.byte	'K_i_chA',0,1,17,15
+	.word	.L53
 	.byte	1,5,3
-	.word	K_p_chB
+	.word	K_i_chA
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('K_p_chB')
+	.sdecl	'.debug_abbrev',debug,cluster('K_i_chA')
 	.sect	'.debug_abbrev'
 .L25:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('K_i_chB')
+	.sdecl	'.debug_info',debug,cluster('K_d_chA')
 	.sect	'.debug_info'
 .L26:
 	.word	203
@@ -593,19 +613,19 @@ g_prev_int_err_chB:	.type	object
 	.byte	'../includes/app/pid/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L7
+	.word	.L11
 	.byte	3
-	.byte	'K_i_chB',0,1,21,15
-	.word	.L52
+	.byte	'K_d_chA',0,1,18,15
+	.word	.L54
 	.byte	1,5,3
-	.word	K_i_chB
+	.word	K_d_chA
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('K_i_chB')
+	.sdecl	'.debug_abbrev',debug,cluster('K_d_chA')
 	.sect	'.debug_abbrev'
 .L27:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('K_d_chB')
+	.sdecl	'.debug_info',debug,cluster('K_p_chB')
 	.sect	'.debug_info'
 .L28:
 	.word	203
@@ -615,63 +635,63 @@ g_prev_int_err_chB:	.type	object
 	.byte	'../includes/app/pid/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L7
+	.word	.L11
 	.byte	3
-	.byte	'K_d_chB',0,1,22,15
-	.word	.L53
+	.byte	'K_p_chB',0,1,20,15
+	.word	.L55
 	.byte	1,5,3
-	.word	K_d_chB
+	.word	K_p_chB
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('K_d_chB')
+	.sdecl	'.debug_abbrev',debug,cluster('K_p_chB')
 	.sect	'.debug_abbrev'
 .L29:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('g_prev_err_chA')
+	.sdecl	'.debug_info',debug,cluster('K_i_chB')
 	.sect	'.debug_info'
 .L30:
-	.word	210
+	.word	203
 	.half	3
 	.word	.L31
 	.byte	4,1
 	.byte	'../includes/app/pid/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L7
+	.word	.L11
 	.byte	3
-	.byte	'g_prev_err_chA',0,1,25,9
-	.word	.L38
+	.byte	'K_i_chB',0,1,21,15
+	.word	.L56
 	.byte	1,5,3
-	.word	g_prev_err_chA
+	.word	K_i_chB
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('g_prev_err_chA')
+	.sdecl	'.debug_abbrev',debug,cluster('K_i_chB')
 	.sect	'.debug_abbrev'
 .L31:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('g_prev_int_err_chA')
+	.sdecl	'.debug_info',debug,cluster('K_d_chB')
 	.sect	'.debug_info'
 .L32:
-	.word	214
+	.word	203
 	.half	3
 	.word	.L33
 	.byte	4,1
 	.byte	'../includes/app/pid/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L7
+	.word	.L11
 	.byte	3
-	.byte	'g_prev_int_err_chA',0,1,26,9
-	.word	.L38
+	.byte	'K_d_chB',0,1,22,15
+	.word	.L57
 	.byte	1,5,3
-	.word	g_prev_int_err_chA
+	.word	K_d_chB
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('g_prev_int_err_chA')
+	.sdecl	'.debug_abbrev',debug,cluster('K_d_chB')
 	.sect	'.debug_abbrev'
 .L33:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('g_prev_err_chB')
+	.sdecl	'.debug_info',debug,cluster('g_prev_err_chA')
 	.sect	'.debug_info'
 .L34:
 	.word	210
@@ -681,19 +701,19 @@ g_prev_int_err_chB:	.type	object
 	.byte	'../includes/app/pid/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L7
+	.word	.L11
 	.byte	3
-	.byte	'g_prev_err_chB',0,1,28,9
-	.word	.L38
+	.byte	'g_prev_err_chA',0,1,25,9
+	.word	.L42
 	.byte	1,5,3
-	.word	g_prev_err_chB
+	.word	g_prev_err_chA
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('g_prev_err_chB')
+	.sdecl	'.debug_abbrev',debug,cluster('g_prev_err_chA')
 	.sect	'.debug_abbrev'
 .L35:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('g_prev_int_err_chB')
+	.sdecl	'.debug_info',debug,cluster('g_prev_int_err_chA')
 	.sect	'.debug_info'
 .L36:
 	.word	214
@@ -703,51 +723,95 @@ g_prev_int_err_chB:	.type	object
 	.byte	'../includes/app/pid/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
-	.word	.L7
+	.word	.L11
+	.byte	3
+	.byte	'g_prev_int_err_chA',0,1,26,9
+	.word	.L42
+	.byte	1,5,3
+	.word	g_prev_int_err_chA
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('g_prev_int_err_chA')
+	.sect	'.debug_abbrev'
+.L37:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('g_prev_err_chB')
+	.sect	'.debug_info'
+.L38:
+	.word	210
+	.half	3
+	.word	.L39
+	.byte	4,1
+	.byte	'../includes/app/pid/pid.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
+	.word	.L11
+	.byte	3
+	.byte	'g_prev_err_chB',0,1,28,9
+	.word	.L42
+	.byte	1,5,3
+	.word	g_prev_err_chB
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('g_prev_err_chB')
+	.sect	'.debug_abbrev'
+.L39:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('g_prev_int_err_chB')
+	.sect	'.debug_info'
+.L40:
+	.word	214
+	.half	3
+	.word	.L41
+	.byte	4,1
+	.byte	'../includes/app/pid/pid.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\auto-drive\\auto-drive\\auto-drive\\TriCore Debug (TASKING)\\',0,12,1,2
+	.word	.L11
 	.byte	3
 	.byte	'g_prev_int_err_chB',0,1,29,9
-	.word	.L38
+	.word	.L42
 	.byte	1,5,3
 	.word	g_prev_int_err_chB
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('g_prev_int_err_chB')
 	.sect	'.debug_abbrev'
-.L37:
+.L41:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('pidController')
 	.sect	'.debug_loc'
-.L41:
-	.word	-1,.L6,0,.L39-.L6
+.L45:
+	.word	-1,.L10,0,.L43-.L10
 	.half	1
 	.byte	84
 	.word	0,0
-.L43:
-	.word	-1,.L6,0,.L39-.L6
+.L47:
+	.word	-1,.L10,0,.L43-.L10
 	.half	1
 	.byte	85
 	.word	0,0
-.L5:
-	.word	-1,.L6,0,.L39-.L6
+.L9:
+	.word	-1,.L10,0,.L43-.L10
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L46:
-	.word	-1,.L6,.L54-.L6,.L2-.L6
+.L50:
+	.word	-1,.L10,.L58-.L10,.L2-.L10
 	.half	1
 	.byte	82
-	.word	.L55-.L6,.L39-.L6
+	.word	.L59-.L10,.L43-.L10
 	.half	1
 	.byte	82
 	.word	0,0
-.L45:
-	.word	-1,.L6,0,.L39-.L6
+.L49:
+	.word	-1,.L10,0,.L43-.L10
 	.half	1
 	.byte	86
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L98:
+.L112:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -755,6 +819,6 @@ g_prev_int_err_chB:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('pidController')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L98,.L6,.L39-.L6
+	.word	.L112,.L10,.L43-.L10
 	.byte	8,19,8,20,8,21,8,22,8,23,0,0
 	; Module end

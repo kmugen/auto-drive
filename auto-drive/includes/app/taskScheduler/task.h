@@ -46,7 +46,7 @@
  *
  * @ return 없음
  */
-extern void taskMotorCtrl(const float32 w_ref, const uint8 motor_on, const uint8 dir);
+extern void taskMotorCtrl(const float32 w_ref, const uint8 motor_on, const uint8 dir, const uint8 pid_on);
 
 /**
  * @ brief : 모터가 동작하는 중에, 부저가 켜지면, 1000hz의 부저 출력
@@ -91,7 +91,7 @@ extern void taskBuzzerMode(const uint32 time_100ms, const float32 dist, uint8 *b
  *
  * @ return 없음
  */
-extern void taskBluetooth(uint8 *bt_on, uint8 *motor_on, const uint32 time_100ms, float32 *w_ref, uint8 *dir);
+extern void taskBluetooth(uint8 *bt_on, uint8 *motor_on, const uint32 time_100ms, float32 *w_ref, uint8 *dir, uint8 *pid_on);
 
 /**
  * @ brief : 스위치로 모터 동작 on/off 제어

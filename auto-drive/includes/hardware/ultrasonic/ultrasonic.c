@@ -5,6 +5,9 @@
 #include "extIrq.h"
 #include "delay.h"
 #include "isrPrio.h"
+#include "IfxStm.h"
+#include "pinSettings.h"
+#include "gpio.h"
 
 /*********************************************************************************************************************/
 /*-------------------------------------------------Global variables--------------------------------------------------*/
@@ -37,4 +40,22 @@ void initUltrasonic(void)
     // Echo pin Hardware 배선 시에는, 점퍼선을 2가닥으로 나누어 GPIO 핀 2개에 배분한다.
     initExtIrq(PIN_US_ECHO_R, risingEdgeDetection, ISR_PRIO_US_ECHO_R); // Echo pin - Rising edge 인터럽트 세팅
     initExtIrq(PIN_US_ECHO_F, fallingEdgeDetection, ISR_PRIO_US_ECHO_F); // Echo pin - Falling edge 인터럽트 세팅
+}
+
+void trigUltrasonic(void)
+{
+    setPinLow(PIN_US_TRIG);
+    delayUs(2);
+    setPinHigh(PIN_US_TRIG);
+    delayUs(10);
+    setPinLow(PIN_US_TRIG);
+}
+
+float32 getUsDist(void)
+{
+    float32 dist = ((float32)g_cnt_f / IfxStm_getFrequency(&MODULE_STM0) * 1000000.0f / 58.8235f);
+    static float32 dist_prev;
+    dist_prev = dist;
+
+    return dist;
 }

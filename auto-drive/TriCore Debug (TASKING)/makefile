@@ -18,9 +18,11 @@ RM := rm -rf
 -include includes/hardware/switch/subdir.mk
 -include includes/hardware/motor/subdir.mk
 -include includes/hardware/encoder/subdir.mk
+-include includes/hardware/dial/subdir.mk
 -include includes/app/taskScheduler/subdir.mk
 -include includes/app/pid/subdir.mk
 -include includes/app/observer/subdir.mk
+-include includes/app/lpf/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/_PinMap/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/_Lib/DataHandling/subdir.mk
 -include Libraries/iLLD/TC27D/Tricore/_Impl/subdir.mk

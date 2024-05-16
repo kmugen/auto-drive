@@ -43,6 +43,7 @@ void core0_main(void)
     {
         appNoTask();        // 항상 수행하는 태스크
         taskScheduler();    // 주기적으로 수행하는 태스크
+
     }
 }
 

@@ -1,0 +1,331 @@
+/*********************************************************************************************************************/
+/*-----------------------------------------------------Includes------------------------------------------------------*/
+/*********************************************************************************************************************/
+#include "Ifx_Types.h"
+#include "observer.h"
+#include "commonMacros.h"
+#include "lpf.h"
+#include "pid.h"
+#include "pinSettings.h"
+#include "gpio.h"
+#include "ultrasonic.h"
+#include "uart.h"
+#include "motor.h"
+#include "encoder.h"
+#include "dial.h"
+#include "switch.h"
+
+/*********************************************************************************************************************/
+/*------------------------------------------------Function Prototypes------------------------------------------------*/
+/*********************************************************************************************************************/
+/**
+ * @ breif : 입력이 min과 max를 넘어서지 않도록 포화
+ *
+ * @ param const float32 in  : 입력
+ * @ param const float32 min : 최소값
+ * @ param const float32 max : 최대값
+ *
+ * @ return : 없음
+ */
+static float32 saturation(const float32 in, const float32 min, const float32 max);
+
+/*********************************************************************************************************************/
+/*---------------------------------------------Function Implementations----------------------------------------------*/
+/*********************************************************************************************************************/
+static float32 saturation(const float32 in, const float32 min, const float32 max)
+{
+    float32 ret = in;
+
+    /* min 또는 max를 넘는 값은 min 또는 max로 설정 */
+    if (ret < min)
+    {
+        ret = min;
+    }
+    else
+    {
+        ;
+    }
+
+    if (ret > max)
+    {
+        ret = max;
+    }
+    else
+    {
+        ;
+    }
+
+    return ret;
+}
+
+void taskMotorCtrl(const float32 w_ref, const uint8 motor_on, const uint8 dir, const uint8 pid_on)
+{
+    /* 모터별 목표 각속도 (rad/s) */
+    float32 w_ref_1 = 0.0f;
+    float32 w_ref_2 = 0.0f;
+
+    /* 옵저버에 입력할 각위치 (rad) */
+    float32 theta_1 = 0.0f;
+    float32 theta_2 = 0.0f;
+
+    /* 옵저버 측정 각속도 (rad/s) */
+    float32 w_1 = 0.0f;
+    float32 w_2 = 0.0f;
+
+    /* 필터를 거친 각속도 (rad/s) */
+    float32 w_lpf_1 = 0.0f;
+    float32 w_lpf_2 = 0.0f;
+
+    /* LPF를 위한 이전 각속도 (rad/s) */
+    static float32 w_lpf_prev_1 = 0.0f;
+    static float32 w_lpf_prev_2 = 0.0f;
+
+    /* 목표 각속도와 실제 각속도 사이의 오차 (rad/s) */
+    float32 w_err_1 = 0.0f;
+    float32 w_err_2 = 0.0f;
+
+    /* 모터에 인가할 전압 (V) */
+    static float32 v_in_1 = 0.0f;
+    static float32 v_in_2 = 0.0f;
+
+    /* 태스크 실행 주기 */
+    const float32 t_s = 0.001f;
+
+    /* 1번 모터와 2번 모터의 회전 방향은 반대 */
+    w_ref_1 = -1.0f * w_ref;
+    w_ref_2 = w_ref;
+
+    if (dir == LEFT)
+    {
+        w_ref_2 *= 1.7f;
+    }
+    else if (dir == RIGHT)
+    {
+        w_ref_1 *= 1.7f;
+    }
+
+    if (g_motor_on == FALSE)
+    {
+        w_ref_1 = w_ref_2 = 0;
+    }
+
+    /* 관측기로 w_hat 측정 */
+    w_1 = getWHat(MOTOR1);
+    w_2 = getWHat(MOTOR2);
+
+    /* LPF 각속도 필터링 */
+    w_lpf_1 = lowPassFilter(w_lpf_1, w_lpf_prev_1, t_s);
+    w_lpf_2 = lowPassFilter(w_lpf_2, w_lpf_prev_2, t_s);
+
+    w_lpf_prev_1 = w_lpf_1;
+    w_lpf_prev_2 = w_lpf_2;
+
+    /* 오차 계산 */
+    w_err_1 = w_ref_1 - w_lpf_1;
+    w_err_2 = w_ref_2 - w_lpf_2;
+
+    /* PI 제어를 통해 인가할 전압 계산 */
+    v_in_1 = pidController(MOTOR1, w_err_1, w_ref_1);
+    v_in_2 = pidController(MOTOR2, w_err_2, w_ref_2);
+
+    /* 입력 전압이 0 ~ 12V 사이에 위치하도록 saturation 수행 */
+    v_in_1 = saturation(v_in_1, V_MIN, V_MAX);
+    v_in_2 = saturation(v_in_2, V_MIN, V_MAX);
+
+//    if (pid_on == FALSE)
+//    {
+//        v_in_1 = w_ref_1 * (-1.0) / W_MAX * V_MAX;
+//        v_in_2 = w_ref_2 / W_MAX * V_MAX;
+//    }
+
+    /* 0 ~ 1 사이의 듀티비를 모터 파워에 인가 */
+    setMotorPower(v_in_1 / V_MAX, v_in_2 / V_MAX);
+
+    /* 관측기 동작을 위한 각위치 측정 */
+    theta_1 = getEncPos(MOTOR1);
+    theta_2 = getEncPos(MOTOR2);
+
+    /* 모터 관측 */
+    observeMotor(MOTOR1, v_in_1, theta_1);
+    observeMotor(MOTOR2, v_in_2, theta_2);
+}
+
+void taskBuzzerCtrl(const uint8 buzzer_on, const uint8 motor_on)
+{
+    if (motor_on == TRUE) /* 모터가 동작 중에만 부저 출력 */
+    {
+        if (buzzer_on == TRUE)
+        {
+            togglePin(PIN_BUZZER); /* 1ms 태스크이므로 1ms 마다 toggle -> 2ms 주기의 주파수 출력 */
+        }
+        else
+        {
+            ;
+        }
+    }
+    else
+    {
+        setPinLow(PIN_BUZZER);
+    }
+}
+
+void taskUltrasonic(float32 *w_ref, float32 *dist, const uint8 motor_on)
+{
+    static float32 dist_prev = 0.0f; /* LPF를 위한 이전 거리 */
+    const float32 t_s = 0.01f; /* 10ms 주기 */
+
+    /* 모터 제어 중에만 거리 측정 */
+//    if (motor_on == TRUE)
+//    {
+        trigUltrasonic();
+        *dist = getUsDist();
+//    }
+
+    /* 거리가 10cm 이하가 되면, 모터 목표 속도 0 */
+    if (*dist < 10.0f)
+    {
+        *w_ref = 0.0f;
+    }
+    else
+    {
+        ;
+    }
+}
+
+void taskBuzzerMode(const uint32 time_100ms, const float32 dist, uint8 *buzzer_on)
+{
+    if (dist < 10.0f) /* 10cm 미만이면 0.1s 주기 부저 */
+    {
+        *buzzer_on = TRUE;
+    }
+    else if (dist < 14.0f) /* 14cm 미만이면 0.4s 주기 부저 */
+    {
+        if (time_100ms % 1 == 0)
+        {
+            *buzzer_on = !(*buzzer_on);
+        }
+        else
+        {
+            ;
+        }
+    }
+    else if (dist < 17.0f) /* 17cm 미만이면 0.7s 주기 부저 */
+    {
+        if (time_100ms % 3 == 0)
+        {
+            *buzzer_on = !(*buzzer_on);
+        }
+        else
+        {
+            ;
+        }
+    }
+    else if (dist < 20.0f) /* 20cm 미만이면 1s 주기 부저 */
+    {
+        if (time_100ms % 6 == 0)
+        {
+            *buzzer_on = !(*buzzer_on);
+        }
+        else
+        {
+            ;
+        }
+    }
+    else /* 20cm 이상이면 부저 출력 안 함 */
+    {
+        *buzzer_on = FALSE;
+    }
+}
+
+void taskBluetooth(uint8 *bt_on, uint8 *motor_on, const uint32 time_100ms, float32 *w_ref, uint8 *dir, uint8 *pid_on)
+{
+    if (g_bt_cmd == 'A') /* 블루투스 시작 */
+    {
+        *bt_on = TRUE;
+    }
+    else if (g_bt_cmd == 'P') /* 블루투스 정지 */
+    {
+        *bt_on = FALSE;
+    }
+    else if (g_bt_cmd == 'p')
+    {
+        *pid_on = TRUE;
+    }
+    else if (g_bt_cmd == 'o')
+    {
+        *pid_on = FALSE;
+    }
+    else
+    {
+        ;
+    }
+
+    if (*bt_on == TRUE) /* 블루투스 on인 경우에만 모터 제어 */
+    {
+        switch (g_bt_cmd)
+        {
+        case 'F':
+            *dir = FORWARD; /* 방향 전진 */
+            break;
+        case 'L':
+            *dir = LEFT; /* 방향 좌회전 */
+            break;
+        case 'R':
+            *dir = RIGHT; /* 방향 우회전 */
+            break;
+        case 'C':
+            *motor_on = TRUE; /* 모터 on */
+            break;
+        case 'S':
+            *motor_on = FALSE; /* 모터 off */
+            break;
+        case 'T':
+            *w_ref = ((*w_ref + W_STEP) > W_MAX) ? W_MAX : (*w_ref + W_STEP);     /* 모터 속도 증가 */
+            break;
+        case 'X':
+            *w_ref = ((*w_ref - W_STEP) < W_MIN) ? W_MIN : (*w_ref - W_STEP);     /* 모터 속도 감소 */
+            break;
+        default:
+            break;
+        }
+    }
+    else
+    {
+        ;
+    }
+
+    g_bt_cmd = '\0';    /* 블루투스 버퍼 clear */
+}
+
+void taskSW(const uint8 bt_on, uint8 *motor_on)
+{
+    /* 블루투스 제어 아닐 때, 스위치를 눌러 모터 on/off 변경 */
+    if (bt_on == FALSE)
+    {
+        if (getSW() == TRUE)
+        {
+            *motor_on = !(*motor_on);
+        }
+        else
+        {
+            ;
+        }
+    }
+    else
+    {
+        ;
+    }
+}
+
+void taskDial(const uint8 bt_on, const uint8 motor_on, const float32 dist, float32 *w_ref)
+{
+    /* 블루투스 제어 아니고, 모터 동작 가능하고, 안전한 거리일 때, 목표 속도 제어 가능 */
+    if ((bt_on == FALSE) && (motor_on == TRUE) && (dist >= 10))
+    {
+        *w_ref = getWRef();
+    }
+    else
+    {
+        ;
+    }
+}

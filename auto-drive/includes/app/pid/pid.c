@@ -13,12 +13,12 @@ const float32 t_s = 0.001f;
  * K_i_chA, K_i_chB : 적분 gain
  * K_d_chA, K_d_chB : 미분 gain
  */
-const float32 K_p_chA       = 2.0f;
-const float32 K_i_chA       = 1.0f;
+const float32 K_p_chA       = 1.0f;
+const float32 K_i_chA       = 3.0f;
 const float32 K_d_chA       = 0.0f;
 
-const float32 K_p_chB       = 2.0f;
-const float32 K_i_chB       = 1.0f;
+const float32 K_p_chB       = 1.0f;
+const float32 K_i_chB       = 3.0f;
 const float32 K_d_chB       = 0.0f;
 
 /* 적분 제어와 미분 제어를 위한 이전 계산 값 저장 */
@@ -45,6 +45,7 @@ float32 pidController(const uint8 channel, const float32 err, const float32 w_re
     if (channel == MOTOR1)
     {
         g_prev_int_err_chA = g_prev_int_err_chA + err * t_s;  // 적분 항 계산
+        g_prev_int_err_chA = (g_prev_int_err_chA > 11) ? 11 : g_prev_int_err_chA;
         ret = ((err * K_p_chA) + (g_prev_int_err_chA * K_i_chA)) + ((err - g_prev_err_chA) / t_s * K_d_chA);  // pid 결과
 
         g_prev_err_chA = err;  // 미분 제어를 위한 이전 에러 저장
@@ -52,6 +53,7 @@ float32 pidController(const uint8 channel, const float32 err, const float32 w_re
     else
     {
         g_prev_int_err_chB = g_prev_int_err_chB + err * t_s;  // 적분 항 계산
+        g_prev_int_err_chB = (g_prev_int_err_chB > 11) ? 11 : g_prev_int_err_chB;
         ret = ((err * K_p_chB) + (g_prev_int_err_chB * K_i_chB)) + ((err - g_prev_err_chA) / t_s * K_d_chA);  // pid 결과
 
         g_prev_err_chB = err;  // 미분 제어를 위한 이전 에러 저장

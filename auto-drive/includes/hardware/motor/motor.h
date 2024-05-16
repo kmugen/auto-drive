@@ -16,10 +16,6 @@ extern void initMotor(void);
 /*********************************************************************************************************************/
 /*----------------------------------------Inline Function Implemetation----------------------------------------------*/
 /*********************************************************************************************************************/
-static inline void setMotorPower(float32 power_motor1, float32 power_motor2)
-{
-    setTomPwmDutyRatio(&PIN_MOTOR1_POWER, power_motor1 * 100.0f);
-    setTomPwmDutyRatio(&PIN_MOTOR2_POWER, power_motor2 * 100.0f);
-}
+extern void setMotorPower(float32 power_motor1, float32 power_motor2);
 
 #endif /* INCLUDES_HARDWARE_MOTOR_MOTOR_H_ */
