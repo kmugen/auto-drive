@@ -73,7 +73,7 @@ static void Task100ms(void)
 {
     taskBuzzerMode(stTestCnt.cnt_100ms, g_dist, &g_buzzer_on);
 
-    taskBluetooth(&g_bt_on, &g_motor_on, stTestCnt.cnt_100ms, &g_w_ref, &g_dir);
+    taskBluetooth(&g_bt_on, &g_motor_on, stTestCnt.cnt_100ms, &g_w_ref, &g_w_ref_1, &g_w_ref_2, &g_dir);
 
     taskSW(g_bt_on, &g_motor_on);
 
