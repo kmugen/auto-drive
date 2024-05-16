@@ -62,13 +62,7 @@ void trigUltrasonic(void)
 float32 getUsDist(void)
 {
     float32 dist = (g_cnt_f / IfxStm_getFrequency(&MODULE_STM0) * 1000000 / 58.8235);
-    if (dist > 250)
-    {
-        dist = g_dist_prev;
-    }
-    else
-    {
         g_dist_prev = dist;
-    }
+
     return dist;
 }

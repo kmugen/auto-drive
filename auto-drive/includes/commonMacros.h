@@ -12,5 +12,8 @@
 #define MOTOR1  0
 #define MOTOR2  1
 
+#define FORWARD     0
+#define LEFT        1
+#define RIGHT       2
 
 #endif /* INCLUDES_HARDWARE_COMMONMACROS_H_ */

@@ -35,9 +35,9 @@
 /*-----------------------------------------------------Includes------------------------------------------------------*/
 /*********************************************************************************************************************/
 extern IfxAsclin_Asc g_ascHandle3;
+extern uint8 g_bt_cmd;
 
 extern void _init_uart3(void);
-
 /* Send character CHR via the serial line */
 static inline void _out_uart3(const unsigned char str){
     IfxAsclin_Asc_blockingWrite(&g_ascHandle3, str);

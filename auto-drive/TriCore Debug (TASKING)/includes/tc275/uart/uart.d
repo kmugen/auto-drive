@@ -142,3 +142,11 @@ includes/tc275/uart/uart.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Servi
 c:/auto-drive/auto-drive/auto-drive/Libraries/Service/CpuGeneric/StdIf/IfxStdIf_Dpipe.h :
 includes/tc275/uart/uart.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/Service/CpuGeneric/SysSe/Comm/Ifx_Console.h
 c:/auto-drive/auto-drive/auto-drive/Libraries/Service/CpuGeneric/SysSe/Comm/Ifx_Console.h :
+includes/tc275/uart/uart.o :	c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h
+c:/auto-drive/auto-drive/auto-drive/includes/tc275/gpio/gpio.h :
+includes/tc275/uart/uart.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.h :
+includes/tc275/uart/uart.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h :
+includes/tc275/uart/uart.o :	c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h
+c:/auto-drive/auto-drive/auto-drive/Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.h :

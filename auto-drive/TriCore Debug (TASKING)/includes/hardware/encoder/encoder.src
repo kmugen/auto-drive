@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc1260a --dep-file=includes/hardware/encoder/encoder.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc27xd -D__CPU_TC27XD__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc27xd -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Configurations -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D\\\\_Reg -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom\\\\PwmHl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom\\\\Timer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Impl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_PinMap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\lpf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\observer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\pid -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\taskScheduler -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\buzzer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\dial -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\encoder -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\motor -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\switch -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\ultrasonic -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275 -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\delay -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\extIrq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmHl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmTom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\uart -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o includes/hardware/encoder/encoder.src ../includes/hardware/encoder/encoder.c"
+	.compiler_invocation	"ctc -f cc8120a --dep-file=includes/hardware/encoder/encoder.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc27xd -D__CPU_TC27XD__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc27xd -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Configurations -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D\\\\_Reg -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\CStart -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom\\\\PwmHl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom\\\\Timer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Std -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Impl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_PinMap -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\lpf -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\observer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\pid -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\app\\\\taskScheduler -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\buzzer -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\dial -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\encoder -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\motor -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\switch -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\hardware\\\\ultrasonic -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275 -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\adc -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\delay -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\extIrq -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\gpio -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmHl -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\pwmTom -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\stm -IC:\\\\auto-drive\\\\auto-drive\\\\auto-drive\\\\includes\\\\tc275\\\\uart -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o includes/hardware/encoder/encoder.src ../includes/hardware/encoder/encoder.c"
 	.compiler_name		"ctc"
 	;source	'../includes/hardware/encoder/encoder.c'
 
@@ -15,29 +15,29 @@ $TC16X
 ; Function initEncoder
 .L31:
 initEncoder:	.type	func
-	movh.a	a15,#@his(IfxPort_P15_0)
-	lea	a15,[a15]@los(IfxPort_P15_0)
+	movh.a	a15,#@his(IfxPort_P20_0)
+	lea	a15,[a15]@los(IfxPort_P20_0)
 	ld.d	e4,[a15]0
 .L58:
 	mov	d6,#16
 	call	setPinMode
 .L59:
-	movh.a	a15,#@his(IfxPort_P15_1)
-	lea	a15,[a15]@los(IfxPort_P15_1)
+	movh.a	a15,#@his(IfxPort_P20_3)
+	lea	a15,[a15]@los(IfxPort_P20_3)
 	ld.d	e4,[a15]0
 .L63:
 	mov	d6,#16
 	call	setPinMode
 .L64:
-	movh.a	a15,#@his(IfxPort_P33_9)
-	lea	a15,[a15]@los(IfxPort_P33_9)
+	movh.a	a15,#@his(IfxPort_P15_5)
+	lea	a15,[a15]@los(IfxPort_P15_5)
 	ld.d	e4,[a15]0
 .L65:
 	mov	d6,#16
 	call	setPinMode
 .L66:
-	movh.a	a15,#@his(IfxPort_P33_8)
-	lea	a15,[a15]@los(IfxPort_P33_8)
+	movh.a	a15,#@his(IfxPort_P15_4)
+	lea	a15,[a15]@los(IfxPort_P15_4)
 	ld.d	e4,[a15]0
 .L67:
 	mov	d6,#16
@@ -59,8 +59,8 @@ __initEncoder_function_end:
 ; Function countEncTicks
 .L33:
 countEncTicks:	.type	func
-	movh.a	a15,#@his(IfxPort_P15_0)
-	lea	a15,[a15]@los(IfxPort_P15_0)
+	movh.a	a15,#@his(IfxPort_P20_0)
+	lea	a15,[a15]@los(IfxPort_P20_0)
 	ld.d	e0,[a15]0
 .L74:
 	mov	d15,d0
@@ -83,8 +83,8 @@ countEncTicks:	.type	func
 .L4:
 	j	.L5
 .L5:
-	movh.a	a15,#@his(IfxPort_P15_1)
-	lea	a15,[a15]@los(IfxPort_P15_1)
+	movh.a	a15,#@his(IfxPort_P20_3)
+	lea	a15,[a15]@los(IfxPort_P20_3)
 	ld.d	e0,[a15]0
 .L93:
 	mov	d2,d0
@@ -107,8 +107,8 @@ countEncTicks:	.type	func
 .L8:
 	j	.L9
 .L9:
-	movh.a	a15,#@his(IfxPort_P33_9)
-	lea	a15,[a15]@los(IfxPort_P33_9)
+	movh.a	a15,#@his(IfxPort_P15_5)
+	lea	a15,[a15]@los(IfxPort_P15_5)
 	ld.d	e0,[a15]0
 .L102:
 	mov	d2,d0
@@ -136,8 +136,8 @@ countEncTicks:	.type	func
 .L104:
 	st.b	[a15],d0
 .L105:
-	movh.a	a15,#@his(IfxPort_P33_8)
-	lea	a15,[a15]@los(IfxPort_P33_8)
+	movh.a	a15,#@his(IfxPort_P15_4)
+	lea	a15,[a15]@los(IfxPort_P15_4)
 	ld.d	e0,[a15]0
 .L108:
 	mov	d2,d0
@@ -427,16 +427,16 @@ _999006_cur_enc2_chB:	.type	object
 	.space	1
 	.calls	'initEncoder','setPinMode'
 	.calls	'initEncoder','',0
-	.extern	IfxPort_P15_0
-	.extern	IfxPort_P15_1
-	.extern	IfxPort_P33_8
-	.extern	IfxPort_P33_9
+	.extern	IfxPort_P15_4
+	.extern	IfxPort_P15_5
+	.extern	IfxPort_P20_0
+	.extern	IfxPort_P20_3
 	.extern	setPinMode
 	.calls	'countEncTicks','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L35:
-	.word	36137
+	.word	36139
 	.half	3
 	.word	.L36
 	.byte	4
@@ -5806,16 +5806,16 @@ _999006_cur_enc2_chB:	.type	object
 	.byte	'IfxPort_Pin',0,3,192,1,3
 	.word	8480
 	.byte	30
-	.byte	'IfxPort_P15_0',0,11,126,24
+	.byte	'IfxPort_P15_4',0,11,130,1,24
 	.word	8480
 	.byte	1,1,30
-	.byte	'IfxPort_P15_1',0,11,127,24
+	.byte	'IfxPort_P15_5',0,11,131,1,24
 	.word	8480
 	.byte	1,1,30
-	.byte	'IfxPort_P33_8',0,11,196,1,24
+	.byte	'IfxPort_P20_0',0,11,135,1,24
 	.word	8480
 	.byte	1,1,30
-	.byte	'IfxPort_P33_9',0,11,197,1,24
+	.byte	'IfxPort_P20_3',0,11,142,1,24
 	.word	8480
 	.byte	1,1,0
 	.sdecl	'.debug_abbrev',debug

@@ -4,11 +4,11 @@
 /*********************************************************************************************************************/
 /*------------------------------------------------------Macros-------------------------------------------------------*/
 /*********************************************************************************************************************/
-#define PIN_ENC1_CHA        P15_0
-#define PIN_ENC1_CHB        P15_1
+#define PIN_ENC1_CHA        P20_0
+#define PIN_ENC1_CHB        P20_3
 
-#define PIN_ENC2_CHA        P33_9
-#define PIN_ENC2_CHB        P33_8
+#define PIN_ENC2_CHA        P15_5
+#define PIN_ENC2_CHB        P15_4
 
 #define PIN_UART_RX         IfxAsclin3_RXD_P32_2_IN
 #define PIN_UART_TX         IfxAsclin3_TX_P15_7_OUT
@@ -30,5 +30,7 @@
 #define PIN_DIAL            SAR0_0
 
 #define PIN_SW              P02_0
+
+#define PIN_LED             P00_5
 
 #endif /* INCLUDES_PINSETTINGS_H_ */

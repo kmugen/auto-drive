@@ -1,0 +1,110 @@
+/*********************************************************************************************************************/
+/*-----------------------------------------------------Includes------------------------------------------------------*/
+/*********************************************************************************************************************/
+#include "taskScheduler.h"
+#include "encoder.h"
+#include "stm.h"
+#include "uart.h"
+#include <stdio.h>
+#include "commonMacros.h"
+#include "lpf.h"
+#include "gpio.h"
+#include "pinSettings.h"
+#include "ultrasonic.h"
+#include "dial.h"
+#include "switch.h"
+#include "task.h"
+
+/*********************************************************************************************************************/
+/*-------------------------------------------------Data Structures---------------------------------------------------*/
+/*********************************************************************************************************************/
+ typedef struct
+{
+        uint32 cnt_1ms;
+        uint32 cnt_10ms;
+        uint32 cnt_100ms;
+}TestCnt;
+
+/*********************************************************************************************************************/
+/*-------------------------------------------------Global variables--------------------------------------------------*/
+/*********************************************************************************************************************/
+TestCnt stTestCnt;
+
+float32 w_ref;
+
+float32 w_ref_1;
+float32 w_ref_2;
+
+float32 g_dist;
+
+uint8 g_motor_on = TRUE;
+
+uint8 g_bt_on = FALSE;
+boolean buzzer_on = FALSE;
+
+char str[40];
+/*********************************************************************************************************************/
+/*------------------------------------------------Function Prototypes------------------------------------------------*/
+/*********************************************************************************************************************/
+static void Task1ms(void);
+static void Task10ms(void);
+static void Task100ms(void);
+
+/*********************************************************************************************************************/
+/*---------------------------------------------Function Implementations----------------------------------------------*/
+/*********************************************************************************************************************/
+void appNoTask(void)
+{
+    countEncTicks();
+}
+
+static void Task1ms(void)
+{
+    taskMotorCtrl(w_ref_1, w_ref_2, g_motor_on);
+
+    taskBuzzerCtrl(buzzer_on, g_motor_on);
+
+    stTestCnt.cnt_1ms++;
+}
+
+static void Task10ms(void)
+{
+    taskUltrasonic(&w_ref, &w_ref_1, &w_ref_2, &g_dist, g_motor_on);
+
+    stTestCnt.cnt_10ms++;
+}
+
+static void Task100ms(void)
+{
+    taskBuzzerMode(stTestCnt.cnt_100ms, g_dist, &buzzer_on);
+
+    taskBluetooth(&g_bt_on, &motor_on, &w_ref, &w_ref_1, &w_ref_2);
+
+    taskSW(g_bt_on, &g_motor_on);
+
+    taskDial(g_bt_on, g_motor_on, g_dist, &w_ref_1, &w_ref_2);
+
+
+    stTestCnt.cnt_100ms++;
+}
+
+void taskScheduler(void)
+{
+    if(schedulingInfo.f_1ms == 1)
+    {
+        schedulingInfo.f_1ms = 0;
+        Task1ms();
+
+        if(schedulingInfo.f_10ms == 1)
+        {
+            schedulingInfo.f_10ms = 0;
+            Task10ms();
+        }
+
+        if(schedulingInfo.f_100ms == 1)
+        {
+            schedulingInfo.f_100ms = 0;
+            Task100ms();
+        }
+    }
+}

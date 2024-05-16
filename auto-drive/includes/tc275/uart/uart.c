@@ -38,6 +38,7 @@
 #include "stdio.h"
 #include "IfxStdIf_Dpipe.h"
 #include "Ifx_Console.h"
+#include "gpio.h"
 
 
 /*********************************************************************************************************************/
@@ -48,7 +49,7 @@
 #define ISR_PRIORITY_ASCLIN_ER      52                                      /* Priority for interrupt ISR Errors    */
 #define ASC_TX_BUFFER_SIZE  256
 #define ASC_RX_BUFFER_SIZE  256
-#define ASC_BAUDRATE        115200
+#define ASC_BAUDRATE        9600
 
 /*********************************************************************************************************************/
 /*-------------------------------------------------Global variables--------------------------------------------------*/
@@ -59,6 +60,19 @@ static IfxStdIf_DPipe g_ascStandardInterface;
 uint8 g_uartTxBuffer[ASC_TX_BUFFER_SIZE + sizeof(Ifx_Fifo) + 8];
 uint8 g_uartRxBuffer[ASC_RX_BUFFER_SIZE + sizeof(Ifx_Fifo) + 8];
 
+/*
+ * Forward
+ * Backward
+ * Left
+ * Right
+ * Circle
+ * cross X
+ * Triangle
+ * Square
+ * stArt
+ * Pause
+ * */
+uint8 g_bt_cmd = '\0';
 /*********************************************************************************************************************/
 /*-------------------------------------------------Data Structures---------------------------------------------------*/
 /*********************************************************************************************************************/
@@ -78,6 +92,7 @@ void asclin3TxISR(void){
 IFX_INTERRUPT(asclin3RxISR, 0, ISR_PRIORITY_ASCLIN_RX);
 void asclin3RxISR(void){
     IfxAsclin_Asc_isrReceive(&g_ascHandle3);
+    g_bt_cmd = IfxAsclin_Asc_blockingRead(&g_ascHandle3);
 }
 
 IFX_INTERRUPT(asclin3ErrISR, 0, ISR_PRIORITY_ASCLIN_ER);
@@ -90,7 +105,7 @@ void _init_uart3(void){
 
     /* Set default configurations */
     // &MODULE_ASCLIN0, 1, 2, 3 가능 -> &MODULE_ASCLIN3 이면 Tx : P15.7, Rx : P32.2  (쉴드 버니 매뉴얼 참조)
-    IfxAsclin_Asc_initModuleConfig(&ascConf, &MODULE_ASCLIN3); /* Initialize the structure with default values      */
+    IfxAsclin_Asc_initModuleConfig(&ascConf, &MODULE_ASCLIN1); /* Initialize the structure with default values      */
 
     /* Set the desired baud rate */
     ascConf.baudrate.baudrate = ASC_BAUDRATE;                                   /* Set the baud rate in bit/s       */
@@ -110,11 +125,11 @@ void _init_uart3(void){
     const IfxAsclin_Asc_Pins pins = {
         .cts        = NULL_PTR,                         /* CTS pin not used                                     */
         .ctsMode    = IfxPort_InputMode_pullUp,
-        .rx         = &IfxAsclin3_RXD_P32_2_IN,         /* Select the pin for RX connected to the USB port      */
+        .rx         = &IfxAsclin1_RXA_P15_1_IN,         /* Select the pin for RX connected to the USB port      */
         .rxMode     = IfxPort_InputMode_pullUp,         /* RX pin                                               */
         .rts        = NULL_PTR,                         /* RTS pin not used                                     */
         .rtsMode    = IfxPort_OutputMode_pushPull,
-        .tx         = &IfxAsclin3_TX_P15_7_OUT,         /* Select the pin for TX connected to the USB port      */
+        .tx         = &IfxAsclin1_TX_P15_0_OUT,         /* Select the pin for TX connected to the USB port      */
         .txMode     = IfxPort_OutputMode_pushPull,      /* TX pin                                               */
         .pinDriver  = IfxPort_PadDriver_cmosAutomotiveSpeed1
     };
@@ -139,8 +154,6 @@ void _init_uart3(void){
 
 
 /*Receive (and wait for) a character from the serial line */
-unsigned char _in_uart3(void){
-    return IfxAsclin_Asc_blockingRead(&g_ascHandle3);
-}
+
 
 #endif /* UART_H_ */
